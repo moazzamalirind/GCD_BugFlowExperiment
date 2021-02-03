@@ -48,11 +48,12 @@ ________________________________________________________________________________
 Explanations of Respository Contents
 
 There are three different models developed and analyzed in this study:
+
 a) Nonlinear Model 
 b) Linear Weekend-Weekday Model
 c) Linear Sat-Sun-Weekday Model
-Each model folder has description about the model, inputs, outputs, directions to encourage reproducibility, and validation. Primarly
 
+Each model folder has description about the model, inputs, outputs, directions to encourage reproducibility, and validation. The folder named documents contains all the paperwork e.g. proposal, article, and revelant docs.
 _________________________________________________________________________________________________________________________________________________________________________________
 Required Softwares
 
@@ -61,8 +62,7 @@ Required Softwares
 2. R and R studio, which are open source softwares used for the results visualization. R can be downloaded from (https://www.r-project.org/) and RStudio is available at (https://rstudio.com/).
 
 3. Microsoft Excel. 
-
-_________________________________________________________________________________________________________________________________________________________________________________
+________________________________________________________________________________________________________________________________________________________________________________
 Recommended Citation
 
 Moazzam Ali Rind and David E. Rosenberg (2021). "Bugs buy water from hydropower producers: modeling, tradeoffs, and multi-objective management". Utah State University, Logan, Utah. https://github.com/moazzamalirind/GCD_BugFlowExperiment
