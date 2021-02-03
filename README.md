@@ -16,7 +16,8 @@ Lasted updated: 2/2/2021
 _________________________________________________________________________________________________________________________________________________________________________________
 
 Project Summary: 
-    This study quantifies tradeoffs between the number of steady flow days and hydropower objectives. The steady flow day—same releases throughout the day—helps the bug-eggs hatching process. Bug Flow Experiment, weekend releases from the Glen Canyon Dam during summer are kept low and steady, has been executed since 2018; the concerned overarching question being: how much hydropower revenue varies with steady flow days beyond weekends?
+	This study quantifies tradeoffs between the number of days of steady reservoir release and hydropower objectives. The steady flow day— same releases throughout the day —helps aquatic invertebrates lay and hatch. A Bug Flow Experiment for Glen Canyon Dam where weekend summer releases were kept low and steady has been executed since 2018. The overarching question is: how does hydropower revenue vary as steady flow days expand from weekends to weekdays?
+    
 	The optimization model with constraint method was used to calculate the tradeoffs. The model runs for one month with two sub-daily timesteps and is subjected to reservoir’s physical and managerial constraints. A non-linear and two linear (Weekend-Weekday and Sun-Sat-Weekday) models are considered. Comparison amongst linear models help understand the importance of Saturday’s flow pattern (Steady or unsteady) for monthly revenue. Finally, tradeoffs of months guides ecosystem manager’s decision of purchasing additional bug flow days and paying off the hydropower revenue lost.
     
 _________________________________________________________________________________________________________________________________________________________________________________
@@ -36,7 +37,7 @@ Features of the study
 
 3. Minimize the daily release decisions from 24 to 2.
 
-4. Tradeoffs of months help visualize the variation of pareto curves across the months and guide decision of number of steady low flow days during each month.
+4. Tradeoffs for different months help visualize the variation of pareto curves across  months and guide decision of number of steady low flow days during each month.
 
 5.  A good example of trade-off analysis used for multi-objective decision making.
 
