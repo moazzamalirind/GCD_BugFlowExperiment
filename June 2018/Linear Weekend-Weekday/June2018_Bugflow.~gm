@@ -24,7 +24,7 @@ Set
           p                             time period during a day /pLow "Low flow period",pHigh "High flow period"/
           tot_vol                       Total montly release volume (acre-ft)/V1*V5/
           modpar                        Saving model parameter for each of the solutions for each of the scenario/ ModStat "Model Statistics", SolStat "Solve Statistics"/
-          case                          Defining constrainted cases for number of low flow steady days /case1*case12/
+         case                          Defining constrainted cases for number of low flow steady days /case1*case12/
 ;
 
 
