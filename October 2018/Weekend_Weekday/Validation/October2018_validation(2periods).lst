@@ -1,4 +1,4 @@
-GAMS 33.2.0  r4f23b21 Released Dec  1, 2020 WEX-WEI x86 64bit/MS Windows - 04/05/21 02:54:23 Page 1
+GAMS 33.2.0  r4f23b21 Released Dec  1, 2020 WEX-WEI x86 64bit/MS Windows - 04/05/21 15:48:01 Page 1
 G e n e r a l   A l g e b r a i c   M o d e l i n g   S y s t e m
 C o m p i l a t i o n
 
@@ -82,9 +82,9 @@ C o m p i l a t i o n
       p(cfs)/8000/
   56  evap(d)                      Evaporation (ac-ft per day).
   57  EnergyRate(p)                Energy prices on weekdays ($ per MWH) /pLow 4
-      7.17, pHigh 65.24/
+      7.189, pHigh 65.218/
   58  weekendRate(p)               Energy prices on weekends ($ per MWH) /pLow 4
-      7.17, pHigh 47.17/
+      7.189, pHigh 47.189/
   59  Duration(p)                  Duration of period (hours)
   60  Steady_Days                  The number of steady low flow days (weekend d
       uring October 2018)
@@ -296,7 +296,7 @@ GDXIN   E:\Class project\GCD_BugFlowExperiment\October 2018\Weekend_Weekday\Vali
  211  * Dump the gdx file to an Excel workbook
  212  Execute "gdx2xls Valid_October2018(2Periods).gdx"
  213   
-GAMS 33.2.0  r4f23b21 Released Dec  1, 2020 WEX-WEI x86 64bit/MS Windows - 04/05/21 02:54:23 Page 2
+GAMS 33.2.0  r4f23b21 Released Dec  1, 2020 WEX-WEI x86 64bit/MS Windows - 04/05/21 15:48:01 Page 2
 G e n e r a l   A l g e b r a i c   M o d e l i n g   S y s t e m
 Include File Summary
 
@@ -318,7 +318,7 @@ Include File Summary
 
 
 COMPILATION TIME     =        1.172 SECONDS      3 MB  33.2.0 r4f23b21 WEX-WEI
-GAMS 33.2.0  r4f23b21 Released Dec  1, 2020 WEX-WEI x86 64bit/MS Windows - 04/05/21 02:54:23 Page 3
+GAMS 33.2.0  r4f23b21 Released Dec  1, 2020 WEX-WEI x86 64bit/MS Windows - 04/05/21 15:48:01 Page 3
 G e n e r a l   A l g e b r a i c   M o d e l i n g   S y s t e m
 E x e c u t i o n
 
@@ -333,6 +333,18 @@ d31
 
 ----     87 PARAMETER Inflow  Inflow to reservoir (cfs)
 
+d1   4614.000,    d2   5346.000,    d3   4425.000,    d4   4396.000
+d5   7281.000,    d6   7230.000,    d7  13082.000,    d8  14844.000
+d9  11161.000,    d10 13579.000,    d11 16356.000,    d12  7879.000
+d13  9725.000,    d14  8960.000,    d15  4362.000,    d16  5885.000
+d17  9247.000,    d18  9919.000,    d19  5928.000,    d20  8213.000
+d21  8163.000,    d22  9233.000,    d23  3347.000,    d24  6373.000
+d25  6926.000,    d26  5578.000,    d27  5377.000,    d28  6117.000
+d29  5425.000,    d30  5949.000,    d31  5572.000
+
+
+----     87 PARAMETER evap  Evaporation (ac-ft per day).
+
 d1  986.000,    d2  986.000,    d3  985.000,    d4  984.000,    d5  983.000
 d6  983.000,    d7  983.000,    d8  984.000,    d9  984.000,    d10 984.000
 d11 985.000,    d12 985.000,    d13 985.000,    d14 984.000,    d15 984.000
@@ -340,17 +352,6 @@ d16 983.000,    d17 983.000,    d18 983.000,    d19 982.000,    d20 982.000
 d21 981.000,    d22 981.000,    d23 980.000,    d24 980.000,    d25 979.000
 d26 978.000,    d27 978.000,    d28 977.000,    d29 976.000,    d30 976.000
 d31 975.000
-
-
-----     87 PARAMETER evap  Evaporation (ac-ft per day).
-
-d1  3592.150,    d2  3592.040,    d3  3591.910,    d4  3591.780,    d5  3591.710
-d6  3591.640,    d7  3591.710,    d8  3591.790,    d9  3591.800,    d10 3591.850
-d11 3591.960,    d12 3591.900,    d13 3591.880,    d14 3591.870,    d15 3591.740
-d16 3591.640,    d17 3591.610,    d18 3591.590,    d19 3591.500,    d20 3591.450
-d21 3591.420,    d22 3591.390,    d23 3591.240,    d24 3591.150,    d25 3591.070
-d26 3590.960,    d27 3590.850,    d28 3590.780,    d29 3590.670,    d30 3590.570
-d31 3590.460
 
 
 ----     87 SET p  time period during a day
@@ -362,7 +363,7 @@ pLow ,    pHigh
 
 pLow   8.000,    pHigh 16.000
 
-GAMS 33.2.0  r4f23b21 Released Dec  1, 2020 WEX-WEI x86 64bit/MS Windows - 04/05/21 02:54:23 Page 4
+GAMS 33.2.0  r4f23b21 Released Dec  1, 2020 WEX-WEI x86 64bit/MS Windows - 04/05/21 15:48:01 Page 4
 G e n e r a l   A l g e b r a i c   M o d e l i n g   S y s t e m
 Equation Listing    SOLVE Model2 Using LP From line 191
 
@@ -370,8 +371,8 @@ Equation Listing    SOLVE Model2 Using LP From line 191
 ---- EQa_Inflow  =E=  Total volume of Water available in the system during the m
                       onth (acre-ft)
 
-EQa_Inflow..  Avail_Water =E= 11076895.488 ; (LHS = 0
-     , INFES = 11076895.488 ****)
+EQa_Inflow..  Avail_Water =E= 11495321.064 ; (LHS = 0
+     , INFES = 11495321.064 ****)
      
 
 ---- EQb_SteadyOutflow  =E=  Volume of Water released during the steady days (ac
@@ -393,7 +394,7 @@ EQc_UnSteadyOutflow..  unsteady_Outflow =E= 492436.4768 ;
 ---- EQ1__ResMassBal  =E=  Reservoir mass balance (acre-ft)
 
 EQ1__ResMassBal..  storage - Avail_Water + steady_Outflow + unsteady_Outflow
-      =E= -111336.08 ; (LHS = 0, INFES = 111336.08 ****)
+      =E= -30439 ; (LHS = 0, INFES = 30439 ****)
      
 
 ---- EQ2__reqpowerstorage  =G=  The minimum storage equivalent to reservoir leve
@@ -464,13 +465,13 @@ EQ10_EnergyGen_Max(pHigh)..  Energy_Gen(pHigh) =L= 21120 ; (LHS = 0)
 ---- EQ12_Revenue  =E=  Total monthly Hydropower Renvenue generated if number of
                         steady flow days are equal or less than weekend days ($)
 
-EQ12_Revenue..  ObjectiveVal - 1084.91*Energy_Gen(pLow)
+EQ12_Revenue..  ObjectiveVal - 1085.347*Energy_Gen(pLow)
      
-      - 1500.52*Energy_Gen(pHigh) - 377.36*SteadyEn_Gen(pLow)
+      - 1500.014*Energy_Gen(pHigh) - 377.512*SteadyEn_Gen(pLow)
      
-      - 377.36*SteadyEn_Gen(pHigh) =E= 0 ; (LHS = 0)
+      - 377.512*SteadyEn_Gen(pHigh) =E= 0 ; (LHS = 0)
      
-GAMS 33.2.0  r4f23b21 Released Dec  1, 2020 WEX-WEI x86 64bit/MS Windows - 04/05/21 02:54:23 Page 5
+GAMS 33.2.0  r4f23b21 Released Dec  1, 2020 WEX-WEI x86 64bit/MS Windows - 04/05/21 15:48:01 Page 5
 G e n e r a l   A l g e b r a i c   M o d e l i n g   S y s t e m
 Column Listing      SOLVE Model2 Using LP From line 191
 
@@ -498,13 +499,13 @@ Energy_Gen(pLow)
                 (.LO, .L, .UP, .M = -INF, 0, +INF, 0)
         1       EQ9_EnergyGen(pLow)
         1       EQ10_EnergyGen_Max(pLow)
-    -1084.91    EQ12_Revenue
+    -1085.347   EQ12_Revenue
 
 Energy_Gen(pHigh)
                 (.LO, .L, .UP, .M = -INF, 0, +INF, 0)
         1       EQ9_EnergyGen(pHigh)
         1       EQ10_EnergyGen_Max(pHigh)
-    -1500.52    EQ12_Revenue
+    -1500.014   EQ12_Revenue
 
 
 ---- SteadyEn_Gen  Hydropower Generated within a period during steady flow days 
@@ -513,12 +514,12 @@ Energy_Gen(pHigh)
 SteadyEn_Gen(pLow)
                 (.LO, .L, .UP, .M = -INF, 0, +INF, 0)
         1       EQ8_SteadyEnergy(pLow)
-     -377.36    EQ12_Revenue
+     -377.512   EQ12_Revenue
 
 SteadyEn_Gen(pHigh)
                 (.LO, .L, .UP, .M = -INF, 0, +INF, 0)
         1       EQ8_SteadyEnergy(pHigh)
-     -377.36    EQ12_Revenue
+     -377.512   EQ12_Revenue
 
 
 ---- Avail_Water  Total Water available in the system during the month (March 20
@@ -556,7 +557,7 @@ TotMonth_volume
                 (.LO, .L, .UP, .M = -INF, 0, +INF, 0)
         1       EQ7__Monthtlyrel
 
-GAMS 33.2.0  r4f23b21 Released Dec  1, 2020 WEX-WEI x86 64bit/MS Windows - 04/05/21 02:54:23 Page 6
+GAMS 33.2.0  r4f23b21 Released Dec  1, 2020 WEX-WEI x86 64bit/MS Windows - 04/05/21 15:48:01 Page 6
 G e n e r a l   A l g e b r a i c   M o d e l i n g   S y s t e m
 Model Statistics    SOLVE Model2 Using LP From line 191
 
@@ -568,8 +569,8 @@ BLOCKS OF VARIABLES           8     SINGLE VARIABLES           10
 NON ZERO ELEMENTS            23
 
 
-GENERATION TIME      =        0.031 SECONDS      4 MB  33.2.0 r4f23b21 WEX-WEI
-GAMS 33.2.0  r4f23b21 Released Dec  1, 2020 WEX-WEI x86 64bit/MS Windows - 04/05/21 02:54:23 Page 7
+GENERATION TIME      =        0.047 SECONDS      4 MB  33.2.0 r4f23b21 WEX-WEI
+GAMS 33.2.0  r4f23b21 Released Dec  1, 2020 WEX-WEI x86 64bit/MS Windows - 04/05/21 15:48:01 Page 7
 G e n e r a l   A l g e b r a i c   M o d e l i n g   S y s t e m
 Solution Report     SOLVE Model2 Using LP From line 191
 
@@ -582,9 +583,9 @@ Solution Report     SOLVE Model2 Using LP From line 191
 
 **** SOLVER STATUS     1 Normal Completion         
 **** MODEL STATUS      1 Optimal                   
-**** OBJECTIVE VALUE         16680736.9148
+**** OBJECTIVE VALUE         16679742.7925
 
- RESOURCE USAGE, LIMIT          0.090 10000000000.000
+ RESOURCE USAGE, LIMIT          0.060 10000000000.000
  ITERATION COUNT, LIMIT         0    2147483647
 
 GAMS/BARON       33.2.0 r4f23b21 Released Dec 01, 2020 WEI x86 64bit/MS Window
@@ -611,8 +612,8 @@ University of Illinois at Urbana-Champaign.
  For LP/MIP/QP: ILOG CPLEX                                      
  For NLP: MINOS, SNOPT, GAMS external NLP, IPOPT, FILTERSD, FILTERSQP
 
-Solution      = 16680736.9147535  best solution found during preprocessing
-Best possible = 16680736.9147535
+Solution      = 16679742.7925286  best solution found during preprocessing
+Best possible = 16679742.7925286
 Absolute gap  = 0  optca = 1E-9
 Relative gap  = 0  optcr = 0.0001
   (Note that BARON uses a different formula to compute the relative gap as
@@ -621,12 +622,12 @@ Relative gap  = 0  optcr = 0.0001
 
                        LOWER     LEVEL     UPPER    MARGINAL
 
----- EQU EQa_Inflow 1.1077E+7 1.1077E+7 1.1077E+7      .         
+---- EQU EQa_Inflow 1.1495E+7 1.1495E+7 1.1495E+7      .         
 ---- EQU EQb_Stead~ 1.6090E+5 1.6090E+5 1.6090E+5      .         
 ---- EQU EQc_UnSte~ 4.9244E+5 4.9244E+5 4.9244E+5      .         
----- EQU EQ1__ResM~ -1.113E+5 -1.113E+5 -1.113E+5      .         
----- EQU EQ2__reqp~ 8.9500E+6 1.0312E+7     +INF       .         
----- EQU EQ3__maxs~     -INF  1.0312E+7 2.5000E+7      .         
+---- EQU EQ1__ResM~ -3.044E+4 -3.044E+4 -3.044E+4      .         
+---- EQU EQ2__reqp~ 8.9500E+6 1.0812E+7     +INF       .         
+---- EQU EQ3__maxs~     -INF  1.0812E+7 2.5000E+7      .         
 
   EQa_Inflow  Total volume of Water available in the system during the month (ac
               re-ft)
@@ -665,16 +666,16 @@ Relative gap  = 0  optcr = 0.0001
 
          LOWER     LEVEL     UPPER    MARGINAL
 
-pLow   3000.760  3000.760  3000.760   377.360      
-pHigh  6001.520  6001.520  6001.520   377.360      
+pLow   3000.760  3000.760  3000.760   377.512      
+pHigh  6001.520  6001.520  6001.520   377.512      
 
 ---- EQU EQ9_EnergyGen  Energy generated within each period during unsteady flow
                         day (MWH)
 
          LOWER     LEVEL     UPPER    MARGINAL
 
-pLow   2636.848  2636.848  2636.848  1084.910      
-pHigh  6946.188  6946.188  6946.188  1500.520      
+pLow   2636.848  2636.848  2636.848  1085.347      
+pHigh  6946.188  6946.188  6946.188  1500.014      
 
 ---- EQU EQ10_EnergyGen_Max  Maximum Energy Generation Limit of the Glen Caynon 
                              Dam(MW)
@@ -693,8 +694,8 @@ pHigh     -INF   6946.188 21120.000      .
 
                        LOWER     LEVEL     UPPER    MARGINAL
 
----- VAR Objective~     -INF  1.6681E+7     +INF       .         
----- VAR storage        -INF  1.0312E+7     +INF       .         
+---- VAR Objective~     -INF  1.6680E+7     +INF       .         
+---- VAR storage        -INF  1.0812E+7     +INF       .         
 
   ObjectiveVal  Objective function value
   storage  Reservoir storage at the end of the month (acre-ft)
@@ -717,7 +718,7 @@ pHigh     -INF   6001.520     +INF       .
 
                        LOWER     LEVEL     UPPER    MARGINAL
 
----- VAR Avail_Wat~     -INF  1.1077E+7     +INF       .         
+---- VAR Avail_Wat~     -INF  1.1495E+7     +INF       .         
 ---- VAR steady_Ou~     -INF  1.6090E+5     +INF       .         
 ---- VAR unsteady_~     -INF  4.9244E+5     +INF       .         
 ---- VAR TotMonth_~     -INF  6.5334E+5     +INF       .         
@@ -732,12 +733,12 @@ pHigh     -INF   6001.520     +INF       .
                              0 INFEASIBLE
                              0  UNBOUNDED
                              4  PROJECTED
-GAMS 33.2.0  r4f23b21 Released Dec  1, 2020 WEX-WEI x86 64bit/MS Windows - 04/05/21 02:54:23 Page 8
+GAMS 33.2.0  r4f23b21 Released Dec  1, 2020 WEX-WEI x86 64bit/MS Windows - 04/05/21 15:48:01 Page 8
 G e n e r a l   A l g e b r a i c   M o d e l i n g   S y s t e m
 E x e c u t i o n
 
 
-----    205 PARAMETER FStore               =  1.668074E+7  Storing objective fun
+----    205 PARAMETER FStore               =  1.667974E+7  Storing objective fun
                                                            ction values
             PARAMETER XStore_steady        =    72018.241  Store Energy Generate
                                                            d during steady flow 
@@ -758,11 +759,11 @@ pLow  10096.770,    pHigh 10096.770
 pLow   8872.300,    pHigh 11686.050
 
 
-----    205 PARAMETER Sstore               =  1.031222E+7  Store Storage Values 
+----    205 PARAMETER Sstore               =  1.081154E+7  Store Storage Values 
                                                            (ac-ft)
 
 
-EXECUTION TIME       =        8.719 SECONDS      4 MB  33.2.0 r4f23b21 WEX-WEI
+EXECUTION TIME       =        9.078 SECONDS      4 MB  33.2.0 r4f23b21 WEX-WEI
 
 
 USER: Small MUD - 5 User License                     G200622/0001AP-GEN

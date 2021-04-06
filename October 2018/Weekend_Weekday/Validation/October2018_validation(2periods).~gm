@@ -54,8 +54,8 @@ Inflow(d)                    Inflow to reservoir (cfs)
 maxRel                       Maximum release in a day d at any timeperiod p(cfs)/31500/
 minRel                       Minimum release in a day d at any timeperiod p(cfs)/8000/
 evap(d)                      Evaporation (ac-ft per day).
-EnergyRate(p)                Energy prices on weekdays ($ per MWH) /pLow 47.17, pHigh 65.24/
-weekendRate(p)               Energy prices on weekends ($ per MWH) /pLow 47.17, pHigh 47.17/
+EnergyRate(p)                Energy prices on weekdays ($ per MWH) /pLow 47.189, pHigh 65.218/
+weekendRate(p)               Energy prices on weekends ($ per MWH) /pLow 47.189, pHigh 47.189/
 Duration(p)                  Duration of period (hours)
 Steady_Days                  The number of steady low flow days (weekend during October 2018)
 ;

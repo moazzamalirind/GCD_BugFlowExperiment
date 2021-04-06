@@ -1,5 +1,5 @@
 
---- Job August2018_Validation(Hourly).gms Start 04/05/21 01:04:11 33.2.0 r4f23b21 WEX-WEI x86 64bit/MS Windows
+--- Job August2018_Validation(Hourly).gms Start 04/05/21 15:57:39 33.2.0 r4f23b21 WEX-WEI x86 64bit/MS Windows
 --- Applying:
     C:\GAMS\33\gmsprmNT.txt
 --- GAMS Parameters defined
@@ -27,16 +27,16 @@ GAMS 33.2.0   Copyright (C) 1987-2020 GAMS Development. All rights reserved
 GDXXRW           33.2.0 r4f23b21 Released Dec 01, 2020 WEI x86 64bit/MS Window
 Input file : E:\Class project\GCD_BugFlowExperiment\August 2018\Weekend-Weekday\Validation\Input_August2018.xlsx
 Output file: E:\Class project\GCD_BugFlowExperiment\August 2018\Weekend-Weekday\Validation\Valid_August2018(Hourly).gdx
-Total time = 985 Ms
+Total time = 984 Ms
 --- August2018_Validation(Hourly).gms(60) 3 Mb
 --- GDXin=E:\Class project\GCD_BugFlowExperiment\August 2018\Weekend-Weekday\Validation\Valid_August2018(Hourly).gdx
 --- August2018_Validation(Hourly).gms(153) 3 Mb
---- Starting execution: elapsed 0:00:01.212
+--- Starting execution: elapsed 0:00:01.203
 --- August2018_Validation(Hourly).gms(71) 4 Mb
 --- Generating LP model validation
 --- August2018_Validation(Hourly).gms(137) 5 Mb
 ---   5,303 rows  2,265 columns  9,766 non-zeroes
---- Executing CPLEX (Solvelink=2): elapsed 0:00:01.240
+--- Executing CPLEX (Solvelink=2): elapsed 0:00:01.242
 
 IBM ILOG CPLEX   33.2.0 r4f23b21 Released Dec 01, 2020 WEI x86 64bit/MS Window
 
@@ -66,11 +66,12 @@ Optimal solution found
 Objective:     27235815.022894
 
 --- Reading solution for model validation
---- Executing after solve: elapsed 0:00:01.337
+--- Executing after solve: elapsed 0:00:01.405
 --- August2018_Validation(Hourly).gms(148) 5 Mb
 --- GDX File (execute_unload) E:\Class project\GCD_BugFlowExperiment\August 2018\Weekend-Weekday\Validation\Valid_August2018(Hourly).gdx
 --- August2018_Validation(Hourly).gms(150) 5 Mb
 GDX2XLS          33.2.0 r4f23b21 Released Dec 01, 2020 WEI x86 64bit/MS Window
 Output file: E:\Class project\GCD_BugFlowExperiment\August 2018\Weekend-Weekday\Validation\Valid_August2018(Hourly).xlsx
+(Created backup file)
 *** Status: Normal completion
---- Job August2018_Validation(Hourly).gms Stop 04/05/21 01:04:24 elapsed 0:00:13.159
+--- Job August2018_Validation(Hourly).gms Stop 04/05/21 15:57:54 elapsed 0:00:14.644

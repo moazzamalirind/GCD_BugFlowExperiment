@@ -1,5 +1,5 @@
 
---- Job July2018_Validation(Hourly).gms Start 04/04/21 23:58:26 33.2.0 r4f23b21 WEX-WEI x86 64bit/MS Windows
+--- Job July2018_Validation(Hourly).gms Start 04/05/21 15:54:26 33.2.0 r4f23b21 WEX-WEI x86 64bit/MS Windows
 --- Applying:
     C:\GAMS\33\gmsprmNT.txt
 --- GAMS Parameters defined
@@ -27,16 +27,16 @@ GAMS 33.2.0   Copyright (C) 1987-2020 GAMS Development. All rights reserved
 GDXXRW           33.2.0 r4f23b21 Released Dec 01, 2020 WEI x86 64bit/MS Window
 Input file : E:\Class project\GCD_BugFlowExperiment\July 2018\Weekend-Weekday Model\Validation\Input_July2018.xlsx
 Output file: E:\Class project\GCD_BugFlowExperiment\July 2018\Weekend-Weekday Model\Validation\Valid_July2018(Hourly).gdx
-Total time = 891 Ms
+Total time = 984 Ms
 --- July2018_Validation(Hourly).gms(60) 3 Mb
 --- GDXin=E:\Class project\GCD_BugFlowExperiment\July 2018\Weekend-Weekday Model\Validation\Valid_July2018(Hourly).gdx
 --- July2018_Validation(Hourly).gms(153) 3 Mb
---- Starting execution: elapsed 0:00:01.115
+--- Starting execution: elapsed 0:00:01.191
 --- July2018_Validation(Hourly).gms(71) 4 Mb
 --- Generating LP model validation
 --- July2018_Validation(Hourly).gms(137) 5 Mb
 ---   5,303 rows  2,265 columns  9,766 non-zeroes
---- Executing CPLEX (Solvelink=2): elapsed 0:00:01.144
+--- Executing CPLEX (Solvelink=2): elapsed 0:00:01.235
 
 IBM ILOG CPLEX   33.2.0 r4f23b21 Released Dec 01, 2020 WEI x86 64bit/MS Window
 
@@ -59,18 +59,19 @@ All rows and columns eliminated.
 Presolve time = 0.00 sec. (1.93 ticks)
 
 --- LP status (1): optimal.
---- Cplex Time: 0.02sec (det. 3.64 ticks)
+--- Cplex Time: 0.00sec (det. 3.64 ticks)
 
 
 Optimal solution found
 Objective:     25694898.984513
 
 --- Reading solution for model validation
---- Executing after solve: elapsed 0:00:01.234
+--- Executing after solve: elapsed 0:00:01.385
 --- July2018_Validation(Hourly).gms(148) 5 Mb
 --- GDX File (execute_unload) E:\Class project\GCD_BugFlowExperiment\July 2018\Weekend-Weekday Model\Validation\Valid_July2018(Hourly).gdx
 --- July2018_Validation(Hourly).gms(150) 5 Mb
 GDX2XLS          33.2.0 r4f23b21 Released Dec 01, 2020 WEI x86 64bit/MS Window
 Output file: E:\Class project\GCD_BugFlowExperiment\July 2018\Weekend-Weekday Model\Validation\Valid_July2018(Hourly).xlsx
+(Created backup file)
 *** Status: Normal completion
---- Job July2018_Validation(Hourly).gms Stop 04/04/21 23:58:39 elapsed 0:00:12.657
+--- Job July2018_Validation(Hourly).gms Stop 04/05/21 15:54:41 elapsed 0:00:14.717

@@ -1,5 +1,5 @@
 
---- Job October2018_validation(2periods).gms Start 04/05/21 02:54:23 33.2.0 r4f23b21 WEX-WEI x86 64bit/MS Windows
+--- Job October2018_validation(2periods).gms Start 04/05/21 15:48:01 33.2.0 r4f23b21 WEX-WEI x86 64bit/MS Windows
 --- Applying:
     C:\GAMS\33\gmsprmNT.txt
 --- GAMS Parameters defined
@@ -27,16 +27,16 @@ GAMS 33.2.0   Copyright (C) 1987-2020 GAMS Development. All rights reserved
 GDXXRW           33.2.0 r4f23b21 Released Dec 01, 2020 WEI x86 64bit/MS Window
 Input file : E:\Class project\GCD_BugFlowExperiment\October 2018\Weekend_Weekday\Validation\Input_October2018.xlsx
 Output file: E:\Class project\GCD_BugFlowExperiment\October 2018\Weekend_Weekday\Validation\Valid_October2018(2Periods).gdx
-Total time = 937 Ms
+Total time = 968 Ms
 --- October2018_validation(2periods).gms(77) 3 Mb
 --- GDXin=E:\Class project\GCD_BugFlowExperiment\October 2018\Weekend_Weekday\Validation\Valid_October2018(2Periods).gdx
 --- October2018_validation(2periods).gms(213) 3 Mb
---- Starting execution: elapsed 0:00:01.185
+--- Starting execution: elapsed 0:00:01.176
 --- October2018_validation(2periods).gms(189) 4 Mb
 --- Generating LP model Model2
 --- October2018_validation(2periods).gms(191) 4 Mb
 ---   14 rows  10 columns  23 non-zeroes
---- Executing BARON (Solvelink=2): elapsed 0:00:01.217
+--- Executing BARON (Solvelink=2): elapsed 0:00:01.211
 
 GAMS/BARON       33.2.0 r4f23b21 Released Dec 01, 2020 WEI x86 64bit/MS Window
 
@@ -57,16 +57,16 @@ GAMS/BARON       33.2.0 r4f23b21 Released Dec 01, 2020 WEI x86 64bit/MS Window
  For LP/MIP/QP: ILOG CPLEX                                      
  For NLP: MINOS, SNOPT, GAMS external NLP, IPOPT, FILTERSD, FILTERSQP
 ===========================================================================
- Preprocessing found feasible solution with value  16680736.9148     
+ Preprocessing found feasible solution with value  16679742.7925     
  Problem solved during preprocessing
- Upper bound is  16680736.9148     
+ Upper bound is  16679742.7925     
 
  Cleaning up
 
                          *** Normal completion ***            
 
- Wall clock time:                     0.10
- Total CPU time used:                 0.06
+ Wall clock time:                     0.07
+ Total CPU time used:                 0.02
 
  Total no. of BaR iterations:      -1
  Best solution found at node:      -1
@@ -75,19 +75,20 @@ GAMS/BARON       33.2.0 r4f23b21 Released Dec 01, 2020 WEI x86 64bit/MS Window
  All done
 ===========================================================================
 
-Solution      = 16680736.9147535  best solution found during preprocessing
-Best possible = 16680736.9147535
+Solution      = 16679742.7925286  best solution found during preprocessing
+Best possible = 16679742.7925286
 Absolute gap  = 0  optca = 1E-9
 Relative gap  = 0  optcr = 0.0001
   (Note that BARON uses a different formula to compute the relative gap as
    was used for the above reported value.)
 
 --- Reading solution for model Model2
---- Executing after solve: elapsed 0:00:01.548
+--- Executing after solve: elapsed 0:00:01.507
 --- October2018_validation(2periods).gms(210) 4 Mb
 --- GDX File (execute_unload) E:\Class project\GCD_BugFlowExperiment\October 2018\Weekend_Weekday\Validation\Valid_October2018(2Periods).gdx
 --- October2018_validation(2periods).gms(212) 4 Mb
 GDX2XLS          33.2.0 r4f23b21 Released Dec 01, 2020 WEI x86 64bit/MS Window
 Output file: E:\Class project\GCD_BugFlowExperiment\October 2018\Weekend_Weekday\Validation\Valid_October2018(2Periods).xlsx
+(Created backup file)
 *** Status: Normal completion
---- Job October2018_validation(2periods).gms Stop 04/05/21 02:54:33 elapsed 0:00:09.920
+--- Job October2018_validation(2periods).gms Stop 04/05/21 15:48:11 elapsed 0:00:10.259

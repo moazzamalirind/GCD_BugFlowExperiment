@@ -1,5 +1,5 @@
 
---- Job October2018_Validation(Hourly).gms Start 04/05/21 02:47:32 33.2.0 r4f23b21 WEX-WEI x86 64bit/MS Windows
+--- Job October2018_Validation(Hourly).gms Start 04/05/21 15:47:49 33.2.0 r4f23b21 WEX-WEI x86 64bit/MS Windows
 --- Applying:
     C:\GAMS\33\gmsprmNT.txt
 --- GAMS Parameters defined
@@ -27,16 +27,16 @@ GAMS 33.2.0   Copyright (C) 1987-2020 GAMS Development. All rights reserved
 GDXXRW           33.2.0 r4f23b21 Released Dec 01, 2020 WEI x86 64bit/MS Window
 Input file : E:\Class project\GCD_BugFlowExperiment\October 2018\Weekend_Weekday\Validation\Input_October2018.xlsx
 Output file: E:\Class project\GCD_BugFlowExperiment\October 2018\Weekend_Weekday\Validation\Valid_October2018(Hourly).gdx
-Total time = 1125 Ms
+Total time = 984 Ms
 --- October2018_Validation(Hourly).gms(62) 3 Mb
 --- GDXin=E:\Class project\GCD_BugFlowExperiment\October 2018\Weekend_Weekday\Validation\Valid_October2018(Hourly).gdx
 --- October2018_Validation(Hourly).gms(155) 3 Mb
---- Starting execution: elapsed 0:00:01.342
+--- Starting execution: elapsed 0:00:01.195
 --- October2018_Validation(Hourly).gms(73) 4 Mb
 --- Generating LP model validation
 --- October2018_Validation(Hourly).gms(139) 5 Mb
 ---   4,559 rows  2,265 columns  9,022 non-zeroes
---- Executing CPLEX (Solvelink=2): elapsed 0:00:01.382
+--- Executing CPLEX (Solvelink=2): elapsed 0:00:01.238
 
 IBM ILOG CPLEX   33.2.0 r4f23b21 Released Dec 01, 2020 WEI x86 64bit/MS Window
 
@@ -66,7 +66,7 @@ Optimal solution found
 Objective:     16679721.469366
 
 --- Reading solution for model validation
---- Executing after solve: elapsed 0:00:01.499
+--- Executing after solve: elapsed 0:00:01.384
 --- October2018_Validation(Hourly).gms(150) 5 Mb
 --- GDX File (execute_unload) E:\Class project\GCD_BugFlowExperiment\October 2018\Weekend_Weekday\Validation\ Valid_October2018(Hourly).gdx
 --- October2018_Validation(Hourly).gms(152) 5 Mb
@@ -74,4 +74,4 @@ GDX2XLS          33.2.0 r4f23b21 Released Dec 01, 2020 WEI x86 64bit/MS Window
 Output file: E:\Class project\GCD_BugFlowExperiment\October 2018\Weekend_Weekday\Validation\Valid_October2018(Hourly).xlsx
 (Created backup file)
 *** Status: Normal completion
---- Job October2018_Validation(Hourly).gms Stop 04/05/21 02:47:37 elapsed 0:00:04.781
+--- Job October2018_Validation(Hourly).gms Stop 04/05/21 15:47:53 elapsed 0:00:04.621

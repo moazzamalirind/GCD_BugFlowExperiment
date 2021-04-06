@@ -100,20 +100,22 @@ PlaneRownr=-1
 1=
 
 [MRUFILES]
-1=E:\Class project\GCD_BugFlowExperiment\October 2018\Weekend_Weekday\Validation\October2018_Validation(Hourly).lst
-2=E:\Class project\GCD_BugFlowExperiment\August 2018\Weekend-Weekday\Validation\Valid_August2018(Hourly).gdx
-3=E:\Class project\GCD_BugFlowExperiment\August 2018\Weekend-Weekday\Validation\Valid_August2018(2Periods).gdx
-4=E:\Class project\GCD_BugFlowExperiment\August 2018\Weekend-Weekday\Validation\August2018_Validation(Hourly).gms
-5=E:\Class project\GCD_BugFlowExperiment\August 2018\Weekend-Weekday\Validation\August2018_validation(2periods).gms
-6=E:\Class project\GCD_BugFlowExperiment\August 2018\Weekend-Weekday\Validation\August2018_validation(2periods).lst
-7=E:\Class project\GCD_BugFlowExperiment\July 2018\Weekend-Weekday Model\Validation\Valid_July2018(Hourly).gdx
-8=E:\Class project\GCD_BugFlowExperiment\July 2018\Weekend-Weekday Model\Validation\Valid_July2018(2Periods).gdx
+1=E:\Class project\GCD_BugFlowExperiment\August 2018\Weekend-Weekday\Validation\Valid_August2018(Hourly).gdx
+2=E:\Class project\GCD_BugFlowExperiment\August 2018\Weekend-Weekday\Validation\Valid_August2018(2Periods).gdx
+3=E:\Class project\GCD_BugFlowExperiment\August 2018\Weekend-Weekday\Validation\August2018_Validation(Hourly).gms
+4=E:\Class project\GCD_BugFlowExperiment\August 2018\Weekend-Weekday\Validation\August2018_validation(2periods).gms
+5=E:\Class project\GCD_BugFlowExperiment\August 2018\Weekend-Weekday\Validation\August2018_validation(2periods).lst
+6=E:\Class project\GCD_BugFlowExperiment\July 2018\Weekend-Weekday Model\Validation\Valid_July2018(Hourly).gdx
+7=E:\Class project\GCD_BugFlowExperiment\July 2018\Weekend-Weekday Model\Validation\Valid_July2018(2Periods).gdx
 
 [OPENWINDOW_1]
-FILE0=E:\Class project\GCD_BugFlowExperiment\October 2018\Weekend_Weekday\Validation\October2018_validation(2periods).gms
-FILE1=E:\Class project\GCD_BugFlowExperiment\October 2018\Weekend_Weekday\Validation\October2018_validation(2periods).lst
-FILE2=E:\Class project\GCD_BugFlowExperiment\October 2018\Weekend_Weekday\Validation\October2018_Validation(Hourly).gms
+FILE0=E:\Class project\GCD_BugFlowExperiment\October 2018\Weekend_Weekday\Validation\ Valid_October2018(Hourly).gdx
+FILE1=E:\Class project\GCD_BugFlowExperiment\October 2018\Weekend_Weekday\Validation\October2018_validation(2periods).gms
+FILE2=E:\Class project\GCD_BugFlowExperiment\October 2018\Weekend_Weekday\Validation\October2018_validation(2periods).lst
 FILE3=E:\Class project\GCD_BugFlowExperiment\October 2018\Weekend_Weekday\Validation\October2018_Validation(Hourly).gms
+FILE4=E:\Class project\GCD_BugFlowExperiment\October 2018\Weekend_Weekday\Validation\October2018_Validation(Hourly).lst
+FILE5=E:\Class project\GCD_BugFlowExperiment\October 2018\Weekend_Weekday\Validation\Valid_October2018(2Periods).gdx
+FILE6=E:\Class project\GCD_BugFlowExperiment\October 2018\Weekend_Weekday\Validation\October2018_validation(2periods).lst
 MAXIM=0
 TOP=-7
 LEFT=-15

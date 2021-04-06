@@ -1,4 +1,4 @@
-GAMS 33.2.0  r4f23b21 Released Dec  1, 2020 WEX-WEI x86 64bit/MS Windows - 04/05/21 02:47:32 Page 1
+GAMS 33.2.0  r4f23b21 Released Dec  1, 2020 WEX-WEI x86 64bit/MS Windows - 04/05/21 15:47:49 Page 1
 G e n e r a l   A l g e b r a i c   M o d e l i n g   S y s t e m
 C o m p i l a t i o n
 
@@ -188,7 +188,7 @@ GDXIN   E:\Class project\GCD_BugFlowExperiment\October 2018\Weekend_Weekday\Vali
  153   
  154   
  155   
-GAMS 33.2.0  r4f23b21 Released Dec  1, 2020 WEX-WEI x86 64bit/MS Windows - 04/05/21 02:47:32 Page 2
+GAMS 33.2.0  r4f23b21 Released Dec  1, 2020 WEX-WEI x86 64bit/MS Windows - 04/05/21 15:47:49 Page 2
 G e n e r a l   A l g e b r a i c   M o d e l i n g   S y s t e m
 Include File Summary
 
@@ -210,8 +210,8 @@ Include File Summary
                                           on\Valid_October2018(Hourly).gdx
 
 
-COMPILATION TIME     =        1.328 SECONDS      3 MB  33.2.0 r4f23b21 WEX-WEI
-GAMS 33.2.0  r4f23b21 Released Dec  1, 2020 WEX-WEI x86 64bit/MS Windows - 04/05/21 02:47:32 Page 3
+COMPILATION TIME     =        1.188 SECONDS      3 MB  33.2.0 r4f23b21 WEX-WEI
+GAMS 33.2.0  r4f23b21 Released Dec  1, 2020 WEX-WEI x86 64bit/MS Windows - 04/05/21 15:47:49 Page 3
 G e n e r a l   A l g e b r a i c   M o d e l i n g   S y s t e m
 E x e c u t i o n
 
@@ -226,13 +226,14 @@ d31
 
 ----     73 PARAMETER Inflow  Inflow to reservoir (cfs)
 
-d1  986.000,    d2  986.000,    d3  985.000,    d4  984.000,    d5  983.000
-d6  983.000,    d7  983.000,    d8  984.000,    d9  984.000,    d10 984.000
-d11 985.000,    d12 985.000,    d13 985.000,    d14 984.000,    d15 984.000
-d16 983.000,    d17 983.000,    d18 983.000,    d19 982.000,    d20 982.000
-d21 981.000,    d22 981.000,    d23 980.000,    d24 980.000,    d25 979.000
-d26 978.000,    d27 978.000,    d28 977.000,    d29 976.000,    d30 976.000
-d31 975.000
+d1   4614.000,    d2   5346.000,    d3   4425.000,    d4   4396.000
+d5   7281.000,    d6   7230.000,    d7  13082.000,    d8  14844.000
+d9  11161.000,    d10 13579.000,    d11 16356.000,    d12  7879.000
+d13  9725.000,    d14  8960.000,    d15  4362.000,    d16  5885.000
+d17  9247.000,    d18  9919.000,    d19  5928.000,    d20  8213.000
+d21  8163.000,    d22  9233.000,    d23  3347.000,    d24  6373.000
+d25  6926.000,    d26  5578.000,    d27  5377.000,    d28  6117.000
+d29  5425.000,    d30  5949.000,    d31  5572.000
 
 
 ----     73 SET p  time periods during a day
@@ -393,15 +394,15 @@ d31   12550.000   12850.000   13000.000   13100.000   12975.000   12325.000
 
 ----     73 PARAMETER evap  Evaporation (ac-ft per day).
 
-d1  3592.150,    d2  3592.040,    d3  3591.910,    d4  3591.780,    d5  3591.710
-d6  3591.640,    d7  3591.710,    d8  3591.790,    d9  3591.800,    d10 3591.850
-d11 3591.960,    d12 3591.900,    d13 3591.880,    d14 3591.870,    d15 3591.740
-d16 3591.640,    d17 3591.610,    d18 3591.590,    d19 3591.500,    d20 3591.450
-d21 3591.420,    d22 3591.390,    d23 3591.240,    d24 3591.150,    d25 3591.070
-d26 3590.960,    d27 3590.850,    d28 3590.780,    d29 3590.670,    d30 3590.570
-d31 3590.460
+d1  986.000,    d2  986.000,    d3  985.000,    d4  984.000,    d5  983.000
+d6  983.000,    d7  983.000,    d8  984.000,    d9  984.000,    d10 984.000
+d11 985.000,    d12 985.000,    d13 985.000,    d14 984.000,    d15 984.000
+d16 983.000,    d17 983.000,    d18 983.000,    d19 982.000,    d20 982.000
+d21 981.000,    d22 981.000,    d23 980.000,    d24 980.000,    d25 979.000
+d26 978.000,    d27 978.000,    d28 977.000,    d29 976.000,    d30 976.000
+d31 975.000
 
-GAMS 33.2.0  r4f23b21 Released Dec  1, 2020 WEX-WEI x86 64bit/MS Windows - 04/05/21 02:47:32 Page 4
+GAMS 33.2.0  r4f23b21 Released Dec  1, 2020 WEX-WEI x86 64bit/MS Windows - 04/05/21 15:47:49 Page 4
 G e n e r a l   A l g e b r a i c   M o d e l i n g   S y s t e m
 Equation Listing    SOLVE validation Using LP From line 139
 
@@ -424,9 +425,9 @@ EQ1__ResMassBal(d1)..  storage(d1) + ReleaseVol(d1,p1) + ReleaseVol(d1,p2)
      
       + ReleaseVol(d1,p21) + ReleaseVol(d1,p22) + ReleaseVol(d1,p23)
      
-      + ReleaseVol(d1,p24) =E= 11014632.962 ;
+      + ReleaseVol(d1,p24) =E= 11024466.088 ;
      
-      (LHS = 0, INFES = 11014632.962 ****)
+      (LHS = 0, INFES = 11024466.088 ****)
      
 EQ1__ResMassBal(d2)..  - storage(d1) + storage(d2) + ReleaseVol(d2,p1)
      
@@ -444,9 +445,9 @@ EQ1__ResMassBal(d2)..  - storage(d1) + storage(d2) + ReleaseVol(d2,p1)
      
       + ReleaseVol(d2,p20) + ReleaseVol(d2,p21) + ReleaseVol(d2,p22)
      
-      + ReleaseVol(d2,p23) + ReleaseVol(d2,p24) =E= -1627.928 ;
+      + ReleaseVol(d2,p23) + ReleaseVol(d2,p24) =E= 9663.232 ;
      
-      (LHS = 0, INFES = 1627.928 ****)
+      (LHS = 0, INFES = 9663.232 ****)
      
 EQ1__ResMassBal(d3)..  - storage(d2) + storage(d3) + ReleaseVol(d3,p1)
      
@@ -464,9 +465,9 @@ EQ1__ResMassBal(d3)..  - storage(d2) + storage(d3) + ReleaseVol(d3,p1)
      
       + ReleaseVol(d3,p20) + ReleaseVol(d3,p21) + ReleaseVol(d3,p22)
      
-      + ReleaseVol(d3,p23) + ReleaseVol(d3,p24) =E= -1629.79 ;
+      + ReleaseVol(d3,p23) + ReleaseVol(d3,p24) =E= 7829.6 ;
      
-      (LHS = 0, INFES = 1629.79 ****)
+      (LHS = 0, INFES = 7829.6 ****)
      
 REMAINING 28 ENTRIES SKIPPED
 
@@ -1836,7 +1837,7 @@ EQ12_ReleaseSim(d1,p3)..  release(d1,p3) =E= 10305 ;
      
 REMAINING 741 ENTRIES SKIPPED
 
-GAMS 33.2.0  r4f23b21 Released Dec  1, 2020 WEX-WEI x86 64bit/MS Windows - 04/05/21 02:47:32 Page 5
+GAMS 33.2.0  r4f23b21 Released Dec  1, 2020 WEX-WEI x86 64bit/MS Windows - 04/05/21 15:47:49 Page 5
 G e n e r a l   A l g e b r a i c   M o d e l i n g   S y s t e m
 Column Listing      SOLVE validation Using LP From line 139
 
@@ -1953,7 +1954,7 @@ Vol_monthlyrelease
                 (.LO, .L, .UP, .M = 0, 0, +INF, 0)
        -1       EQ8__March_rel
 
-GAMS 33.2.0  r4f23b21 Released Dec  1, 2020 WEX-WEI x86 64bit/MS Windows - 04/05/21 02:47:32 Page 6
+GAMS 33.2.0  r4f23b21 Released Dec  1, 2020 WEX-WEI x86 64bit/MS Windows - 04/05/21 15:47:49 Page 6
 G e n e r a l   A l g e b r a i c   M o d e l i n g   S y s t e m
 Model Statistics    SOLVE validation Using LP From line 139
 
@@ -1966,7 +1967,7 @@ NON ZERO ELEMENTS         9,022
 
 
 GENERATION TIME      =        0.047 SECONDS      5 MB  33.2.0 r4f23b21 WEX-WEI
-GAMS 33.2.0  r4f23b21 Released Dec  1, 2020 WEX-WEI x86 64bit/MS Windows - 04/05/21 02:47:32 Page 7
+GAMS 33.2.0  r4f23b21 Released Dec  1, 2020 WEX-WEI x86 64bit/MS Windows - 04/05/21 15:47:49 Page 7
 G e n e r a l   A l g e b r a i c   M o d e l i n g   S y s t e m
 Solution Report     SOLVE validation Using LP From line 139
 
@@ -1981,7 +1982,7 @@ Solution Report     SOLVE validation Using LP From line 139
 **** MODEL STATUS      1 Optimal                   
 **** OBJECTIVE VALUE         16679721.4694
 
- RESOURCE USAGE, LIMIT          0.015 10000000000.000
+ RESOURCE USAGE, LIMIT          0.016 10000000000.000
  ITERATION COUNT, LIMIT         0    2147483647
 --- GAMS/Cplex licensed for continuous and discrete problems.
 --- Space for names approximately 0.19 Mb
@@ -2004,110 +2005,110 @@ Objective:     16679721.469366
 
        LOWER     LEVEL     UPPER    MARGINAL
 
-d1  1.1015E+7 1.1015E+7 1.1015E+7      EPS       
-d2  -1627.928 -1627.928 -1627.928      EPS       
-d3  -1629.790 -1629.790 -1629.790      EPS       
-d4  -1631.652 -1631.652 -1631.652      EPS       
-d5  -1633.574 -1633.574 -1633.574      EPS       
-d6  -1633.504 -1633.504 -1633.504      EPS       
-d7  -1633.574 -1633.574 -1633.574      EPS       
-d8  -1631.662 -1631.662 -1631.662      EPS       
-d9  -1631.672 -1631.672 -1631.672      EPS       
-d10 -1631.722 -1631.722 -1631.722      EPS       
-d11 -1629.840 -1629.840 -1629.840      EPS       
-d12 -1629.780 -1629.780 -1629.780      EPS       
-d13 -1629.760 -1629.760 -1629.760      EPS       
-d14 -1631.742 -1631.742 -1631.742      EPS       
-d15 -1631.612 -1631.612 -1631.612      EPS       
-d16 -1633.504 -1633.504 -1633.504      EPS       
-d17 -1633.474 -1633.474 -1633.474      EPS       
-d18 -1633.454 -1633.454 -1633.454      EPS       
-d19 -1635.356 -1635.356 -1635.356      EPS       
-d20 -1635.306 -1635.306 -1635.306      EPS       
-d21 -1637.268 -1637.268 -1637.268      EPS       
-d22 -1637.238 -1637.238 -1637.238      EPS       
-d23 -1639.080 -1639.080 -1639.080      EPS       
-d24 -1638.990 -1638.990 -1638.990      EPS       
-d25 -1640.902 -1640.902 -1640.902      EPS       
-d26 -1642.784 -1642.784 -1642.784      EPS       
-d27 -1642.674 -1642.674 -1642.674      EPS       
-d28 -1644.596 -1644.596 -1644.596      EPS       
-d29 -1646.478 -1646.478 -1646.478      EPS       
-d30 -1646.378 -1646.378 -1646.378      EPS       
-d31 -1648.260 -1648.260 -1648.260      EPS       
+d1  1.1024E+7 1.1024E+7 1.1024E+7      EPS       
+d2   9663.232  9663.232  9663.232      EPS       
+d3   7829.600  7829.600  7829.600      EPS       
+d4   7772.832  7772.832  7772.832      EPS       
+d5  13520.752 13520.752 13520.752      EPS       
+d6  13419.160 13419.160 13419.160      EPS       
+d7  25076.344 25076.344 25076.344      EPS       
+d8  28585.248 28585.248 28585.248      EPS       
+d9  21248.712 21248.712 21248.712      EPS       
+d10 26065.368 26065.368 26065.368      EPS       
+d11 31596.152 31596.152 31596.152      EPS       
+d12 14709.968 14709.968 14709.968      EPS       
+d13 18387.200 18387.200 18387.200      EPS       
+d14 16864.320 16864.320 16864.320      EPS       
+d15  7705.104  7705.104  7705.104      EPS       
+d16 10739.920 10739.920 10739.920      EPS       
+d17 17437.024 17437.024 17437.024      EPS       
+d18 18775.648 18775.648 18775.648      EPS       
+d19 10826.576 10826.576 10826.576      EPS       
+d20 15378.296 15378.296 15378.296      EPS       
+d21 15279.696 15279.696 15279.696      EPS       
+d22 17411.136 17411.136 17411.136      EPS       
+d23  5687.224  5687.224  5687.224      EPS       
+d24 11715.016 11715.016 11715.016      EPS       
+d25 12817.592 12817.592 12817.592      EPS       
+d26 10133.376 10133.376 10133.376      EPS       
+d27  9732.984  9732.984  9732.984      EPS       
+d28 11208.064 11208.064 11208.064      EPS       
+d29  9830.600  9830.600  9830.600      EPS       
+d30 10874.408 10874.408 10874.408      EPS       
+d31 10124.424 10124.424 10124.424      EPS       
 
 ---- EQU EQ2__reqpowerstorage  The minimum storage equivalent to reservoir level
                                required for hydropower generation (acre-ft)
 
        LOWER     LEVEL     UPPER    MARGINAL
 
-d1  8.9500E+6 1.0993E+7     +INF       .         
-d2  8.9500E+6 1.0970E+7     +INF       .         
-d3  8.9500E+6 1.0947E+7     +INF       .         
-d4  8.9500E+6 1.0923E+7     +INF       .         
-d5  8.9500E+6 1.0900E+7     +INF       .         
-d6  8.9500E+6 1.0878E+7     +INF       .         
-d7  8.9500E+6 1.0857E+7     +INF       .         
-d8  8.9500E+6 1.0834E+7     +INF       .         
-d9  8.9500E+6 1.0812E+7     +INF       .         
-d10 8.9500E+6 1.0788E+7     +INF       .         
-d11 8.9500E+6 1.0764E+7     +INF       .         
-d12 8.9500E+6 1.0741E+7     +INF       .         
-d13 8.9500E+6 1.0719E+7     +INF       .         
-d14 8.9500E+6 1.0698E+7     +INF       .         
-d15 8.9500E+6 1.0675E+7     +INF       .         
-d16 8.9500E+6 1.0652E+7     +INF       .         
-d17 8.9500E+6 1.0630E+7     +INF       .         
-d18 8.9500E+6 1.0607E+7     +INF       .         
-d19 8.9500E+6 1.0583E+7     +INF       .         
-d20 8.9500E+6 1.0561E+7     +INF       .         
-d21 8.9500E+6 1.0540E+7     +INF       .         
-d22 8.9500E+6 1.0518E+7     +INF       .         
-d23 8.9500E+6 1.0494E+7     +INF       .         
-d24 8.9500E+6 1.0471E+7     +INF       .         
-d25 8.9500E+6 1.0448E+7     +INF       .         
-d26 8.9500E+6 1.0425E+7     +INF       .         
-d27 8.9500E+6 1.0402E+7     +INF       .         
-d28 8.9500E+6 1.0381E+7     +INF       .         
-d29 8.9500E+6 1.0359E+7     +INF       .         
-d30 8.9500E+6 1.0335E+7     +INF       .         
-d31 8.9500E+6 1.0312E+7     +INF       .         
+d1  8.9500E+6 1.1003E+7     +INF       .         
+d2  8.9500E+6 1.0991E+7     +INF       .         
+d3  8.9500E+6 1.0977E+7     +INF       .         
+d4  8.9500E+6 1.0963E+7     +INF       .         
+d5  8.9500E+6 1.0955E+7     +INF       .         
+d6  8.9500E+6 1.0948E+7     +INF       .         
+d7  8.9500E+6 1.0954E+7     +INF       .         
+d8  8.9500E+6 1.0961E+7     +INF       .         
+d9  8.9500E+6 1.0962E+7     +INF       .         
+d10 8.9500E+6 1.0965E+7     +INF       .         
+d11 8.9500E+6 1.0975E+7     +INF       .         
+d12 8.9500E+6 1.0969E+7     +INF       .         
+d13 8.9500E+6 1.0966E+7     +INF       .         
+d14 8.9500E+6 1.0964E+7     +INF       .         
+d15 8.9500E+6 1.0951E+7     +INF       .         
+d16 8.9500E+6 1.0940E+7     +INF       .         
+d17 8.9500E+6 1.0936E+7     +INF       .         
+d18 8.9500E+6 1.0933E+7     +INF       .         
+d19 8.9500E+6 1.0923E+7     +INF       .         
+d20 8.9500E+6 1.0917E+7     +INF       .         
+d21 8.9500E+6 1.0913E+7     +INF       .         
+d22 8.9500E+6 1.0910E+7     +INF       .         
+d23 8.9500E+6 1.0894E+7     +INF       .         
+d24 8.9500E+6 1.0884E+7     +INF       .         
+d25 8.9500E+6 1.0876E+7     +INF       .         
+d26 8.9500E+6 1.0864E+7     +INF       .         
+d27 8.9500E+6 1.0853E+7     +INF       .         
+d28 8.9500E+6 1.0845E+7     +INF       .         
+d29 8.9500E+6 1.0834E+7     +INF       .         
+d30 8.9500E+6 1.0823E+7     +INF       .         
+d31 8.9500E+6 1.0812E+7     +INF       .         
 
 ---- EQU EQ3__maxstor  Reservoir storage max (acre-ft)
 
        LOWER     LEVEL     UPPER    MARGINAL
 
-d1      -INF  1.0993E+7 2.5000E+7      .         
-d2      -INF  1.0970E+7 2.5000E+7      .         
-d3      -INF  1.0947E+7 2.5000E+7      .         
-d4      -INF  1.0923E+7 2.5000E+7      .         
-d5      -INF  1.0900E+7 2.5000E+7      .         
-d6      -INF  1.0878E+7 2.5000E+7      .         
-d7      -INF  1.0857E+7 2.5000E+7      .         
-d8      -INF  1.0834E+7 2.5000E+7      .         
-d9      -INF  1.0812E+7 2.5000E+7      .         
-d10     -INF  1.0788E+7 2.5000E+7      .         
-d11     -INF  1.0764E+7 2.5000E+7      .         
-d12     -INF  1.0741E+7 2.5000E+7      .         
-d13     -INF  1.0719E+7 2.5000E+7      .         
-d14     -INF  1.0698E+7 2.5000E+7      .         
-d15     -INF  1.0675E+7 2.5000E+7      .         
-d16     -INF  1.0652E+7 2.5000E+7      .         
-d17     -INF  1.0630E+7 2.5000E+7      .         
-d18     -INF  1.0607E+7 2.5000E+7      .         
-d19     -INF  1.0583E+7 2.5000E+7      .         
-d20     -INF  1.0561E+7 2.5000E+7      .         
-d21     -INF  1.0540E+7 2.5000E+7      .         
-d22     -INF  1.0518E+7 2.5000E+7      .         
-d23     -INF  1.0494E+7 2.5000E+7      .         
-d24     -INF  1.0471E+7 2.5000E+7      .         
-d25     -INF  1.0448E+7 2.5000E+7      .         
-d26     -INF  1.0425E+7 2.5000E+7      .         
-d27     -INF  1.0402E+7 2.5000E+7      .         
-d28     -INF  1.0381E+7 2.5000E+7      .         
-d29     -INF  1.0359E+7 2.5000E+7      .         
-d30     -INF  1.0335E+7 2.5000E+7      .         
-d31     -INF  1.0312E+7 2.5000E+7      .         
+d1      -INF  1.1003E+7 2.5000E+7      .         
+d2      -INF  1.0991E+7 2.5000E+7      .         
+d3      -INF  1.0977E+7 2.5000E+7      .         
+d4      -INF  1.0963E+7 2.5000E+7      .         
+d5      -INF  1.0955E+7 2.5000E+7      .         
+d6      -INF  1.0948E+7 2.5000E+7      .         
+d7      -INF  1.0954E+7 2.5000E+7      .         
+d8      -INF  1.0961E+7 2.5000E+7      .         
+d9      -INF  1.0962E+7 2.5000E+7      .         
+d10     -INF  1.0965E+7 2.5000E+7      .         
+d11     -INF  1.0975E+7 2.5000E+7      .         
+d12     -INF  1.0969E+7 2.5000E+7      .         
+d13     -INF  1.0966E+7 2.5000E+7      .         
+d14     -INF  1.0964E+7 2.5000E+7      .         
+d15     -INF  1.0951E+7 2.5000E+7      .         
+d16     -INF  1.0940E+7 2.5000E+7      .         
+d17     -INF  1.0936E+7 2.5000E+7      .         
+d18     -INF  1.0933E+7 2.5000E+7      .         
+d19     -INF  1.0923E+7 2.5000E+7      .         
+d20     -INF  1.0917E+7 2.5000E+7      .         
+d21     -INF  1.0913E+7 2.5000E+7      .         
+d22     -INF  1.0910E+7 2.5000E+7      .         
+d23     -INF  1.0894E+7 2.5000E+7      .         
+d24     -INF  1.0884E+7 2.5000E+7      .         
+d25     -INF  1.0876E+7 2.5000E+7      .         
+d26     -INF  1.0864E+7 2.5000E+7      .         
+d27     -INF  1.0853E+7 2.5000E+7      .         
+d28     -INF  1.0845E+7 2.5000E+7      .         
+d29     -INF  1.0834E+7 2.5000E+7      .         
+d30     -INF  1.0823E+7 2.5000E+7      .         
+d31     -INF  1.0812E+7 2.5000E+7      .         
 
 ---- EQU EQ4__MaxR  Max Release (cfs)
 
@@ -6628,37 +6629,37 @@ d31.p24 12325.000 12325.000 12325.000     2.011
 
        LOWER     LEVEL     UPPER    MARGINAL
 
-d1       .    1.0993E+7     +INF       .         
-d2       .    1.0970E+7     +INF       .         
-d3       .    1.0947E+7     +INF       .         
-d4       .    1.0923E+7     +INF       .         
-d5       .    1.0900E+7     +INF       .         
-d6       .    1.0878E+7     +INF       .         
-d7       .    1.0857E+7     +INF       .         
-d8       .    1.0834E+7     +INF       .         
-d9       .    1.0812E+7     +INF       .         
-d10      .    1.0788E+7     +INF       .         
-d11      .    1.0764E+7     +INF       .         
-d12      .    1.0741E+7     +INF       .         
-d13      .    1.0719E+7     +INF       .         
-d14      .    1.0698E+7     +INF       .         
-d15      .    1.0675E+7     +INF       .         
-d16      .    1.0652E+7     +INF       .         
-d17      .    1.0630E+7     +INF       .         
-d18      .    1.0607E+7     +INF       .         
-d19      .    1.0583E+7     +INF       .         
-d20      .    1.0561E+7     +INF       .         
-d21      .    1.0540E+7     +INF       .         
-d22      .    1.0518E+7     +INF       .         
-d23      .    1.0494E+7     +INF       .         
-d24      .    1.0471E+7     +INF       .         
-d25      .    1.0448E+7     +INF       .         
-d26      .    1.0425E+7     +INF       .         
-d27      .    1.0402E+7     +INF       .         
-d28      .    1.0381E+7     +INF       .         
-d29      .    1.0359E+7     +INF       .         
-d30      .    1.0335E+7     +INF       .         
-d31      .    1.0312E+7     +INF       .         
+d1       .    1.1003E+7     +INF       .         
+d2       .    1.0991E+7     +INF       .         
+d3       .    1.0977E+7     +INF       .         
+d4       .    1.0963E+7     +INF       .         
+d5       .    1.0955E+7     +INF       .         
+d6       .    1.0948E+7     +INF       .         
+d7       .    1.0954E+7     +INF       .         
+d8       .    1.0961E+7     +INF       .         
+d9       .    1.0962E+7     +INF       .         
+d10      .    1.0965E+7     +INF       .         
+d11      .    1.0975E+7     +INF       .         
+d12      .    1.0969E+7     +INF       .         
+d13      .    1.0966E+7     +INF       .         
+d14      .    1.0964E+7     +INF       .         
+d15      .    1.0951E+7     +INF       .         
+d16      .    1.0940E+7     +INF       .         
+d17      .    1.0936E+7     +INF       .         
+d18      .    1.0933E+7     +INF       .         
+d19      .    1.0923E+7     +INF       .         
+d20      .    1.0917E+7     +INF       .         
+d21      .    1.0913E+7     +INF       .         
+d22      .    1.0910E+7     +INF       .         
+d23      .    1.0894E+7     +INF       .         
+d24      .    1.0884E+7     +INF       .         
+d25      .    1.0876E+7     +INF       .         
+d26      .    1.0864E+7     +INF       .         
+d27      .    1.0853E+7     +INF       .         
+d28      .    1.0845E+7     +INF       .         
+d29      .    1.0834E+7     +INF       .         
+d30      .    1.0823E+7     +INF       .         
+d31      .    1.0812E+7     +INF       .         
 
 ---- VAR release  reservoir release on any day d in any period p (cfs)
 
@@ -8917,7 +8918,7 @@ d31.p24      .     1022.975     +INF       .
 **** REPORT SUMMARY :        0     NONOPT
                              0 INFEASIBLE
                              0  UNBOUNDED
-GAMS 33.2.0  r4f23b21 Released Dec  1, 2020 WEX-WEI x86 64bit/MS Windows - 04/05/21 02:47:32 Page 8
+GAMS 33.2.0  r4f23b21 Released Dec  1, 2020 WEX-WEI x86 64bit/MS Windows - 04/05/21 15:47:49 Page 8
 G e n e r a l   A l g e b r a i c   M o d e l i n g   S y s t e m
 E x e c u t i o n
 
@@ -9066,14 +9067,14 @@ d31   12550.000   12850.000   13000.000   13100.000   12975.000   12325.000
 
 ----    147 PARAMETER Sstore  Store Storage Values (ac-ft)
 
-d1  1.099284E+7,    d2  1.096992E+7,    d3  1.094666E+7,    d4  1.092322E+7
-d5  1.090032E+7,    d6  1.087770E+7,    d7  1.085674E+7,    d8  1.083383E+7
-d9  1.081168E+7,    d10 1.078760E+7,    d11 1.076448E+7,    d12 1.074143E+7
-d13 1.071891E+7,    d14 1.069830E+7,    d15 1.067547E+7,    d16 1.065242E+7
-d17 1.062965E+7,    d18 1.060651E+7,    d19 1.058345E+7,    d20 1.056104E+7
-d21 1.054001E+7,    d22 1.051751E+7,    d23 1.049449E+7,    d24 1.047138E+7
-d25 1.044824E+7,    d26 1.042517E+7,    d27 1.040217E+7,    d28 1.038132E+7
-d29 1.035851E+7,    d30 1.033543E+7,    d31 1.031222E+7
+d1  1.100267E+7,    d2  1.099105E+7,    d3  1.097725E+7,    d4  1.096321E+7
+d5  1.095546E+7,    d6  1.094790E+7,    d7  1.095365E+7,    d8  1.096095E+7
+d9  1.096169E+7,    d10 1.096530E+7,    d11 1.097541E+7,    d12 1.096870E+7
+d13 1.096619E+7,    d14 1.096408E+7,    d15 1.095059E+7,    d16 1.093991E+7
+d17 1.093621E+7,    d18 1.093348E+7,    d19 1.092288E+7,    d20 1.091748E+7
+d21 1.091338E+7,    d22 1.090992E+7,    d23 1.089423E+7,    d24 1.088447E+7
+d25 1.087579E+7,    d26 1.086449E+7,    d27 1.085287E+7,    d28 1.084487E+7
+d29 1.083354E+7,    d30 1.082298E+7,    d31 1.081154E+7
 
 
 ----    147 PARAMETER Xstore  Storing energy generation(MWh per day)
@@ -9089,7 +9090,7 @@ d29  9469.907,    d30  9594.452,    d31  9651.570
 
 
 
-EXECUTION TIME       =        3.422 SECONDS      5 MB  33.2.0 r4f23b21 WEX-WEI
+EXECUTION TIME       =        3.406 SECONDS      5 MB  33.2.0 r4f23b21 WEX-WEI
 
 
 USER: Small MUD - 5 User License                     G200622/0001AP-GEN

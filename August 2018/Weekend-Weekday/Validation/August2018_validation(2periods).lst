@@ -1,4 +1,4 @@
-GAMS 33.2.0  r4f23b21 Released Dec  1, 2020 WEX-WEI x86 64bit/MS Windows - 04/05/21 01:48:02 Page 1
+GAMS 33.2.0  r4f23b21 Released Dec  1, 2020 WEX-WEI x86 64bit/MS Windows - 04/05/21 15:57:50 Page 1
 G e n e r a l   A l g e b r a i c   M o d e l i n g   S y s t e m
 C o m p i l a t i o n
 
@@ -296,7 +296,7 @@ GDXIN   E:\Class project\GCD_BugFlowExperiment\August 2018\Weekend-Weekday\Valid
  211  * Dump the gdx file to an Excel workbook
  212  Execute "gdx2xls Valid_August2018(2Periods).gdx"
  213   
-GAMS 33.2.0  r4f23b21 Released Dec  1, 2020 WEX-WEI x86 64bit/MS Windows - 04/05/21 01:48:02 Page 2
+GAMS 33.2.0  r4f23b21 Released Dec  1, 2020 WEX-WEI x86 64bit/MS Windows - 04/05/21 15:57:50 Page 2
 G e n e r a l   A l g e b r a i c   M o d e l i n g   S y s t e m
 Include File Summary
 
@@ -316,8 +316,8 @@ Include File Summary
                                           n\Valid_August2018(2Periods).gdx
 
 
-COMPILATION TIME     =        1.453 SECONDS      3 MB  33.2.0 r4f23b21 WEX-WEI
-GAMS 33.2.0  r4f23b21 Released Dec  1, 2020 WEX-WEI x86 64bit/MS Windows - 04/05/21 01:48:02 Page 3
+COMPILATION TIME     =        1.406 SECONDS      3 MB  33.2.0 r4f23b21 WEX-WEI
+GAMS 33.2.0  r4f23b21 Released Dec  1, 2020 WEX-WEI x86 64bit/MS Windows - 04/05/21 15:57:50 Page 3
 G e n e r a l   A l g e b r a i c   M o d e l i n g   S y s t e m
 E x e c u t i o n
 
@@ -332,6 +332,17 @@ d31
 
 ----     87 PARAMETER Inflow  Inflow to reservoir (cfs)
 
+d1  3830.000,    d2  2818.000,    d3  3918.000,    d4  4446.000,    d5  2018.000
+d6  6232.000,    d7  3466.000,    d8  3338.000,    d9  3391.000,    d10 4572.000
+d11 1374.000,    d12 2797.000,    d13 1959.000,    d14 6463.000,    d15 3023.000
+d16 2551.000,    d17 2535.000,    d18 5622.000,    d19 3503.000,    d20 2680.000
+d21 6297.000,    d22 6402.000,    d23 5466.000,    d24 7411.000,    d25 2189.000
+d26 2186.000,    d27 6602.000,    d28 5950.000,    d29 5347.000,    d30 4347.000
+d31 8417.000
+
+
+----     87 PARAMETER evap  Evaporation (ac-ft per day).
+
 d1  1658.000,    d2  1655.000,    d3  1652.000,    d4  1650.000,    d5  1648.000
 d6  1646.000,    d7  1643.000,    d8  1640.000,    d9  1637.000,    d10 1634.000
 d11 1632.000,    d12 1630.000,    d13 1627.000,    d14 1625.000,    d15 1621.000
@@ -339,17 +350,6 @@ d16 1618.000,    d17 1615.000,    d18 1614.000,    d19 1612.000,    d20 1609.000
 d21 1607.000,    d22 1605.000,    d23 1603.000,    d24 1601.000,    d25 1599.000
 d26 1597.000,    d27 1595.000,    d28 1592.000,    d29 1590.000,    d30 1588.000
 d31 1586.000
-
-
-----     87 PARAMETER evap  Evaporation (ac-ft per day).
-
-d1  3603.560,    d2  3603.300,    d3  3603.060,    d4  3602.910,    d5  3602.720
-d6  3602.520,    d7  3602.270,    d8  3602.020,    d9  3601.770,    d10 3601.540
-d11 3601.330,    d12 3601.180,    d13 3600.900,    d14 3600.710,    d15 3600.450
-d16 3600.180,    d17 3599.910,    d18 3599.780,    d19 3599.610,    d20 3599.340
-d21 3599.140,    d22 3598.940,    d23 3598.720,    d24 3598.540,    d25 3598.340
-d26 3598.150,    d27 3597.950,    d28 3597.740,    d29 3597.520,    d30 3597.280
-d31 3597.120
 
 
 ----     87 SET p  time period during a day
@@ -361,7 +361,7 @@ pLow ,    pHigh
 
 pLow   8.000,    pHigh 16.000
 
-GAMS 33.2.0  r4f23b21 Released Dec  1, 2020 WEX-WEI x86 64bit/MS Windows - 04/05/21 01:48:02 Page 4
+GAMS 33.2.0  r4f23b21 Released Dec  1, 2020 WEX-WEI x86 64bit/MS Windows - 04/05/21 15:57:50 Page 4
 G e n e r a l   A l g e b r a i c   M o d e l i n g   S y s t e m
 Equation Listing    SOLVE Model2 Using LP From line 191
 
@@ -369,8 +369,7 @@ Equation Listing    SOLVE Model2 Using LP From line 191
 ---- EQa_Inflow  =E=  Total volume of Water available in the system during the m
                       onth (acre-ft)
 
-EQa_Inflow..  Avail_Water =E= 12193049.168 ; (LHS = 0
-     , INFES = 12193049.168 ****)
+EQa_Inflow..  Avail_Water =E= 12354243.8 ; (LHS = 0, INFES = 12354243.8 ****)
      
 
 ---- EQb_SteadyOutflow  =E=  Volume of Water released during the steady days (ac
@@ -392,7 +391,7 @@ EQc_UnSteadyOutflow..  unsteady_Outflow =E= 726341.81792 ;
 ---- EQ1__ResMassBal  =E=  Reservoir mass balance (acre-ft)
 
 EQ1__ResMassBal..  storage - Avail_Water + steady_Outflow + unsteady_Outflow
-      =E= -111608.5 ; (LHS = 0, INFES = 111608.5 ****)
+      =E= -50229 ; (LHS = 0, INFES = 50229 ****)
      
 
 ---- EQ2__reqpowerstorage  =G=  The minimum storage equivalent to reservoir leve
@@ -467,7 +466,7 @@ EQ12_Revenue..  ObjectiveVal - 1143.1*Energy_Gen(pLow) - 1817*Energy_Gen(pHigh)
      
       - 397.6*SteadyEn_Gen(pLow) - 397.6*SteadyEn_Gen(pHigh) =E= 0 ; (LHS = 0)
      
-GAMS 33.2.0  r4f23b21 Released Dec  1, 2020 WEX-WEI x86 64bit/MS Windows - 04/05/21 01:48:02 Page 5
+GAMS 33.2.0  r4f23b21 Released Dec  1, 2020 WEX-WEI x86 64bit/MS Windows - 04/05/21 15:57:50 Page 5
 G e n e r a l   A l g e b r a i c   M o d e l i n g   S y s t e m
 Column Listing      SOLVE Model2 Using LP From line 191
 
@@ -553,7 +552,7 @@ TotMonth_volume
                 (.LO, .L, .UP, .M = -INF, 0, +INF, 0)
         1       EQ7__Monthtlyrel
 
-GAMS 33.2.0  r4f23b21 Released Dec  1, 2020 WEX-WEI x86 64bit/MS Windows - 04/05/21 01:48:02 Page 6
+GAMS 33.2.0  r4f23b21 Released Dec  1, 2020 WEX-WEI x86 64bit/MS Windows - 04/05/21 15:57:50 Page 6
 G e n e r a l   A l g e b r a i c   M o d e l i n g   S y s t e m
 Model Statistics    SOLVE Model2 Using LP From line 191
 
@@ -565,8 +564,8 @@ BLOCKS OF VARIABLES           8     SINGLE VARIABLES           10
 NON ZERO ELEMENTS            23
 
 
-GENERATION TIME      =        0.016 SECONDS      4 MB  33.2.0 r4f23b21 WEX-WEI
-GAMS 33.2.0  r4f23b21 Released Dec  1, 2020 WEX-WEI x86 64bit/MS Windows - 04/05/21 01:48:02 Page 7
+GENERATION TIME      =        0.031 SECONDS      4 MB  33.2.0 r4f23b21 WEX-WEI
+GAMS 33.2.0  r4f23b21 Released Dec  1, 2020 WEX-WEI x86 64bit/MS Windows - 04/05/21 15:57:50 Page 7
 G e n e r a l   A l g e b r a i c   M o d e l i n g   S y s t e m
 Solution Report     SOLVE Model2 Using LP From line 191
 
@@ -581,7 +580,7 @@ Solution Report     SOLVE Model2 Using LP From line 191
 **** MODEL STATUS      1 Optimal                   
 **** OBJECTIVE VALUE         27235935.7785
 
- RESOURCE USAGE, LIMIT          0.040 10000000000.000
+ RESOURCE USAGE, LIMIT          0.070 10000000000.000
  ITERATION COUNT, LIMIT         0    2147483647
 
 GAMS/BARON       33.2.0 r4f23b21 Released Dec 01, 2020 WEI x86 64bit/MS Window
@@ -618,12 +617,12 @@ Relative gap  = 0  optcr = 0.0001
 
                        LOWER     LEVEL     UPPER    MARGINAL
 
----- EQU EQa_Inflow 1.2193E+7 1.2193E+7 1.2193E+7      .         
+---- EQU EQa_Inflow 1.2354E+7 1.2354E+7 1.2354E+7      .         
 ---- EQU EQb_Stead~ 1.8809E+5 1.8809E+5 1.8809E+5      .         
 ---- EQU EQc_UnSte~ 7.2634E+5 7.2634E+5 7.2634E+5      .         
----- EQU EQ1__ResM~ -1.116E+5 -1.116E+5 -1.116E+5      .         
----- EQU EQ2__reqp~ 8.9500E+6 1.1167E+7     +INF       .         
----- EQU EQ3__maxs~     -INF  1.1167E+7 2.5000E+7      .         
+---- EQU EQ1__ResM~ -5.023E+4 -5.023E+4 -5.023E+4      .         
+---- EQU EQ2__reqp~ 8.9500E+6 1.1390E+7     +INF       .         
+---- EQU EQ3__maxs~     -INF  1.1390E+7 2.5000E+7      .         
 
   EQa_Inflow  Total volume of Water available in the system during the month (ac
               re-ft)
@@ -691,7 +690,7 @@ pHigh     -INF  10230.385 21120.000      .
                        LOWER     LEVEL     UPPER    MARGINAL
 
 ---- VAR Objective~     -INF  2.7236E+7     +INF       .         
----- VAR storage        -INF  1.1167E+7     +INF       .         
+---- VAR storage        -INF  1.1390E+7     +INF       .         
 
   ObjectiveVal  Objective function value
   storage  Reservoir storage at the end of the month (acre-ft)
@@ -714,7 +713,7 @@ pHigh     -INF   7015.477     +INF       .
 
                        LOWER     LEVEL     UPPER    MARGINAL
 
----- VAR Avail_Wat~     -INF  1.2193E+7     +INF       .         
+---- VAR Avail_Wat~     -INF  1.2354E+7     +INF       .         
 ---- VAR steady_Ou~     -INF  1.8809E+5     +INF       .         
 ---- VAR unsteady_~     -INF  7.2634E+5     +INF       .         
 ---- VAR TotMonth_~     -INF  9.1443E+5     +INF       .         
@@ -729,7 +728,7 @@ pHigh     -INF   7015.477     +INF       .
                              0 INFEASIBLE
                              0  UNBOUNDED
                              5  PROJECTED
-GAMS 33.2.0  r4f23b21 Released Dec  1, 2020 WEX-WEI x86 64bit/MS Windows - 04/05/21 01:48:02 Page 8
+GAMS 33.2.0  r4f23b21 Released Dec  1, 2020 WEX-WEI x86 64bit/MS Windows - 04/05/21 15:57:50 Page 8
 G e n e r a l   A l g e b r a i c   M o d e l i n g   S y s t e m
 E x e c u t i o n
 
@@ -755,11 +754,11 @@ pLow  11802.620,    pHigh 11802.620
 pLow  13137.800,    pHigh 17211.280
 
 
-----    205 PARAMETER Sstore               =  1.116701E+7  Store Storage Values 
+----    205 PARAMETER Sstore               =  1.138959E+7  Store Storage Values 
                                                            (ac-ft)
 
 
-EXECUTION TIME       =        8.734 SECONDS      4 MB  33.2.0 r4f23b21 WEX-WEI
+EXECUTION TIME       =        8.687 SECONDS      4 MB  33.2.0 r4f23b21 WEX-WEI
 
 
 USER: Small MUD - 5 User License                     G200622/0001AP-GEN

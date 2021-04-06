@@ -1,5 +1,5 @@
 
---- Job July2018_validation(2periods).gms Start 04/05/21 00:07:45 33.2.0 r4f23b21 WEX-WEI x86 64bit/MS Windows
+--- Job July2018_validation(2periods).gms Start 04/05/21 15:54:35 33.2.0 r4f23b21 WEX-WEI x86 64bit/MS Windows
 --- Applying:
     C:\GAMS\33\gmsprmNT.txt
 --- GAMS Parameters defined
@@ -8,7 +8,7 @@
     PageSize 0
     PageContr 3
     Action CE
-    ScrDir "E:\Class project\GCD_BugFlowExperiment\July 2018\Weekend-Weekday Model\Validation\225a\"
+    ScrDir "E:\Class project\GCD_BugFlowExperiment\July 2018\Weekend-Weekday Model\Validation\225b\"
     SysDir C:\GAMS\33\
     WorkDir "E:\Class project\GCD_BugFlowExperiment\July 2018\Weekend-Weekday Model\Validation\"
     LogOption 3
@@ -27,16 +27,16 @@ GAMS 33.2.0   Copyright (C) 1987-2020 GAMS Development. All rights reserved
 GDXXRW           33.2.0 r4f23b21 Released Dec 01, 2020 WEI x86 64bit/MS Window
 Input file : E:\Class project\GCD_BugFlowExperiment\July 2018\Weekend-Weekday Model\Validation\Input_July2018.xlsx
 Output file: E:\Class project\GCD_BugFlowExperiment\July 2018\Weekend-Weekday Model\Validation\Valid_July2018(2Periods).gdx
-Total time = 844 Ms
+Total time = 1125 Ms
 --- July2018_validation(2periods).gms(77) 3 Mb
 --- GDXin=E:\Class project\GCD_BugFlowExperiment\July 2018\Weekend-Weekday Model\Validation\Valid_July2018(2Periods).gdx
 --- July2018_validation(2periods).gms(213) 3 Mb
---- Starting execution: elapsed 0:00:01.055
+--- Starting execution: elapsed 0:00:01.408
 --- July2018_validation(2periods).gms(189) 4 Mb
 --- Generating LP model Model2
 --- July2018_validation(2periods).gms(191) 4 Mb
 ---   14 rows  10 columns  23 non-zeroes
---- Executing BARON (Solvelink=2): elapsed 0:00:01.073
+--- Executing BARON (Solvelink=2): elapsed 0:00:01.435
 
 GAMS/BARON       33.2.0 r4f23b21 Released Dec 01, 2020 WEI x86 64bit/MS Window
 
@@ -65,7 +65,7 @@ GAMS/BARON       33.2.0 r4f23b21 Released Dec 01, 2020 WEI x86 64bit/MS Window
 
                          *** Normal completion ***            
 
- Wall clock time:                     0.04
+ Wall clock time:                     0.06
  Total CPU time used:                 0.03
 
  Total no. of BaR iterations:      -1
@@ -83,7 +83,7 @@ Relative gap  = 0  optcr = 0.0001
    was used for the above reported value.)
 
 --- Reading solution for model Model2
---- Executing after solve: elapsed 0:00:01.258
+--- Executing after solve: elapsed 0:00:01.789
 --- July2018_validation(2periods).gms(210) 4 Mb
 --- GDX File (execute_unload) E:\Class project\GCD_BugFlowExperiment\July 2018\Weekend-Weekday Model\Validation\Valid_July2018(2Periods).gdx
 --- July2018_validation(2periods).gms(212) 4 Mb
@@ -91,4 +91,4 @@ GDX2XLS          33.2.0 r4f23b21 Released Dec 01, 2020 WEI x86 64bit/MS Window
 Output file: E:\Class project\GCD_BugFlowExperiment\July 2018\Weekend-Weekday Model\Validation\Valid_July2018(2Periods).xlsx
 (Created backup file)
 *** Status: Normal completion
---- Job July2018_validation(2periods).gms Stop 04/05/21 00:07:53 elapsed 0:00:08.533
+--- Job July2018_validation(2periods).gms Stop 04/05/21 15:54:45 elapsed 0:00:10.154

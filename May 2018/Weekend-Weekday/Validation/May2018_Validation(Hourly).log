@@ -1,5 +1,5 @@
 
---- Job May2018_Validation(Hourly).gms Start 04/04/21 21:49:46 33.2.0 r4f23b21 WEX-WEI x86 64bit/MS Windows
+--- Job May2018_Validation(Hourly).gms Start 04/05/21 15:51:41 33.2.0 r4f23b21 WEX-WEI x86 64bit/MS Windows
 --- Applying:
     C:\GAMS\33\gmsprmNT.txt
 --- GAMS Parameters defined
@@ -31,12 +31,12 @@ Total time = 1078 Ms
 --- May2018_Validation(Hourly).gms(60) 3 Mb
 --- GDXin=E:\Class project\GCD_BugFlowExperiment\May 2018\Weekend-Weekday\Validation\Valid_May2018(Hourly).gdx
 --- May2018_Validation(Hourly).gms(153) 3 Mb
---- Starting execution: elapsed 0:00:01.341
+--- Starting execution: elapsed 0:00:01.294
 --- May2018_Validation(Hourly).gms(71) 4 Mb
 --- Generating LP model validation
 --- May2018_Validation(Hourly).gms(137) 5 Mb
 ---   5,303 rows  2,265 columns  9,766 non-zeroes
---- Executing CPLEX (Solvelink=2): elapsed 0:00:01.390
+--- Executing CPLEX (Solvelink=2): elapsed 0:00:01.333
 
 IBM ILOG CPLEX   33.2.0 r4f23b21 Released Dec 01, 2020 WEI x86 64bit/MS Window
 
@@ -66,7 +66,7 @@ Optimal solution found
 Objective:     15759215.419365
 
 --- Reading solution for model validation
---- Executing after solve: elapsed 0:00:01.529
+--- Executing after solve: elapsed 0:00:01.474
 --- May2018_Validation(Hourly).gms(148) 5 Mb
 --- GDX File (execute_unload) E:\Class project\GCD_BugFlowExperiment\May 2018\Weekend-Weekday\Validation\Valid_May2018(Hourly).gdx
 --- May2018_Validation(Hourly).gms(150) 5 Mb
@@ -74,4 +74,5 @@ GDX2XLS          33.2.0 r4f23b21 Released Dec 01, 2020 WEI x86 64bit/MS Window
 Output file: E:\Class project\GCD_BugFlowExperiment\May 2018\Weekend-Weekday\Validation\Valid_May2018(Hourly).xlsx
 (Created backup file)
 *** Status: Normal completion
---- Job May2018_Validation(Hourly).gms Stop 04/04/21 21:50:02 elapsed 0:00:15.108
+--- May2018_Validation(Hourly).gms(150) 5 Mb  13 secs
+--- Job May2018_Validation(Hourly).gms Stop 04/05/21 15:51:56 elapsed 0:00:14.869
