@@ -81,6 +81,27 @@ PlaneRownr=-1
 [RP:MARCH18_SAT_VALIDATION]
 1=
 
+[GDXDISP: Released_vol Var 0]
+PlaneDim=0
+RowDim=0
+Squeeze=1
+SqTrail0=0
+Order=1
+Decim=7
+PlaneRownr=-1
+
+[RP:APRIL18_SAT_VALIDATION]
+1=
+
+[GDXDISP: Avail_Water Var 0]
+PlaneDim=0
+RowDim=0
+Squeeze=1
+SqTrail0=0
+Order=1
+Decim=7
+PlaneRownr=-1
+
 [MRUFILES]
 1=E:\Class project\GCD_BugFlowExperiment\Meeting_4_1_2021\Saturday-Sunday-Weekday\June18_Sat_Sun-Weekday_Model.gms
 2=E:\Class project\GCD_BugFlowExperiment\March 2018\Weekend-Weekday\Validation\Validation_March2018(Hourly).gdx
@@ -92,8 +113,12 @@ PlaneRownr=-1
 8=E:\Class project\GCD_BugFlowExperiment\March 2018\Saturday-Sunday-Weekday\Validation\Valid_SatModel.gdx
 
 [OPENWINDOW_1]
-FILE0=E:\Class project\GCD_BugFlowExperiment\April 2018\Saturday_Sunday_Weekday\Validation\Valid_SatModel_April.gdx
-FILE1=E:\Class project\GCD_BugFlowExperiment\April 2018\Saturday_Sunday_Weekday\Validation\Valid_SatModel_April.gdx
+FILE0=E:\Class project\GCD_BugFlowExperiment\April 2018\Saturday_Sunday_Weekday\Validation\April18_Sat_Validation.gms
+FILE1=E:\Class project\GCD_BugFlowExperiment\April 2018\Saturday_Sunday_Weekday\Validation\April18_Sat_Validation.lst
+FILE2=E:\Class project\GCD_BugFlowExperiment\April 2018\Saturday_Sunday_Weekday\Validation\Valid_SatModel_April.gdx
+FILE3=E:\Class project\GCD_BugFlowExperiment\April 2018\Weekend-Weekday\Validation\Valid_April2018(2Periods).gdx
+FILE4=E:\Class project\GCD_BugFlowExperiment\April 2018\Weekend-Weekday\Validation\Valid_April2018(Hourly).gdx
+FILE5=E:\Class project\GCD_BugFlowExperiment\April 2018\Weekend-Weekday\Validation\Valid_April2018(2Periods).gdx
 MAXIM=0
 TOP=0
 LEFT=50

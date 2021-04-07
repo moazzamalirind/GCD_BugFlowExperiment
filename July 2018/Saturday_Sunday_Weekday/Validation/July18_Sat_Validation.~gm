@@ -64,7 +64,7 @@ Table Observed_Rel(d,p)"Releases (cfs) observed during July 2018"
                 pLow      pHigh
 Sunday        12150.69   11398.13
 Saturday      12150.69   11401.17
-Weekday       12593.04   16750.14 ;
+Weekday       12497.16   16750.14 ;
 
 
 Table Energy_Rate(d,p)"Price of MegaWatt hour during different days and within period p ($ per MWh)"

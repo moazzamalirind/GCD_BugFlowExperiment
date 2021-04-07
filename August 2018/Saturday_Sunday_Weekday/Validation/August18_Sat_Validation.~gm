@@ -64,15 +64,15 @@ Table Observed_Rel(d,p)"Releases (cfs) observed during August 2018"
                 pLow      pHigh
 Sunday        12736.72   11024.26
 Saturday      12736.72   11646.88
-Weekday       13135.03   17211.28 ;
+Weekday       13137.8    17211.28 ;
 
 
 
 Table Energy_Rate(d,p)"Price of MegaWatt hour during different days and within period p ($ per MWh)"
               pLow        pHigh
-Sunday       49.70        79.00
+Sunday       49.70        49.70 
 Saturday     49.70        64.35
-Weekday      49.70        49.70  ;
+Weekday      49.70        79.00  ;
 
 
 

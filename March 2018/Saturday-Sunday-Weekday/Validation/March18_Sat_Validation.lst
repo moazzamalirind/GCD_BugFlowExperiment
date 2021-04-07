@@ -1,4 +1,4 @@
-GAMS 33.2.0  r4f23b21 Released Dec  1, 2020 WEX-WEI x86 64bit/MS Windows - 04/06/21 11:46:10 Page 1
+GAMS 33.2.0  r4f23b21 Released Dec  1, 2020 WEX-WEI x86 64bit/MS Windows - 04/06/21 15:43:01 Page 1
 G e n e r a l   A l g e b r a i c   M o d e l i n g   S y s t e m
 C o m p i l a t i o n
 
@@ -95,9 +95,9 @@ C o m p i l a t i o n
   69  Table Energy_Rate(d,p)"Price of MegaWatt hour during different days and wi
       thin period p ($ per MWh)"
   70                pLow        pHigh
-  71  Sunday       44.37        58.64
+  71  Sunday       44.37        44.37
   72  Saturday     44.37        51.50
-  73  Weekday      44.37        44.37;
+  73  Weekday      44.37        58.64;
   74   
   75  *===============================================
   76  SCALAR
@@ -264,7 +264,7 @@ C o m p i l a t i o n
 
 
 COMPILATION TIME     =        0.000 SECONDS      3 MB  33.2.0 r4f23b21 WEX-WEI
-GAMS 33.2.0  r4f23b21 Released Dec  1, 2020 WEX-WEI x86 64bit/MS Windows - 04/06/21 11:46:10 Page 2
+GAMS 33.2.0  r4f23b21 Released Dec  1, 2020 WEX-WEI x86 64bit/MS Windows - 04/06/21 15:43:01 Page 2
 G e n e r a l   A l g e b r a i c   M o d e l i n g   S y s t e m
 Equation Listing    SOLVE Model1 Using LP From line 155
 
@@ -393,11 +393,11 @@ REMAINING 3 ENTRIES SKIPPED
 
 EQ11_EnergyRevenue..  ObjectiveVal - 177.48*Energy_Gen(Sunday,pLow)
      
-      - 234.56*Energy_Gen(Sunday,pHigh) - 221.85*Energy_Gen(Saturday,pLow)
+      - 177.48*Energy_Gen(Sunday,pHigh) - 221.85*Energy_Gen(Saturday,pLow)
      
       - 257.5*Energy_Gen(Saturday,pHigh) - 976.14*Energy_Gen(Weekday,pLow)
      
-      - 976.14*Energy_Gen(Weekday,pHigh) =E= 0 ; (LHS = 0)
+      - 1290.08*Energy_Gen(Weekday,pHigh) =E= 0 ; (LHS = 0)
      
 
 ---- EQ12_Simulation  =E=  Making releases equal to observed hydrograph releases
@@ -417,7 +417,7 @@ EQ12_Simulation(Saturday,pLow)..  Release(Saturday,pLow) =E= 11493.54 ;
      
 REMAINING 3 ENTRIES SKIPPED
 
-GAMS 33.2.0  r4f23b21 Released Dec  1, 2020 WEX-WEI x86 64bit/MS Windows - 04/06/21 11:46:10 Page 3
+GAMS 33.2.0  r4f23b21 Released Dec  1, 2020 WEX-WEI x86 64bit/MS Windows - 04/06/21 15:43:01 Page 3
 G e n e r a l   A l g e b r a i c   M o d e l i n g   S y s t e m
 Column Listing      SOLVE Model1 Using LP From line 155
 
@@ -497,7 +497,7 @@ Energy_Gen(Sunday,pHigh)
                 (.LO, .L, .UP, .M = 0, 0, +INF, 0)
         1       EQ9_EnergyGen_Max(Sunday,pHigh)
         1       EQ10_EnergyGen(Sunday,pHigh)
-     -234.56    EQ11_EnergyRevenue
+     -177.48    EQ11_EnergyRevenue
 
 Energy_Gen(Saturday,pLow)
                 (.LO, .L, .UP, .M = 0, 0, +INF, 0)
@@ -506,7 +506,7 @@ Energy_Gen(Saturday,pLow)
      -221.85    EQ11_EnergyRevenue
 
 REMAINING 3 ENTRIES SKIPPED
-GAMS 33.2.0  r4f23b21 Released Dec  1, 2020 WEX-WEI x86 64bit/MS Windows - 04/06/21 11:46:10 Page 4
+GAMS 33.2.0  r4f23b21 Released Dec  1, 2020 WEX-WEI x86 64bit/MS Windows - 04/06/21 15:43:01 Page 4
 G e n e r a l   A l g e b r a i c   M o d e l i n g   S y s t e m
 Model Statistics    SOLVE Model1 Using LP From line 155
 
@@ -518,8 +518,8 @@ BLOCKS OF VARIABLES           5     SINGLE VARIABLES           15
 NON ZERO ELEMENTS            66
 
 
-GENERATION TIME      =        0.016 SECONDS      4 MB  33.2.0 r4f23b21 WEX-WEI
-GAMS 33.2.0  r4f23b21 Released Dec  1, 2020 WEX-WEI x86 64bit/MS Windows - 04/06/21 11:46:10 Page 5
+GENERATION TIME      =        0.032 SECONDS      4 MB  33.2.0 r4f23b21 WEX-WEI
+GAMS 33.2.0  r4f23b21 Released Dec  1, 2020 WEX-WEI x86 64bit/MS Windows - 04/06/21 15:43:01 Page 5
 G e n e r a l   A l g e b r a i c   M o d e l i n g   S y s t e m
 Solution Report     SOLVE Model1 Using LP From line 155
 
@@ -532,9 +532,9 @@ Solution Report     SOLVE Model1 Using LP From line 155
 
 **** SOLVER STATUS     1 Normal Completion         
 **** MODEL STATUS      1 Optimal                   
-**** OBJECTIVE VALUE         17381566.8674
+**** OBJECTIVE VALUE         19787570.5032
 
- RESOURCE USAGE, LIMIT          0.015 10000000000.000
+ RESOURCE USAGE, LIMIT          0.000 10000000000.000
  ITERATION COUNT, LIMIT         0    2147483647
 --- GAMS/Cplex licensed for continuous and discrete problems.
 --- GMO memory 0.50 Mb (peak 0.50 Mb)
@@ -548,7 +548,7 @@ Solution Report     SOLVE Model1 Using LP From line 155
 
 
 Optimal solution found
-Objective:     17381566.867351
+Objective:     19787570.503167
 
 
                        LOWER     LEVEL     UPPER    MARGINAL
@@ -628,11 +628,11 @@ Weekday .pHigh     -INF   9042.524 21120.000      .
                   LOWER     LEVEL     UPPER    MARGINAL
 
 Sunday  .pLow       .         .         .      177.480      
-Sunday  .pHigh      .         .         .      234.560      
+Sunday  .pHigh      .         .         .      177.480      
 Saturday.pLow       .         .         .      221.850      
 Saturday.pHigh      .         .         .      257.500      
 Weekday .pLow       .         .         .      976.140      
-Weekday .pHigh      .         .         .      976.140      
+Weekday .pHigh      .         .         .     1290.080      
 
                        LOWER     LEVEL     UPPER    MARGINAL
 
@@ -646,15 +646,15 @@ Weekday .pHigh      .         .         .      976.140
                   LOWER     LEVEL     UPPER    MARGINAL
 
 Sunday  .pLow  11493.540 11493.540 11493.540    52.747      
-Sunday  .pHigh 12756.480 12756.480 12756.480   139.422      
+Sunday  .pHigh 12756.480 12756.480 12756.480   105.494      
 Saturday.pLow  11493.540 11493.540 11493.540    65.934      
 Saturday.pHigh 13738.060 13738.060 13738.060   153.058      
 Weekday .pLow  11407.700 11407.700 11407.700   290.109      
-Weekday .pHigh 15212.860 15212.860 15212.860   580.218      
+Weekday .pHigh 15212.860 15212.860 15212.860   766.824      
 
                        LOWER     LEVEL     UPPER    MARGINAL
 
----- VAR Objective~     -INF  1.7382E+7     +INF       .         
+---- VAR Objective~     -INF  1.9788E+7     +INF       .         
 ---- VAR storage        -INF  1.2877E+7     +INF       .         
 ---- VAR Released_~     -INF  8.3877E+5     +INF       .         
 
@@ -690,12 +690,12 @@ Weekday .pHigh      .     9042.524     +INF       .
 **** REPORT SUMMARY :        0     NONOPT
                              0 INFEASIBLE
                              0  UNBOUNDED
-GAMS 33.2.0  r4f23b21 Released Dec  1, 2020 WEX-WEI x86 64bit/MS Windows - 04/06/21 11:46:10 Page 6
+GAMS 33.2.0  r4f23b21 Released Dec  1, 2020 WEX-WEI x86 64bit/MS Windows - 04/06/21 15:43:01 Page 6
 G e n e r a l   A l g e b r a i c   M o d e l i n g   S y s t e m
 E x e c u t i o n
 
 
-----    180 PARAMETER FStore               =  1.738157E+7  Storing objective fun
+----    180 PARAMETER FStore               =  1.978757E+7  Storing objective fun
                                                            ction values over dif
                                                            ferent scenarios ($$)
 
@@ -724,7 +724,7 @@ Weekday    11407.700   15212.860
                                                            ac-ft)
 
 
-EXECUTION TIME       =        6.594 SECONDS      4 MB  33.2.0 r4f23b21 WEX-WEI
+EXECUTION TIME       =        8.359 SECONDS      4 MB  33.2.0 r4f23b21 WEX-WEI
 
 
 USER: Small MUD - 5 User License                     G200622/0001AP-GEN

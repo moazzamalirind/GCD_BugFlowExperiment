@@ -68,9 +68,9 @@ Weekday       11081.62   13694.02 ;
 
 Table Energy_Rate(d,p)"Price of MegaWatt hour during different days and within period p ($ per MWh)"
               pLow        pHigh
-Sunday       38.24        38.24
+Sunday       38.24        55.05
 Saturday     38.24        46.70
-Weekday      38.24        55.05 ;
+Weekday      38.24        38.24 ;
 
 
 

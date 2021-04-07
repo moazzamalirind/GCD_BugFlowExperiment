@@ -27,17 +27,17 @@ Set
 Parameters
 *======================================
 
-Initstorage                           Initial reservoir storage (e.g Storage in Powell on 1st April2018) (acre-ft)/12711184/
+Initstorage                           Initial reservoir storage (e.g Storage in Powell on 1st April2018) (acre-ft)/11458588/
 * Storage data for lake Powell can be found at: http://lakepowell.water-data.com/index2.php
 
-Inflow                                Average monthly Inflow to reservoir (cfs) /4230.64/
+Inflow                                Average monthly Inflow to reservoir (cfs) /3858.2/
 *Inflow data can be found at: http://lakepowell.water-data.com/index2.php
 
 maxstorage                            Maximumn Reservoir capacity (acre-ft)/25000000/
 minstorage                            Minimum reservoir storage to maintain hydropower level(acre-ft)/8950000/
 maxRel                                Maximum release in a day d at any timeperiod p(cfs) /31500/
 minRel                                Minimum release in a day d at any timeperiod p(cfs)/8000/
-evap                                  Evaporation (ac-ft per Month) /50229/
+evap                                  Evaporation (ac-ft per Month) /44783/
 *The evaporation data can be found at: https://www.usbr.gov/rsvrWater/HistoricalApp.html
 
 Duration(p)                           Duration of period (hours)
@@ -62,17 +62,16 @@ Duration("pHigh")= 16;
 
 Table Observed_Rel(d,p)"Releases (cfs) observed during September 2018"
                 pLow      pHigh
-Sunday        12736.72   11024.26
-Saturday      12736.72   11646.88
-Weekday       13137.8    17211.28 ;
-
+Sunday        10316.88   10688.22
+Saturday      10316.88   12169.94
+Weekday       10028.41   12811.5 ;
 
 
 Table Energy_Rate(d,p)"Price of MegaWatt hour during different days and within period p ($ per MWh)"
               pLow        pHigh
-Sunday       49.70        79.00
-Saturday     49.70        64.35
-Weekday      49.70        49.70  ;
+Sunday       52.19        52.19
+Saturday     52.19        61.10
+Weekday      52.19        70.01  ;
 
 
 
@@ -188,9 +187,9 @@ DISPLAY FStore,XStore,RStore,Sstore;
 *Following part of code creates gdx and excel output file..
 
 * Dump all input data and results to a GAMS gdx file
-Execute_Unload "Valid_SatModel_August.gdx";
+Execute_Unload "Valid_SatModel_September.gdx";
 * Dump the gdx file to an Excel workbook
-Execute "gdx2xls Valid_SatModel_August.gdx"
+Execute "gdx2xls Valid_SatModel_September.gdx"
 
 
 
