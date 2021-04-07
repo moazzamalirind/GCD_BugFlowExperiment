@@ -39,9 +39,6 @@ Order=1,2,3
 Decim=7
 PlaneRownr=-1
 
-[RP:JUNE18_SAT_SUN-WEEKDAY_MODEL]
-1=
-
 [GDXDISP: XStore Par 2]
 PlaneDim=0
 RowDim=2
@@ -141,26 +138,23 @@ Order=1
 Decim=7
 PlaneRownr=-1
 
-[MRUFILES]
-1=E:\Class project\GCD_BugFlowExperiment\October 2018\Weekend_Weekday\Validation\October2018_validation(2periods).gms
-2=E:\Class project\GCD_BugFlowExperiment\October 2018\Weekend_Weekday\Validation\Valid_October2018(Hourly).gdx
-3=E:\Class project\GCD_BugFlowExperiment\August 2018\Weekend-Weekday\Validation\Valid_August2018(Hourly).gdx
-4=E:\Class project\GCD_BugFlowExperiment\August 2018\Saturday_Sunday_Weekday\Validation\Valid_SatModel_August.gdx
-5=E:\Class project\GCD_BugFlowExperiment\August 2018\Saturday_Sunday_Weekday\Validation\August18_Sat_Validation.lst
-6=E:\Class project\GCD_BugFlowExperiment\August 2018\Saturday_Sunday_Weekday\Validation\August18_Sat_Validation.gms
-7=E:\Class project\GCD_BugFlowExperiment\July 2018\Weekend-Weekday Model\Validation\Valid_July2018(Hourly).gdx
-8=E:\Class project\GCD_BugFlowExperiment\July 2018\Saturday_Sunday_Weekday\Validation\Valid_SatModel_July.gdx
-9=E:\Class project\GCD_BugFlowExperiment\July 2018\Saturday_Sunday_Weekday\Validation\July18_Sat_Validation.lst
-
 [OPENWINDOW_1]
-FILE0=E:\Class project\GCD_BugFlowExperiment\October 2018\Saturday_Sunday_Weekday\Validation\October18_Sat_Validation.gms
-FILE1=E:\Class project\GCD_BugFlowExperiment\October 2018\Saturday_Sunday_Weekday\Validation\October18_Sat_Validation.lst
-FILE2=E:\Class project\GCD_BugFlowExperiment\October 2018\Saturday_Sunday_Weekday\Validation\Valid_SatModel_October.gdx
-FILE3=E:\Class project\GCD_BugFlowExperiment\October 2018\Weekend_Weekday\Validation\ Valid_October2018(Hourly).gdx
-FILE4=E:\Class project\GCD_BugFlowExperiment\October 2018\Weekend_Weekday\Validation\Valid_October2018(2Periods).gdx
-FILE5=E:\Class project\GCD_BugFlowExperiment\October 2018\Saturday_Sunday_Weekday\Validation\October18_Sat_Validation.gms
 MAXIM=0
 TOP=0
 LEFT=50
 HEIGHT=691
 WIDTH=1062
+
+[RP:JUNE18_SAT_SUN-WEEKDAY_MODEL]
+1=
+
+[MRUFILES]
+1=E:\Class project\GCD_BugFlowExperiment\October 2018\Weekend_Weekday\Validation\Valid_October2018(2Periods).gdx
+2=E:\Class project\GCD_BugFlowExperiment\October 2018\Weekend_Weekday\Validation\ Valid_October2018(Hourly).gdx
+3=E:\Class project\GCD_BugFlowExperiment\October 2018\Saturday_Sunday_Weekday\Validation\Valid_SatModel_October.gdx
+4=E:\Class project\GCD_BugFlowExperiment\October 2018\Saturday_Sunday_Weekday\Validation\October18_Sat_Validation.lst
+5=E:\Class project\GCD_BugFlowExperiment\October 2018\Saturday_Sunday_Weekday\Validation\October18_Sat_Validation.gms
+6=C:\Users\moazz\Box\Saturday Model\June18_Sat_Sun-Weekday_Model.gms
+7=E:\Class project\GCD_BugFlowExperiment\October 2018\Weekend_Weekday\Validation\October2018_validation(2periods).gms
+8=E:\Class project\GCD_BugFlowExperiment\October 2018\Weekend_Weekday\Validation\Valid_October2018(Hourly).gdx
+9=E:\Class project\GCD_BugFlowExperiment\August 2018\Weekend-Weekday\Validation\Valid_August2018(Hourly).gdx

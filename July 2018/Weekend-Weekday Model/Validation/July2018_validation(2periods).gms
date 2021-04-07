@@ -74,7 +74,7 @@ Duration("pHigh")= 16;
 $CALL GDXXRW.EXE input=Input_July2018.xlsx output=Valid_July2018(2Periods).gdx set=d rng=day!A1 Rdim=1 par=Inflow rng=inflow!A1 Rdim=1  par=evap rng=Evaporation!A1 Rdim=1
 
 *Write the input Data into a GDX file
-$GDXIN Valid_July2018(2Periods).gdx
+$GDXIN =Valid_July2018(2Periods).gdx
 
 * parameters and input data from the GDX file into the model
 $LOAD d

@@ -27,7 +27,7 @@ Set
 Parameters
 *======================================
 
-Initstorage                           Initial reservoir storage (e.g Storage in Powell on 1st April2018) (acre-ft)/11016261/
+Initstorage                           Initial reservoir storage (e.g Storage in Powell on 1st October 2018) (acre-ft)/11016261/
 * Storage data for lake Powell can be found at: http://lakepowell.water-data.com/index2.php
 
 Inflow                                Average monthly Inflow to reservoir (cfs) /7757.81/

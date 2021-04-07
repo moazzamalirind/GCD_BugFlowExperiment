@@ -54,8 +54,8 @@ Inflow(d)                    Inflow to reservoir (cfs)
 maxRel                       Maximum release in a day d at any timeperiod p(cfs)/31500/
 minRel                       Minimum release in a day d at any timeperiod p(cfs)/8000/
 evap(d)                      Evaporation (ac-ft per day).
-EnergyRate(p)                Energy prices on weekdays ($ per MWH) /pLow 46.55, pHigh 80.08/
-weekendRate(p)               Energy prices on weekends ($ per MWH) /pLow 46.55, pHigh 46.55/
+EnergyRate(p)                Energy prices on weekdays ($ per MWH) /pLow 46.548, pHigh 80.077/
+weekendRate(p)               Energy prices on weekends ($ per MWH) /pLow 46.548, pHigh 46.548/
 Duration(p)                  Duration of period (hours)
 Steady_Days                  The number of steady low flow days (weekend during July 2018)
 ;
@@ -71,10 +71,10 @@ Duration("pHigh")= 16;
 *===================================================
 * Read data from Excel
 *===================================================
-$CALL GDXXRW.EXE input=Input_July2018.xlsx output=Valid_July2018(2Periods).gdx set=d rng=day!A1 Rdim=1 par=Inflow rng=inflow!A1 Rdim=1  par=evap rng=Evaporation!A1 Rdim=1
+$CALL GDXXRW.EXE input=Input_July2018.xlsx output=July2018(2Periods).gdx set=d rng=day!A1 Rdim=1 par=Inflow rng=inflow!A1 Rdim=1  par=evap rng=Evaporation!A1 Rdim=1
 
 *Write the input Data into a GDX file
-$GDXIN Valid_July2018(2Periods).gdx
+$GDXIN =July2018(2Periods).gdx
 
 * parameters and input data from the GDX file into the model
 $LOAD d
@@ -207,7 +207,7 @@ DISPLAY FStore,XStore_steady,XStore_unsteady,RStore_steady,RStore_unsteady,Sstor
 
 *------------------------------------------------------------------------------*
 * Dump all input data and results to a GAMS gdx file
-Execute_Unload "Valid_July2018(2Periods).gdx";
+Execute_Unload "July2018(2Periods).gdx";
 * Dump the gdx file to an Excel workbook
-Execute "gdx2xls Valid_July2018(2Periods).gdx"
+Execute "gdx2xls July2018(2Periods).gdx"
 
