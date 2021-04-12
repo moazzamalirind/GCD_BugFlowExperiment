@@ -89,7 +89,7 @@ Unsteady. Sunday          4       3        2       0      0        0      0     
 Steady. Saturday          0       0        0       0      2        4      4       4       4       4         4         4
 Unsteady. Saturday        4       4        4       4      2        0      0       0       0       0         0         0
 Steady. Weekday           0       0        0       0      0        0      1       2       7       12        17        23
-Unsteady. Weekday         22      22       22      22     22       22     21      20      15      10        5         0     ;
+Unsteady. Weekday         23      23       23      23     23       23     22      21      16      11        6         0     ;
 
 Table Energy_Rate(Days,p)"Price of MegaWatt hour during different days and within period p ($ per MWh)"
               pLow        pHigh
