@@ -63,7 +63,7 @@ Saturdays(FlowPattern,d)              To represent the number of saturdays (i.e.
 Sundays(FlowPattern,d)                To represent the number of Sundays (i.e. steady flow sundays and unsteady flow sundays)
 Weekdays(FlowPattern,d)               To represent the number of weekdays (i.e. steady flow weekdays and unsteady flow weekdays)
 
-Weekend_Rel                           Additional release made on weekend off-peak incomparison to weekday off-peak release(cfs)--Offset release/0EX/
+Weekend_Rel                           Additional release made on weekend off-peak incomparison to weekday off-peak release(cfs)--Offset release/0/
 
 
 FStore(tot_vol,Nu_SteadyDays)                          Storing objective function values over different scenarios ($$)

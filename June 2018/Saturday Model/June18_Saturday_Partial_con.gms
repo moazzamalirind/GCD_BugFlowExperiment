@@ -282,7 +282,7 @@ DISPLAY FStore,XStore,RStore,Sstore;
 
 *Following part of code creates  gdx and excel output file..
 
-*The constrained model makes off-peak releases during Saturday, Sunday and Weekday equal. Activate equations 11 and 13
+*The Partial model constraints the on-peak releases during unsteady Saturday or Sunday should be on-peak weekday minus 2000 cfs.  While off-peak releases during Saturday, Sunday and Weekday equal.
 * Dump all input data and results to a GAMS gdx file
 Execute_Unload "partialcons_H4.gdx";
 * Dump the gdx file to an Excel workbook

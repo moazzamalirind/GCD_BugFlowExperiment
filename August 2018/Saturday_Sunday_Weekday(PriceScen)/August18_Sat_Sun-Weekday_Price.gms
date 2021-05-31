@@ -6,7 +6,7 @@ Created By: Moazzam Ali Rind
 Email: moazzamalirind@gmail.com
 
 Created : 12/16/2020
-Last updated: 5/10/2021
+Last updated: 5/30/2021
 
 Description: This model was developed to qaunitfy the trade-off between number of steady low flow days and hydropower revenue objectives.
             The model has 2 periods per day (i.e. pHigh and plow), three distinct day types(Sunday,Saturday, and Weekday) and runs for a month. we have used linear programming to solve the problem.
