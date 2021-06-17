@@ -56,8 +56,8 @@ maxRel                                Maximum release in a day d at any timeperi
 minRel                                Minimum release in a day d at any timeperiod p(cfs)
 evap                                  evaporation (ac-ft per day Considered constant throughout the month
 EnergyRate(p)                         Energy revenue on weekdays ($ per MWH) /pLow 37.70, pHigh 63.52/
-*weekendRate(p)                        Energy revenue on weekends ($ per MWH) /pLow 37.70, pHigh 37.70/
-weekendRate(p)                        Energy revenue on weekends ($ per MWH) /pLow 54.9, pHigh 54.9/
+weekendRate(p)                        Energy revenue on weekends ($ per MWH) /pLow 37.70, pHigh 37.70/
+*weekendRate(p)                        Energy revenue on weekends ($ per MWH) /pLow 54.9, pHigh 54.9/
 
 *The energy prices with half price differentail
 *EnergyRate(p)                         Energy revenue on weekdays ($ per MWH) /pLow 37.70, pHigh 50.61/
@@ -66,7 +66,7 @@ Duration(p)                           Duration of period (hours)
 Vol_monthlyrelease(tot_vol)           Different Total volumes of water to be released in the month i.e. June2018 in presented case (acre-ft)/V1 700000,V2 800000,V3 900000,V4 1000000,V5 1100000/
 TotMonth_volume                       To represent total monthly volume (acre-ft)
 Steady_Days                           To represent the number of steady low flow days
-Num_steady(case)                      Number of steady low flow days/case1 0, case2 4,case3 6, case4 7, case5 8, case6 9,case7 10,case8 12,case9 15,case10 20,case11 25,case12 30/
+Num_steady(case)                      Number of steady low flow days/case1 0, case2 1,case3 2, case4 4, case5 6, case6 8,case7 9,case8 10,case9 15,case10 20,case11 25,case12 30/
 Mar_Ramp(tot_vol,case,p)              To save margninal values associted with the ramp rate.
 ;
 
@@ -80,10 +80,10 @@ Duration("pHigh")= 16;
 *===================================================
 * Read data from Excel
 *===================================================
-$CALL GDXXRW.EXE input=June2018.xls output=PriceSen_June.gdx set=d rng=day!A1 Rdim=1  par=Inflow rng=inflow!A1 Rdim=1  par=initstorage rng=initstorage!A1 Rdim=0  par=maxstorage rng=maxstorage!A1 Rdim=0   par=minstorage rng=minstorage!A1 Rdim=0  par=maxRel rng=maxRel!A1 Rdim=0 par=minRel rng=minRel!A1 Rdim=0  par=evap rng=evap!A1 Rdim=0
+$CALL GDXXRW.EXE input=June2018.xls output=Weekday_Weekend.gdx set=d rng=day!A1 Rdim=1  par=Inflow rng=inflow!A1 Rdim=1  par=initstorage rng=initstorage!A1 Rdim=0  par=maxstorage rng=maxstorage!A1 Rdim=0   par=minstorage rng=minstorage!A1 Rdim=0  par=maxRel rng=maxRel!A1 Rdim=0 par=minRel rng=minRel!A1 Rdim=0  par=evap rng=evap!A1 Rdim=0
 
 *Write the input Data into a GDX file
-$GDXIN PriceSen_June.gdx
+$GDXIN Weekday_Weekend.gdx
 
 * loading parameters and input data from the GDX file into the model
 $LOAD d
@@ -263,7 +263,12 @@ else SOLVE Model2 USING LP maximize ObjectiveVal;
 
 *------------------------------------------------------------------------------*
 * Dump all input data and results to a GAMS gdx file
-Execute_Unload "PriceSen_June.gdx";
+*Execute_Unload "PriceSen_June.gdx";
 * Dump the gdx file to an Excel workbook
-Execute "gdx2xls PriceSen_June.gdx"
+*Execute "gdx2xls PriceSen_June.gdx"
+
+* Dump all input data and results to a GAMS gdx file
+Execute_Unload "Weekday_Weekend.gdx";
+* Dump the gdx file to an Excel workbook
+Execute "gdx2xls Weekday_Weekend.gdx"
 

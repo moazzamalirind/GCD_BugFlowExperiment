@@ -43,7 +43,7 @@ Inflow                                Average monthly Inflow to reservoir (cfs) 
 *Inflow data can be found at: http://lakepowell.water-data.com/index2.php
 
 maxstorage                            Maximumn Reservoir capacity (acre-ft)/25000000/
-minstorage                            Minimum reservoir storage to maintain hydropower level(acre-ft)/8950000/
+minstorage                            Minimum reservoir storage to maintain hydropower level(acre-ft)/5892163/
 maxRel                                Maximum release in a day d at any timeperiod p(cfs) /32000/
 minRel                                Minimum release in a day d at any timeperiod p(cfs)/8000/
 evap                                  Evaporation (ac-ft per Month) /50229/
@@ -101,7 +101,7 @@ Unsteady. Weekday         23      23       23      23     23       23     22    
 Table Energy_Rate(Days,p)"Price of MegaWatt hour during different days and within period p ($ per MWh)"
               pLow        pHigh
 Sunday       49.70        49.70
-Saturday     49.70        49.70
+Saturday     49.70        79.00
 Weekday      49.70        79.00  ;
 *===============================================
 SCALAR
@@ -202,8 +202,8 @@ EQ12_OffsetRel(FlowPattern)$((Num_days("Unsteady","Weekday") gt 0) and (Num_Days
 
 *EQ13_Zero_steadydays(FlowPattern,d,p)$(Num_Days("Steady","Sunday") eq 0)..      Release("Unsteady",d,p)=g= Release("Unsteady","Weekday",p);
 
-EQ13a_OnPeak_Saturday(FlowPattern,d,p)$(Num_Days("Unsteady","Saturday") gt 0)..      Release("Unsteady","Saturday","pHigh")=g= Release("Unsteady","Weekday","pHigh")-2000;
-EQ13b_OnPeak_Sunday(FlowPattern,d,p)$(Num_Days("Unsteady","Sunday") gt 0)..       Release("Unsteady","Sunday","pHigh")=g= Release("Unsteady","Saturday","pHigh");
+EQ13a_OnPeak_Saturday(FlowPattern,d,p)$(Num_Days("Unsteady","Saturday") gt 0)..      Release("Unsteady","Saturday","pHigh")=e= Release("Unsteady","Weekday","pHigh")-2000;
+EQ13b_OnPeak_Sunday(FlowPattern,d,p)$(Num_Days("Unsteady","Sunday") gt 0)..       Release("Unsteady","Sunday","pHigh")=e= Release("Unsteady","Saturday","pHigh");
 
 EQ14_Steady_Saturdays(FlowPattern,d,p)$(Num_Days("Steady","Saturday")gt 0)..   Release("Steady","Saturday",p)=e= Release("Steady","Sunday",p);
 

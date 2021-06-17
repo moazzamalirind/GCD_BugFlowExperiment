@@ -51,7 +51,7 @@ Mar_Ramp(Wkn,tot_vol,case,p)                      To save margninal values assoc
 
 initstorage                            Initial reservoir storage on 1st May 2018 (acre-ft)/12658966/
 maxstorage                             Reservoir capacity (acre-ft)/25000000/
-minstorage                             Minimum reservoir storage to maintain hydropower level(acre-ft) /8950000/
+minstorage                             Minimum reservoir storage to maintain hydropower level(acre-ft) /5892163/
 Inflow(d)                              Inflow to reservoir (cfs)
 maxRel                                 Maximum release in a day d at any timeperiod p(cfs)/31500/
 minRel                                 Minimum release in a day d at any timeperiod p(cfs)/8000/

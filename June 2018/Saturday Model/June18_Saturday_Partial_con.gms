@@ -44,8 +44,8 @@ Inflow                                Average monthly Inflow to reservoir (cfs) 
 *Inflow data can be found at: http://lakepowell.water-data.com/index2.php
 
 maxstorage                            Maximumn Reservoir capacity (acre-ft)/25000000/
-minstorage                            Minimum reservoir storage to maintain hydropower level(acre-ft)/8950000/
-maxRel                                Maximum release in a day d at any timeperiod p(cfs) /32000/
+minstorage                            Minimum reservoir storage to maintain hydropower level(acre-ft)/5890000/
+maxRel                                Maximum release in a day d at any timeperiod p(cfs) /31500/
 minRel                                Minimum release in a day d at any timeperiod p(cfs)/8000/
 evap                                  Evaporation (ac-ft per Month) /45291/
 *The evaporation data can be found at: https://www.usbr.gov/rsvrWater/HistoricalApp.html

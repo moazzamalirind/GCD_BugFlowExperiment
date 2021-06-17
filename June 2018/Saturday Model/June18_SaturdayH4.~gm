@@ -8,7 +8,7 @@ Created By: Moazzam Ali Rind
 Email: moazzamalirind@gmail.com
 
 Created : 4/1/2021
-Last updated: 4/2/2021
+Last updated: 6/7/2021
 
 Description: This model was developed to qaunitfy the trade-off between number of steady low flow days and hydropower revenue objectives.
             The model has 2 periods per day (i.e. pHigh and plow) and runs for a month. we have used linear programming to solve the problem.
@@ -44,8 +44,8 @@ Inflow                                Average monthly Inflow to reservoir (cfs) 
 *Inflow data can be found at: http://lakepowell.water-data.com/index2.php
 
 maxstorage                            Maximumn Reservoir capacity (acre-ft)/25000000/
-minstorage                            Minimum reservoir storage to maintain hydropower level(acre-ft)/8950000/
-maxRel                                Maximum release in a day d at any timeperiod p(cfs) /32000/
+minstorage                            Minimum reservoir storage to maintain hydropower level(acre-ft)/5892163/
+maxRel                                Maximum release in a day d at any timeperiod p(cfs) /31500/
 minRel                                Minimum release in a day d at any timeperiod p(cfs)/8000/
 evap                                  Evaporation (ac-ft per Month) /45291/
 *The evaporation data can be found at: https://www.usbr.gov/rsvrWater/HistoricalApp.html
@@ -63,7 +63,7 @@ Saturdays(FlowPattern,d)              To represent the number of saturdays (i.e.
 Sundays(FlowPattern,d)                To represent the number of Sundays (i.e. steady flow sundays and unsteady flow sundays)
 Weekdays(FlowPattern,d)               To represent the number of weekdays (i.e. steady flow weekdays and unsteady flow weekdays)
 
-Weekend_Rel                           Additional release made on weekend off-peak incomparison to weekday off-peak release(cfs)--Offset release/0/
+Weekend_Rel                           Additional release made on weekend off-peak incomparison to weekday off-peak release(cfs)--Offset release/1000/
 
 
 FStore(tot_vol,Nu_SteadyDays)                          Storing objective function values over different scenarios ($$)
@@ -95,7 +95,7 @@ Table Energy_Rate(Days,p)"Price of MegaWatt hour during different days and withi
               pLow    pHigh
 Sunday        37.70   37.70
 Saturday      37.70   50.61
-Weekday       37.70   63.52;
+Weekday       37.70   63.52 ;
 *===============================================
 SCALAR
 Convert                        Conversion factor from cfs to ac-ft per hour (0.0014*60)/0.083/
@@ -127,9 +127,10 @@ EQ4_MaxR(FlowPattern,d,p)                        Max Release for any day type du
 EQ5_MinR(FlowPattern,d,p)                        Min Release for any day type with flows during any period p but it will not work when NumDays will be zero (cfs)
 EQ6_ZeroFlowDays(FlowPattern,d,p)                No release for any day type during any period p when Num_Days equal to zero(cfs)
 EQ7_Rel_Range(FlowPattern,d)                     Constraining the daily release range but it will not work when NumDays will be zero(cfs change with in day)
-EQ7a_btwDays_RelRange(FlowPattern,d)             Constraining the allowable release change between on-peak period current day and off-peak peroid next day (cfs change between two day types)
-EQ7b_Rel_Change(FlowPattern,d)                   Constraining the allowable release change between steady Sunday and off-peak unsteady weekday(cfs change between two day types)
-EQ7c_Rel_ChangeSat(FlowPattern,d)                Constraining the allowable release change between on-peak unsteady weekday and off-peak unsteady Saturday(cfs change between two day types)
+*eq 7a,7b and 7c were just trial.. not needed
+*EQ7a_btwDays_RelRange(FlowPattern,d)             Constraining the allowable release change between on-peak period current day and off-peak peroid next day (cfs change between two day types)
+*EQ7b_Rel_Change(FlowPattern,d)                   Constraining the allowable release change between steady Sunday and off-peak unsteady weekday(cfs change between two day types)
+*EQ7c_Rel_ChangeSat(FlowPattern,d)                Constraining the allowable release change between on-peak unsteady weekday and off-peak unsteady Saturday(cfs change between two day types)
 
 EQ8_Monthtlyrel                                  Constraining total monthly release volume (ac-ft)
 EQ9_RelVolume                                    Total volume from different types of day in the month (ac-ft)
@@ -174,11 +175,11 @@ EQ6_ZeroFlowDays(FlowPattern,d,p)$(Num_Days(FlowPattern,d) eq 0)..             R
 
 EQ7_Rel_Range(FlowPattern,d)$(Num_Days(FlowPattern,d) gt 0)..                  Release(FlowPattern,d,"pHigh")- Release(FlowPattern,d,"pLow")=l=Daily_RelRange;
 
-EQ7a_btwDays_RelRange(FlowPattern,d)$(Num_Days("Unsteady","Sunday") gt 0) ..     Release("Unsteady","Weekday","pLow")-Release("Unsteady","Sunday","pHigh")=l=Daily_RelRange;
+*EQ7a_btwDays_RelRange(FlowPattern,d)$(Num_Days("Unsteady","Sunday") gt 0) ..     Release("Unsteady","Weekday","pLow")-Release("Unsteady","Sunday","pHigh")=l=Daily_RelRange;
 
-EQ7b_Rel_Change(FlowPattern,d)$((Num_Days("Steady","Saturday") gt 0) and (Num_days("Unsteady","Weekday") gt 0))..          Release("Steady","Sunday","pHigh")-Release("Unsteady","Weekday","pLow")=l=Daily_RelRange;
+*EQ7b_Rel_Change(FlowPattern,d)$((Num_Days("Steady","Saturday") gt 0) and (Num_days("Unsteady","Weekday") gt 0))..          Release("Steady","Sunday","pHigh")-Release("Unsteady","Weekday","pLow")=l=Daily_RelRange;
 
-EQ7c_Rel_ChangeSat(FlowPattern,d)$(Num_Days("Unsteady","Saturday") gt 0)..      Release("Unsteady","Weekday","pHigh")- Release("Unsteady","Saturday","pLow")=l=Daily_RelRange;
+*EQ7c_Rel_ChangeSat(FlowPattern,d)$(Num_Days("Unsteady","Saturday") gt 0)..      Release("Unsteady","Weekday","pHigh")- Release("Unsteady","Saturday","pLow")=l=Daily_RelRange;
 
 *EQ8_  constraining the overall monthly released volume..
 EQ8_Monthtlyrel..                                                              TotMonth_volume=e= Released_vol;

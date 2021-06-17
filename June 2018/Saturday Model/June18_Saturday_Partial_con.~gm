@@ -44,7 +44,7 @@ Inflow                                Average monthly Inflow to reservoir (cfs) 
 *Inflow data can be found at: http://lakepowell.water-data.com/index2.php
 
 maxstorage                            Maximumn Reservoir capacity (acre-ft)/25000000/
-minstorage                            Minimum reservoir storage to maintain hydropower level(acre-ft)/8950000/
+minstorage                            Minimum reservoir storage to maintain hydropower level(acre-ft)/5890000/
 maxRel                                Maximum release in a day d at any timeperiod p(cfs) /32000/
 minRel                                Minimum release in a day d at any timeperiod p(cfs)/8000/
 evap                                  Evaporation (ac-ft per Month) /45291/
@@ -282,7 +282,7 @@ DISPLAY FStore,XStore,RStore,Sstore;
 
 *Following part of code creates  gdx and excel output file..
 
-*The constrained model makes off-peak releases during Saturday, Sunday and Weekday equal. Activate equations 11 and 13
+*The Partial model constraints the on-peak releases during unsteady Saturday or Sunday should be on-peak weekday minus 2000 cfs.  While off-peak releases during Saturday, Sunday and Weekday equal.
 * Dump all input data and results to a GAMS gdx file
 Execute_Unload "partialcons_H4.gdx";
 * Dump the gdx file to an Excel workbook

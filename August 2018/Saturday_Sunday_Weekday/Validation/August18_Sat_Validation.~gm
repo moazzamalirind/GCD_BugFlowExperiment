@@ -70,7 +70,7 @@ Weekday       13137.8    17211.28 ;
 
 Table Energy_Rate(d,p)"Price of MegaWatt hour during different days and within period p ($ per MWh)"
               pLow        pHigh
-Sunday       49.70        49.70 
+Sunday       49.70        49.70
 Saturday     49.70        64.35
 Weekday      49.70        79.00  ;
 
@@ -166,7 +166,7 @@ Solve Model1 using LP MAXIMIZE ObjectiveVal;
 
 * XStore store the energy generated (Mwh/day) during different types of days
 *XStore(d)= sum (p,Energy_Gen.L(d,p))+ EPS;
-   XStore(d,p) = Energy_Gen.L(d,p)+ EPS;
+   XStore(d,p) = Energy_Gen.L(d,p)*Num_Days(d)+ EPS;
 
 * RStore store the reservoir releases (cfs) during different types of days and scenarios.
    RStore(d,p)= Release.L(d,p)+ EPS;

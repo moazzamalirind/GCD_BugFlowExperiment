@@ -43,7 +43,7 @@ Inflow                                Average monthly Inflow to reservoir (cfs) 
 *Inflow data can be found at: http://lakepowell.water-data.com/index2.php
 
 maxstorage                            Maximumn Reservoir capacity (acre-ft)/25000000/
-minstorage                            Minimum reservoir storage to maintain hydropower level(acre-ft)/8950000/
+minstorage                            Minimum reservoir storage to maintain hydropower level(acre-ft)/5892163/
 maxRel                                Maximum release in a day d at any timeperiod p(cfs) /32000/
 minRel                                Minimum release in a day d at any timeperiod p(cfs)/8000/
 evap                                  Evaporation (ac-ft per Month) /50229/
@@ -101,8 +101,8 @@ Unsteady. Weekday         23      23       23      23     23       23     22    
 Table Energy_Rate(Days,p)"Price of MegaWatt hour during different days and within period p ($ per MWh)"
               pLow        pHigh
 Sunday       49.70        49.70
-Saturday     49.70        49.70
-Weekday      49.70        79.00  ;
+Saturday     49.70        60.00
+Weekday      49.70        74.00  ;
 *===============================================
 SCALAR
 Convert                        Conversion factor from cfs to ac-ft per hour (0.0014*60)/0.083/

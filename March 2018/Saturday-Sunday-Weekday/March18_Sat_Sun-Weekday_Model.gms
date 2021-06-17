@@ -6,7 +6,7 @@ Created By: Moazzam Ali Rind
 Email: moazzamalirind@gmail.com
 
 Created : 12/16/2020
-Last updated: 4/6/202021
+Last updated: 6/7/202021
 
 Description: This model was developed to qaunitfy the trade-off between number of steady low flow days and hydropower revenue objectives.
             The model has 2 periods per day (i.e. pHigh and plow), three distinct day types(Sunday,Saturday, and Weekday) and runs for a month. we have used linear programming to solve the problem.
@@ -43,8 +43,8 @@ Inflow                                Average monthly Inflow to reservoir (cfs) 
 *Inflow data can be found at: http://lakepowell.water-data.com/index2.php
 
 maxstorage                            Maximumn Reservoir capacity (acre-ft)/25000000/
-minstorage                            Minimum reservoir storage to maintain hydropower level(acre-ft)/8950000/
-maxRel                                Maximum release in a day d at any timeperiod p(cfs) /32000/
+minstorage                            Minimum reservoir storage to maintain hydropower level(acre-ft)/5892163/
+maxRel                                Maximum release in a day d at any timeperiod p(cfs) /31500/
 minRel                                Minimum release in a day d at any timeperiod p(cfs)/8000/
 evap                                  Evaporation (ac-ft per Month) /15931/
 *The evaporation data can be found at: https://www.usbr.gov/rsvrWater/HistoricalApp.html
@@ -134,9 +134,9 @@ EQ8_Monthtlyrel                                  Constraining total monthly rele
 EQ9_RelVolume                                    Total volume from different types of day in the month (ac-ft)
 
 EQ10_SteadyFlow_Day(FlowPattern,d)               Constraining on-peak and off-peak releases during Steadyflow day to be equal (cfs)
-EQ11_Unsteadydays_OffpeakRel(FlowPattern,d)      Constraining off-peak releases during unsteady days to be equal to weekend off-peak release (cfs)
+*EQ11_Unsteadydays_OffpeakRel(FlowPattern,d)      Constraining off-peak releases during unsteady days to be equal to weekend off-peak release (cfs)
 EQ12_OffsetRel(FlowPattern)                      Offset release between off-peak unsteady weekday and off-peak steady weekend (saturday or and sunday)releses(cfs)
-EQ13_Zero_OffsetRel(FlowPattern,d,p)             When there are zero steady days then make zero offset between off-peak weekday and weekends (saturday or and sunday)(cfs)
+*EQ13_Zero_OffsetRel(FlowPattern,d,p)             When there are zero steady days then make zero offset between off-peak weekday and weekends (saturday or and sunday)(cfs)
 EQ14_Steady_Saturdays(FlowPattern,d,p)           Constraining the steady Saturday flows equal to steady sundays flows (cfs)
 ***********************************************************************************************************************
 ** Note: There are two possible hydrographs: 1) Steady weekday flows equal to steady Sundays (EQ 15). 2)Steady weekday flows equal to off-peak unsteady weekday flow (EQ 16). I am selecting here EQ 15 and commenting other. One of the two should be selected at a time.
@@ -182,13 +182,13 @@ EQ9_RelVolume..                                                                R
 
 EQ10_SteadyFlow_Day(FlowPattern,d)$(Num_Days("Steady",d) gt 0)..               Release("Steady",d,"pHigh") =e= Release("Steady",d,"pLow");
 
-EQ11_Unsteadydays_OffpeakRel(FlowPattern,d)$(Num_Days("Unsteady",d) gt 0)..    Release("Unsteady",d,"pLow")=e= Release("Unsteady","Weekday","pLow");
+*EQ11_Unsteadydays_OffpeakRel(FlowPattern,d)$(Num_Days("Unsteady",d) gt 0)..    Release("Unsteady",d,"pLow")=e= Release("Unsteady","Weekday","pLow");
 
 
 EQ12_OffsetRel(FlowPattern)$((Num_days("Unsteady","Weekday") gt 0) and (Num_Days("Steady","Sunday") gt 0))..          Release("Steady","Sunday","pLow")=e= Release("Unsteady","Weekday","pLow")+ Weekend_Rel;
 * EQ12_  finds the minimimum release value from the hydrograph plus additional release we desire on weekends above off-peak weekday release (i.e. Offset).
 
-EQ13_Zero_OffsetRel(FlowPattern,d,p)$(Num_Days("Steady","Sunday") eq 0)..      Release("Unsteady",d,p)=e= Release("Unsteady","Weekday",p);
+*EQ13_Zero_OffsetRel(FlowPattern,d,p)$(Num_Days("Steady","Sunday") eq 0)..      Release("Unsteady",d,p)=e= Release("Unsteady","Weekday",p);
 
 EQ14_Steady_Saturdays(FlowPattern,d,p)$(Num_Days("Steady","Saturday")gt 0)..   Release("Steady","Saturday",p)=e= Release("Steady","Sunday",p);
 
@@ -267,24 +267,17 @@ DISPLAY FStore,XStore,RStore,Sstore;
 *The unconstrained model doesnot control the unsteady Saturaday and Sunday releases except it only has minimum release constriant. (comment out equation 11 and equation 13 to make the model unconstrianed)
 
 * Dump all input data and results to a GAMS gdx file
-*Execute_Unload "Unconstrained_Model.gdx";
-* Dump the gdx file to an Excel workbook
-*Execute "gdx2xls Unconstrained_Model.gdx"
-
-
-*The constrained model makes off-peak releases during Saturday, Sunday and Weekday equal. Activate equations 11 and 13
-*Dump all input data and results to a GAMS gdx file
 Execute_Unload "Sat-Sun-Weekday_March.gdx";
 * Dump the gdx file to an Excel workbook
 Execute "gdx2xls Sat-Sun-Weekday_March.gdx"
 
-
-*Following code can be used to create gdx and excel output files when On-peak unsteady Saturday release is greater than or equal to (e.g. 11000 cfs) and  On-peak unsteady Sunday release is greater than or equal to (10000 Cfs).
-
-* Dump all input data and results to a GAMS gdx file
-*Execute_Unload "Trial_Model.gdx";
+*The constrained model makes off-peak releases during Saturday, Sunday and Weekday equal. Activate equations 11 and 13
+*Dump all input data and results to a GAMS gdx file
+*Execute_Unload "constrained_March.gdx";
 * Dump the gdx file to an Excel workbook
-*Execute "gdx2xls Trial_Model.gdx"
+*Execute "gdx2xls constrained_March.gdx"
+
+
 
 
 

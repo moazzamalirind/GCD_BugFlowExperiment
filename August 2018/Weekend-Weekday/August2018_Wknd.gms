@@ -51,13 +51,13 @@ Mar_Ramp(Wkn,tot_vol,case,p)                      To save margninal values assoc
 
 initstorage                            Initial reservoir storage on 1st August 2018 (acre-ft)/12092993/
 maxstorage                             Reservoir capacity (acre-ft)/25000000/
-minstorage                             Minimum reservoir storage to maintain hydropower level(acre-ft) /8950000/
+minstorage                             Minimum reservoir storage to maintain hydropower level(acre-ft) /5892163/
 Inflow(d)                              Inflow to reservoir (cfs)
 maxRel                                 Maximum release in a day d at any timeperiod p(cfs)/31500/
 minRel                                 Minimum release in a day d at any timeperiod p(cfs)/8000/
 evap(d)                                Evaporation (ac-ft per day)
 EnergyRate(p)                         Energy prices on weekdays ($ per MWH) /pLow 49.7, pHigh 79.0/
-weekendRate(p)                        Energy prices on weekends ($ per MWH) /pLow 49.7, pHigh 49.7/ 
+weekendRate(p)                        Energy prices on weekends ($ per MWH) /pLow 49.7, pHigh 49.7/
 Duration(p)                           Duration of period (hours)
 Vol_monthlyrelease(tot_vol)           Different Total volumes of water to be released in the month i.e. August 2018 in presented case (acre-ft)/V1 700000,V2 800000,V3 900000,V4 1000000,V5 1100000/
 TotMonth_volume                       To represent total monthly volume (acre-ft)
