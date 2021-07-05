@@ -1,5 +1,5 @@
 _________________________________________________________________________________________________
-Bugs buy water from hydropower producers: modeling, tradeoffs, and multi-objective management
+##Bugs buy water from hydropower producers: modeling, tradeoffs, and multi-objective management
 _________________________________________________________________________________________________
 
 This study is part of my M.S. degree in Civil and Environmental Engineering at Utah State University, Utah, USA.
