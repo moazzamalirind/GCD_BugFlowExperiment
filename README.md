@@ -12,20 +12,20 @@ Advised by: Dr. David E. Rosenberg (http://rosenberg.usu.edu/)
 
 Starting Date: 6/1/2019
 
-Lasted updated: 2/2/2021
+Lasted updated: 7/5/2021
 _________________________________________________________________________________________________________________________________________________________________________________
 
 Project Summary: 
-	This study quantifies tradeoffs between the number of days of steady reservoir release and hydropower objectives. The steady flow day— same releases throughout the day —helps aquatic invertebrates lay and hatch. A Bug Flow Experiment for Glen Canyon Dam where weekend summer releases were kept low and steady has been executed since 2018. The overarching question is: how does hydropower revenue vary as steady flow days expand from weekends to weekdays?
+	This study quantifies tradeoffs between the number of days of steady reservoir release and hydropower objectives. The steady flow day— constanst releases throughout the day —helps aquatic invertebrates lay and hatch eggs. A Bug Flow Experiment for Glen Canyon Dam where weekend summer releases were kept low and steady has been executed since 2018. The overarching question is: how does hydropower revenue vary as steady flow days expand from weekends to weekdays?
     
-	The optimization model with constraint method was used to calculate the tradeoffs. The model runs for one month with two sub-daily timesteps and is subjected to reservoir’s physical and managerial constraints. A non-linear and two linear (Weekend-Weekday and Sun-Sat-Weekday) models are considered. Comparison amongst linear models help understand the importance of Saturday’s flow pattern (Steady or unsteady) for monthly revenue. Finally, tradeoffs of months guides ecosystem manager’s decision of purchasing additional bug flow days and paying off the hydropower revenue lost.
+	The optimization model with constraint method was used to calculate the tradeoffs. The model runs for one month with two sub-daily timesteps and is subjected to reservoir’s physical and managerial constraints. A non-linear and two linear (Weekend-Weekday and Sun-Sat-Weekday) models are developed and tested. Comparison amongst linear models help understand the importance of Saturday’s flow pattern (Steady or unsteady) for monthly revenue. Finally, tradeoffs of months guides ecosystem manager’s decision of purchasing additional bug flow days and paying off the hydropower revenue lost.
     
 _________________________________________________________________________________________________________________________________________________________________________________
 Objectives
 
 •	Quantify tradeoffs between ecosystem (number of steady low flow days) and traditional management (monthly hydropower revenue) objectives
 
-•	Demonstrate how different influencing factors e.g. price differential between on- and off-peaks during weekdays, energy prices between weekdays and weekend, total monthly       release volume etc. controls the cost associated with the Bug Flow Experiment (i.e. shape and position of the tradeoff curves)
+•	Demonstrate how different influencing factors e.g. price differential between on- and off-peaks during weekdays, energy prices between weekdays and weekend, total monthly release volume etc. controls the cost associated with the Bug Flow Experiment (i.e. shape and position of the tradeoff curves)
 
 •	Identify strategies which can utilize the tradeoffs and help ecosystem manager’s decision of purchasing or trading number of steady flow days across the months.
 _________________________________________________________________________________________________________________________________________________________________________________
@@ -39,9 +39,9 @@ Features of the study
 
 4. Tradeoffs for different months help visualize the variation of pareto curves across  months and guide decision of number of steady low flow days during each month.
 
-5.  A good example of trade-off analysis used for multi-objective decision making.
+5. A good example of trade-off analysis used for multi-objective decision making.
 
-6.  The study is replicable and adaptable to other sites of same nature.
+6. The study is replicable and adaptable to other sites and designer flow experimet (e.g. HFEs)
 
 _________________________________________________________________________________________________________________________________________________________________________________
 Model Formulation
