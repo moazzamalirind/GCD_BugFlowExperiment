@@ -84,9 +84,6 @@ PlaneRownr=-1
 [RP:JULY18_SAT_SUN-WEEKDAY_MODEL]
 1=
 
-[RP:JUNE18_SATURDAY_PARTIAL_CON]
-1=
-
 [RP:MARCH2018_WKND]
 1=
 
@@ -114,21 +111,22 @@ PlaneRownr=-1
 [RP:SEPTEMBER18_SAT_SUN-WEEKDAY_MODEL]
 1=
 
+[RP:JUNE18_SATURDAY_PARTIAL_CON]
+1=
+
 [MRUFILES]
-1=E:\Class project\GCD_BugFlowExperiment\September 2018\Saturday_Sunday_Weekday\September18_Sat_Sun-Weekday_Model.gms
-2=E:\Class project\GCD_BugFlowExperiment\September 2018\Weekend-Weekday\September2018_Wknd.gms
-3=E:\Class project\GCD_BugFlowExperiment\October 2018\Saturday_Sunday_Weekday\October18_Sat_Sun-Weekday_Model.gms
-4=E:\Class project\GCD_BugFlowExperiment\October 2018\Weekend_Weekday\October2018_Wknd.gms
-5=E:\Class project\GCD_BugFlowExperiment\May 2018\Saturday_Sunday_Weekday\May18_Sat_Sun-Weekday_Model.gms
-6=E:\Class project\GCD_BugFlowExperiment\May 2018\Weekend-Weekday\May2018_Wknd.gms
-7=E:\Class project\GCD_BugFlowExperiment\March 2018\Saturday-Sunday-Weekday\March18_Sat_Sun-Weekday_Model.gms
-8=E:\Class project\GCD_BugFlowExperiment\March 2018\Weekend-Weekday\March2018_Wknd.gms
-9=E:\Class project\GCD_BugFlowExperiment\July 2018\Saturday_Sunday_Weekday\July18_Sat_Sun-Weekday_Model.gms
+1=E:\Class project\GCD_BugFlowExperiment\June 2018\Saturday Model\June18_Saturday_Partial_con.gms
+2=E:\Class project\GCD_BugFlowExperiment\September 2018\Saturday_Sunday_Weekday\September18_Sat_Sun-Weekday_Model.gms
+3=E:\Class project\GCD_BugFlowExperiment\September 2018\Weekend-Weekday\September2018_Wknd.gms
+4=E:\Class project\GCD_BugFlowExperiment\October 2018\Saturday_Sunday_Weekday\October18_Sat_Sun-Weekday_Model.gms
+5=E:\Class project\GCD_BugFlowExperiment\October 2018\Weekend_Weekday\October2018_Wknd.gms
+6=E:\Class project\GCD_BugFlowExperiment\May 2018\Saturday_Sunday_Weekday\May18_Sat_Sun-Weekday_Model.gms
+7=E:\Class project\GCD_BugFlowExperiment\May 2018\Weekend-Weekday\May2018_Wknd.gms
+8=E:\Class project\GCD_BugFlowExperiment\March 2018\Saturday-Sunday-Weekday\March18_Sat_Sun-Weekday_Model.gms
 
 [OPENWINDOW_1]
-FILE0=E:\Class project\GCD_BugFlowExperiment\June 2018\Saturday Model\June18_Saturday_Partial_con.gms
+FILE0=E:\Class project\GCD_BugFlowExperiment\June 2018\Saturday Model\June18_SaturdayH4.gms
 FILE1=E:\Class project\GCD_BugFlowExperiment\June 2018\Saturday Model\June18_SaturdayH4.gms
-FILE2=E:\Class project\GCD_BugFlowExperiment\June 2018\Saturday Model\June18_SaturdayH4.gms
 MAXIM=0
 TOP=13
 LEFT=65
