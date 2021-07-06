@@ -1,0 +1,10 @@
+## April 2018
+###### Instructions
+
+Two seperate models (Saturday-Sunday-Weekday and Weekend-Weekday) were developed and each of the folders have specific model's code, input, and output files. Besides, the folders also have validation run details (sub_folder named "Validation")
+
+Saturday-Sunday-Weekday folder has GAMS project file (Sat-Sun-Weekday), model code file (Apri18_Sat_Sun_Weekday_Model), and output file (Sat-Sun-Weekday_April). The model code file has detailed comments for explanation and require GAMS licensed version to run.
+Similar folder structure is for Weekend-Weekday folder.
+
+Excel file named "Graphs_Results_both models(April)" has results from both models (sheets with Fstore). Also, comparision of results is available.
+Excel File named "Observed_April2018" has observed data at Glen Canyon dam and in different templates. For basic level data, refer Energy(MWh) worksheet only.
