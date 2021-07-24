@@ -1,5 +1,5 @@
 $ontext
-Title Optimization model for Glen Canyon Dam releases to favor Bugs population. (August 2018)
+Title Optimization model for Glen Canyon Dam releases to favor Bugs population. (August 2018)   Constrained model
 
 ###################################
 Created By: Moazzam Ali Rind

@@ -84,9 +84,6 @@ Order=1,2,3
 Decim=7
 PlaneRownr=-1
 
-[RP:AUGUST18_SAT_SUN-WEEKDAY_MODEL]
-1=
-
 [RP:JUNE18_SATURDAYH4]
 1=
 
@@ -103,9 +100,6 @@ Decim=7
 PlaneRownr=-1
 
 [RP:JUNE18_SATURDAY_PARTIAL_CON]
-1=
-
-[RP:AUGUST18_UNCONSTRAINED]
 1=
 
 [GDXDISP: FlowType Alias 1]
@@ -153,26 +147,33 @@ Order=1,2,4,5,6,3
 Decim=7
 PlaneRownr=-1
 
+[RP:AUGUST18_SAT_SUN-WEEKDAY_MODEL]
+1=
+
 [RP:AUGUST18_PARTIAL]
 1=
 
+[RP:AUGUST18_UNCONSTRAINED]
+1=
+
 [MRUFILES]
-1=E:\Class project\GCD_BugFlowExperiment\August 2018\Saturday_Sunday_Weekday\August18_Partial.lst
-2=E:\Class project\GCD_BugFlowExperiment\June 2018\Saturday Model\June18_Saturday_Partial_con.gms
-3=E:\Class project\GCD_BugFlowExperiment\June 2018\Saturday Model\partialcons_H4.gdx
-4=E:\Class project\GCD_BugFlowExperiment\August 2018\Saturday_Sunday_Weekday\August18_Unconstrained.lst
-5=E:\Class project\GCD_BugFlowExperiment\August 2018\Saturday_Sunday_Weekday\Untitled_1.gms
-6=E:\Class project\GCD_BugFlowExperiment\June 2018\Saturday Model\June18_SaturdayH4.gms
-7=E:\Class project\GCD_BugFlowExperiment\August 2018\Saturday_Sunday_Weekday\August18_Sat_Sun-Weekday_Model.lst
-8=E:\Class project\GCD_BugFlowExperiment\August 2018\Saturday_Sunday_Weekday\August18_Sat_Sun-Weekday_Model.gms
+1=E:\Class project\GCD_BugFlowExperiment\August 2018\Saturday_Sunday_Weekday\August18_Sat_Sun-Weekday_Model.gms
+2=E:\Class project\GCD_BugFlowExperiment\August 2018\Saturday_Sunday_Weekday\August18_Partial.lst
+3=E:\Class project\GCD_BugFlowExperiment\June 2018\Saturday Model\June18_Saturday_Partial_con.gms
+4=E:\Class project\GCD_BugFlowExperiment\June 2018\Saturday Model\partialcons_H4.gdx
+5=E:\Class project\GCD_BugFlowExperiment\August 2018\Saturday_Sunday_Weekday\August18_Unconstrained.lst
+6=E:\Class project\GCD_BugFlowExperiment\August 2018\Saturday_Sunday_Weekday\Untitled_1.gms
+7=E:\Class project\GCD_BugFlowExperiment\June 2018\Saturday Model\June18_SaturdayH4.gms
+8=E:\Class project\GCD_BugFlowExperiment\August 2018\Saturday_Sunday_Weekday\August18_Sat_Sun-Weekday_Model.lst
 
 [OPENWINDOW_1]
-FILE0=E:\Class project\GCD_BugFlowExperiment\August 2018\Saturday_Sunday_Weekday\August18_Partial.gms
-FILE1=E:\Class project\GCD_BugFlowExperiment\August 2018\Saturday_Sunday_Weekday\August18_Unconstrained.gms
-FILE2=E:\Class project\GCD_BugFlowExperiment\August 2018\Saturday_Sunday_Weekday\Sat-Sun-Weekday_August(Partial).gdx
-FILE3=E:\Class project\GCD_BugFlowExperiment\August 2018\Saturday_Sunday_Weekday\Sat-Sun-Weekday_August.gdx
-FILE4=E:\Class project\GCD_BugFlowExperiment\August 2018\Saturday_Sunday_Weekday\Unconstrained_Model.gdx
+FILE0=E:\Class project\GCD_BugFlowExperiment\August 2018\Market-Contract Pricing\August18_Pricing.gms
+FILE1=E:\Class project\GCD_BugFlowExperiment\August 2018\Saturday_Sunday_Weekday\August18_Partial.gms
+FILE2=E:\Class project\GCD_BugFlowExperiment\August 2018\Saturday_Sunday_Weekday\August18_Unconstrained.gms
+FILE3=E:\Class project\GCD_BugFlowExperiment\August 2018\Saturday_Sunday_Weekday\Sat-Sun-Weekday_August(Partial).gdx
+FILE4=E:\Class project\GCD_BugFlowExperiment\August 2018\Saturday_Sunday_Weekday\Sat-Sun-Weekday_August.gdx
 FILE5=E:\Class project\GCD_BugFlowExperiment\August 2018\Saturday_Sunday_Weekday\Unconstrained_Model.gdx
+FILE6=E:\Class project\GCD_BugFlowExperiment\August 2018\Market-Contract Pricing\August18_Pricing.gms
 MAXIM=0
 TOP=3
 LEFT=0

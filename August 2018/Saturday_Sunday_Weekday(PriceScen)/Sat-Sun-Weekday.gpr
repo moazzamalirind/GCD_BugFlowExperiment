@@ -111,33 +111,29 @@ PlaneRownr=-1
 [RP:JUNE18_SATURDAYH4]
 1=
 
-[RP:AUGUST18_PRICE_UNCONSTRAINED]
-1=
-
-[RP:AUGUST18_PRICE_PARTIAL]
-1=
-
-[MRUFILES]
-1=E:\Class project\GCD_BugFlowExperiment\June 2018\Saturday Model\Constrained_H4.gdx
-2=E:\Class project\GCD_BugFlowExperiment\August 2018\Saturday_Sunday_Weekday\August18_Partial.gms
-3=E:\Class project\GCD_BugFlowExperiment\August 2018\Saturday_Sunday_Weekday(PriceScen)\August18_Sat_Sun-Weekday_Price.gms
-4=E:\Class project\GCD_BugFlowExperiment\August 2018\Saturday_Sunday_Weekday(PriceScen)\Sat-Sun-Weekday_AugPrice.gdx
-5=E:\Class project\GCD_BugFlowExperiment\August 2018\Saturday_Sunday_Weekday(PriceScen)\August18_Sat_Sun-Weekday_Price.lst
-6=E:\Class project\GCD_BugFlowExperiment\August 2018\Saturday_Sunday_Weekday(PriceScen)\Untitled_1.gms
-7=E:\Class project\GCD_BugFlowExperiment\June 2018\Linear Sunday-Saturady-Weekday\June18_Sat_Sun-Weekday_Model.gms
-8=E:\Class project\GCD_BugFlowExperiment\June 2018\Linear Weekend-Weekday - Price-Senstivity\June2018_Bugflow.gms
-
 [OPENWINDOW_1]
-FILE0=E:\Class project\GCD_BugFlowExperiment\August 2018\Saturday_Sunday_Weekday(PriceScen)\August18_Price_Partial.gms
-FILE1=E:\Class project\GCD_BugFlowExperiment\August 2018\Saturday_Sunday_Weekday(PriceScen)\August18_Price_Partial.lst
-FILE2=E:\Class project\GCD_BugFlowExperiment\August 2018\Saturday_Sunday_Weekday(PriceScen)\August18_Price_Unconstrained.gms
-FILE3=E:\Class project\GCD_BugFlowExperiment\August 2018\Saturday_Sunday_Weekday(PriceScen)\August18_Price_Unconstrained.lst
-FILE4=E:\Class project\GCD_BugFlowExperiment\August 2018\Saturday_Sunday_Weekday(PriceScen)\Partial_AugPrice.gdx
-FILE5=E:\Class project\GCD_BugFlowExperiment\August 2018\Saturday_Sunday_Weekday(PriceScen)\Unconstrained_AugPrice.gdx
-FILE6=E:\Class project\GCD_BugFlowExperiment\June 2018\Saturday Model\June18_SaturdayH4.gms
-FILE7=E:\Class project\GCD_BugFlowExperiment\August 2018\Saturday_Sunday_Weekday(PriceScen)\Partial_AugPrice.gdx
 MAXIM=0
 TOP=3
 LEFT=0
 HEIGHT=673
 WIDTH=1119
+
+[RP:AUGUST18_PRICE_PARTIAL]
+1=
+
+[RP:AUGUST18_PRICE_UNCONSTRAINED]
+1=
+
+[RP:AUGUST2018_WKND_PRICE]
+1=
+
+[MRUFILES]
+1=E:\Class project\GCD_BugFlowExperiment\August 2018\Weekend-Weekday_PriceScen\August2018_Wknd_price.gms
+2=E:\Class project\GCD_BugFlowExperiment\August 2018\Saturday_Sunday_Weekday(PriceScen)\August18_Price_Unconstrained.gms
+3=E:\Class project\GCD_BugFlowExperiment\June 2018\Saturday Model\June18_SaturdayH4.gms
+4=E:\Class project\GCD_BugFlowExperiment\August 2018\Saturday_Sunday_Weekday(PriceScen)\Unconstrained_AugPrice.gdx
+5=E:\Class project\GCD_BugFlowExperiment\August 2018\Saturday_Sunday_Weekday(PriceScen)\Partial_AugPrice.gdx
+6=E:\Class project\GCD_BugFlowExperiment\August 2018\Saturday_Sunday_Weekday(PriceScen)\August18_Price_Unconstrained.lst
+7=E:\Class project\GCD_BugFlowExperiment\August 2018\Saturday_Sunday_Weekday(PriceScen)\August18_Price_Partial.lst
+8=E:\Class project\GCD_BugFlowExperiment\August 2018\Saturday_Sunday_Weekday(PriceScen)\August18_Price_Partial.gms
+9=E:\Class project\GCD_BugFlowExperiment\June 2018\Saturday Model\Constrained_H4.gdx

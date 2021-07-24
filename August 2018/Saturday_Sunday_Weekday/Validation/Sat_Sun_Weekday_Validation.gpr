@@ -120,30 +120,6 @@ Order=
 Decim=7
 PlaneRownr=-1
 
-[MRUFILES]
-1=E:\Class project\GCD_BugFlowExperiment\August 2018\Weekend-Weekday\Validation\August2018_validation(2periods).gms
-2=E:\Class project\GCD_BugFlowExperiment\July 2018\Weekend-Weekday Model\Validation\Valid_July2018(Hourly).gdx
-3=E:\Class project\GCD_BugFlowExperiment\July 2018\Saturday_Sunday_Weekday\Validation\Valid_SatModel_July.gdx
-4=E:\Class project\GCD_BugFlowExperiment\July 2018\Saturday_Sunday_Weekday\Validation\July18_Sat_Validation.lst
-5=E:\Class project\GCD_BugFlowExperiment\July 2018\Saturday_Sunday_Weekday\Validation\July18_Sat_Validation.gms
-6=E:\Class project\GCD_BugFlowExperiment\May 2018\Weekend-Weekday\Validation\Valid_May2018(Hourly).gdx
-7=E:\Class project\GCD_BugFlowExperiment\May 2018\Saturday_Sunday_Weekday\Validation\Valid_SatModel_May.gdx
-8=E:\Class project\GCD_BugFlowExperiment\May 2018\Saturday_Sunday_Weekday\Validation\May18_Sat_Validation.lst
-9=E:\Class project\GCD_BugFlowExperiment\May 2018\Saturday_Sunday_Weekday\Validation\May18_Sat_Validation.gms
-
-[OPENWINDOW_1]
-FILE0=E:\Class project\GCD_BugFlowExperiment\August 2018\Saturday_Sunday_Weekday\Validation\August18_Sat_Validation.gms
-FILE1=E:\Class project\GCD_BugFlowExperiment\August 2018\Saturday_Sunday_Weekday\Validation\August18_Sat_Validation.lst
-FILE2=E:\Class project\GCD_BugFlowExperiment\August 2018\Saturday_Sunday_Weekday\Validation\Valid_SatModel_August.gdx
-FILE3=E:\Class project\GCD_BugFlowExperiment\August 2018\Weekend-Weekday\Validation\Valid_August2018(2Periods).gdx
-FILE4=E:\Class project\GCD_BugFlowExperiment\August 2018\Weekend-Weekday\Validation\Valid_August2018(Hourly).gdx
-FILE5=E:\Class project\GCD_BugFlowExperiment\August 2018\Weekend-Weekday\Validation\Valid_August2018(2Periods).gdx
-MAXIM=0
-TOP=0
-LEFT=50
-HEIGHT=691
-WIDTH=1062
-
 [GDXDISP: Released_vol Var 0]
 PlaneDim=0
 RowDim=0
@@ -170,3 +146,27 @@ SqTrail0=0
 Order=1
 Decim=7
 PlaneRownr=-1
+
+[MRUFILES]
+1=E:\Class project\GCD_BugFlowExperiment\August 2018\Weekend-Weekday\Validation\August2018_validation(2periods).gms
+2=E:\Class project\GCD_BugFlowExperiment\July 2018\Weekend-Weekday Model\Validation\Valid_July2018(Hourly).gdx
+3=E:\Class project\GCD_BugFlowExperiment\July 2018\Saturday_Sunday_Weekday\Validation\Valid_SatModel_July.gdx
+4=E:\Class project\GCD_BugFlowExperiment\July 2018\Saturday_Sunday_Weekday\Validation\July18_Sat_Validation.lst
+5=E:\Class project\GCD_BugFlowExperiment\July 2018\Saturday_Sunday_Weekday\Validation\July18_Sat_Validation.gms
+6=E:\Class project\GCD_BugFlowExperiment\May 2018\Weekend-Weekday\Validation\Valid_May2018(Hourly).gdx
+7=E:\Class project\GCD_BugFlowExperiment\May 2018\Saturday_Sunday_Weekday\Validation\Valid_SatModel_May.gdx
+8=E:\Class project\GCD_BugFlowExperiment\May 2018\Saturday_Sunday_Weekday\Validation\May18_Sat_Validation.lst
+9=E:\Class project\GCD_BugFlowExperiment\May 2018\Saturday_Sunday_Weekday\Validation\May18_Sat_Validation.gms
+
+[OPENWINDOW_1]
+FILE0=E:\Class project\GCD_BugFlowExperiment\August 2018\Saturday_Sunday_Weekday\Validation\August18_Sat_Validation.gms
+FILE1=E:\Class project\GCD_BugFlowExperiment\August 2018\Saturday_Sunday_Weekday\Validation\August18_Sat_Validation.lst
+FILE2=E:\Class project\GCD_BugFlowExperiment\August 2018\Saturday_Sunday_Weekday\Validation\Valid_SatModel_August.gdx
+FILE3=E:\Class project\GCD_BugFlowExperiment\August 2018\Weekend-Weekday\Validation\Valid_August2018(2Periods).gdx
+FILE4=E:\Class project\GCD_BugFlowExperiment\August 2018\Weekend-Weekday\Validation\Valid_August2018(Hourly).gdx
+FILE5=E:\Class project\GCD_BugFlowExperiment\August 2018\Saturday_Sunday_Weekday\Validation\August18_Sat_Validation.gms
+MAXIM=0
+TOP=0
+LEFT=50
+HEIGHT=691
+WIDTH=1062
