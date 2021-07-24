@@ -158,6 +158,8 @@ EQ4_MaxR(FlowPattern,d,p)                        Max Release for any day type du
 EQ5_MinR(FlowPattern,d,p)                        Min Release for any day type with flows during any period p but it will not work when NumDays will be zero (cfs)
 EQ6_ZeroFlowDays(FlowPattern,d,p)                No release for any day type during any period p when Num_Days equal to zero(cfs)
 EQ7_Rel_Range(FlowPattern,d)                     Constraining the daily release range but it will not work when NumDays will be zero(cfs per day)
+EQ7a_AlternativeDays_Relrange(FlowPattern,d)     Constraining release change between on-peak of current day and off-peak of next day to be less than or equal to 8000 (cfs)
+
 EQ8_Monthtlyrel                                  Constraining total monthly release volume (ac-ft)
 EQ9_RelVolume                                    Total volume from different types of day in the month (ac-ft)
 
@@ -198,10 +200,10 @@ EQ26a_Unsteady_SaturdayRev_Offpeak               Revenue generated during off-pe
 EQ27_Steady_SaturdayRev_Onpeak                   Revenue generated during on-peak Steady Saturday ($)
 EQ28_Steady_SaturdayRev_Offpeak                  Revenue generated during off-peak Steady Saturday ($)
 
-EQ29_Unsteady_SundayRev_Onpeak                   Revenue generated during on-peak unsteady Sunday ($).For scenarios with no steady Sunday
+EQ29_Unsteady_SundayRev_Onpeak                    Revenue generated during on-peak unsteady Sunday ($).For scenarios with no steady Sunday
 EQ29a_Unsteady_SundayRev_Onpeak                   Revenue generated during on-peak unsteady Sunday ($).For scenarios with steady Sundays.
 
-EQ30_Unsteady_SundayRev_Offpeak                  Revenue generated during off-peak unsteady Sunday ($).For scenarios with no steady Sunday
+EQ30_Unsteady_SundayRev_Offpeak                   Revenue generated during off-peak unsteady Sunday ($).For scenarios with no steady Sunday
 EQ30a_Unsteady_SundayRev_Offpeak                  Revenue generated during off-peak unsteady Sunday ($).For scenarios with steady Sundays.
 
 EQ31_Steady_SundayRev_Onpeak                     Revenue generated during on-peak Steady Sunday ($)
@@ -228,6 +230,7 @@ EQ5_MinR(FlowPattern,d,p)$(Num_Days(FlowPattern,d) gt 0)..                     R
 EQ6_ZeroFlowDays(FlowPattern,d,p)$(Num_Days(FlowPattern,d) eq 0)..             Release(FlowPattern,d,p)=e=0;
 
 EQ7_Rel_Range(FlowPattern,d)$(Num_Days(FlowPattern,d) gt 0)..                  Release(FlowPattern,d,"pHigh")- Release(FlowPattern,d,"pLow")=l=Daily_RelRange;
+EQ7a_AlternativeDays_Relrange(FlowPattern,d)..                                  Release(Flowpattern,d,"pHigh")- Release(FlowPattern,d+1,"pLow")=l=Daily_RelRange;
 
 *EQ8_  constraining the overall monthly released volume..
 EQ8_Monthtlyrel..                                                              TotMonth_volume=e= Released_vol;
@@ -284,7 +287,7 @@ EQ25a_Unsteady_SaturdayRev_Onpeak$(Num_Days("Steady","Saturday") gt 0)..        
 EQ26_Unsteady_SaturdayRev_Offpeak$(Num_Days("Steady","Saturday") eq 0)..               Revenue_offpeak_UnsteadySat=e= { Release("Unsteady","Saturday","pLow")*Duration("pLow")*0.03715* Energy_Price("Saturday","Contract","pLow")} * Num_Days("Unsteady","Saturday");
 EQ26a_Unsteady_SaturdayRev_Offpeak$(Num_Days("Steady","Saturday") gt 0)..              Revenue_offpeak_UnsteadySat=e= [{ Release("Unsteady","Saturday","pLow")*Duration("pLow")*0.03715* Energy_Price("Saturday","Contract","pLow")} - {(Nobugflow_Rel("Saturday","pLow")-Release("Unsteady","Saturday","pLow"))*0.03715*Duration("pLow")*Energy_Price("Saturday","Market","pLow")}]* Num_Days("Unsteady","Saturday");
 
-EQ27_Steady_SaturdayRev_Onpeak..                  Revenue_onpeak_SteadySat =e=  [{ Release("Steady","Saturday","pHigh")*Duration("pHigh")*0.03715* Energy_Price("Weekday","Contract","pHigh")} - {(Nobugflow_Rel("Saturday","pHigh")- Release("Steady","Saturday","pHigh"))*0.03715*Duration("pHigh")*Energy_Price("Saturday","Market","pHigh")}]* Num_Days("Steady","Saturday");
+EQ27_Steady_SaturdayRev_Onpeak..                  Revenue_onpeak_SteadySat =e=  [{ Release("Steady","Saturday","pHigh")*Duration("pHigh")*0.03715* Energy_Price("Saturday","Contract","pHigh")} - {(Nobugflow_Rel("Saturday","pHigh")- Release("Steady","Saturday","pHigh"))*0.03715*Duration("pHigh")*Energy_Price("Saturday","Market","pHigh")}]* Num_Days("Steady","Saturday");
 EQ28_Steady_SaturdayRev_Offpeak..                 Revenue_offpeak_SteadySat =e= [{ Nobugflow_Rel("Saturday","pLow")*Duration("pLow")*0.03715* Energy_Price("Saturday","Contract","pLow")} + {(Release("Steady","Saturday","pLow")- Nobugflow_Rel("Saturday","pLow"))*0.03715*Duration("pLow")*Energy_Price("Saturday","Market","pLow")}]* Num_Days("Steady","Saturday");
 
 
@@ -294,7 +297,7 @@ EQ29a_Unsteady_SundayRev_Onpeak$(Num_Days("Steady","Sunday") gt 0)..            
 EQ30_Unsteady_SundayRev_Offpeak$(Num_Days("Steady","Sunday") eq 0)..               Revenue_offpeak_UnsteadySun=e= {Release("Unsteady","Sunday","pLow")*Duration("pLow")*0.03715* Energy_Price("Sunday","Contract","pLow")}* Num_Days("Unsteady","Sunday");
 EQ30a_Unsteady_SundayRev_Offpeak$(Num_Days("Steady","Sunday") gt 0)..               Revenue_offpeak_UnsteadySun=e= [{ Release("Unsteady","Sunday","pLow")*Duration("pLow")*0.03715* Energy_Price("Sunday","Contract","pLow")} - {(Nobugflow_Rel("Sunday","pLow")-Release("Unsteady","Sunday","pLow"))*0.03715*Duration("pLow")*Energy_Price("Sunday","Market","pLow")}]* Num_Days("Unsteady","Sunday");
 
-EQ31_Steady_SundayRev_Onpeak..                  Revenue_onpeak_SteadySun =e=  [{ Release("Steady","Sunday","pHigh")*Duration("pHigh")*0.03715* Energy_Price("Weekday","Contract","pHigh")} - {(Nobugflow_Rel("Sunday","pHigh")- Release("Steady","Sunday","pHigh"))*0.03715*Duration("pHigh")*Energy_Price("Sunday","Market","pHigh")}]* Num_Days("Steady","Sunday");
+EQ31_Steady_SundayRev_Onpeak..                  Revenue_onpeak_SteadySun =e=  [{ Release("Steady","Sunday","pHigh")*Duration("pHigh")*0.03715* Energy_Price("Sunday","Contract","pHigh")} - {(Nobugflow_Rel("Sunday","pHigh")- Release("Steady","Sunday","pHigh"))*0.03715*Duration("pHigh")*Energy_Price("Sunday","Market","pHigh")}]* Num_Days("Steady","Sunday");
 EQ32_Steady_SundayRev_Offpeak ..                Revenue_offpeak_SteadySun =e= [{ Nobugflow_Rel("Sunday","pLow")*Duration("pLow")*0.03715* Energy_Price("Sunday","Contract","pLow")} + {(Release("Steady","Sunday","pLow")- Nobugflow_Rel("Sunday","pLow"))*0.03715*Duration("pLow")*Energy_Price("Sunday","Market","pLow")}]* Num_Days("Steady","Sunday");
 
 
@@ -359,15 +362,4 @@ DISPLAY FStore,XStore,RStore,Sstore;
 Execute_Unload "Pricing_Model.gdx";
 * Dump the gdx file to an Excel workbook
 Execute "gdx2xls Pricing_Model.gdx"
-
-
-
-
-
-
-
-
-
-
-
 
