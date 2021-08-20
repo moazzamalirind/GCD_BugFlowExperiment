@@ -6,7 +6,7 @@ Created By: Moazzam Ali Rind
 Email: moazzamalirind@gmail.com
 
 Created : 12/16/2020
-Last updated: 5/30/2021
+Last updated: 8/3/2021
 
 Description: This model was developed to qaunitfy the trade-off between number of steady low flow days and hydropower revenue objectives.
             The model has 2 periods per day (i.e. pHigh and plow), three distinct day types(Sunday,Saturday, and Weekday) and runs for a month. we have used linear programming to solve the problem.
@@ -90,12 +90,20 @@ Steady. Saturday          0       0        0       0      2        4      4     
 Unsteady. Saturday        4       4        4       4      2        0      0       0       0       0         0         0
 Steady. Weekday           0       0        0       0      0        0      1       2       7       12        17        23
 Unsteady. Weekday         23      23       23      23     23       23     22      21      16      11        6         0     ;
-
+*$ontext
 Table Energy_Rate(Days,p)"Price of MegaWatt hour during different days and within period p ($ per MWh)"
               pLow        pHigh
 Sunday       49.70        49.70
 Saturday     49.70        64.35
 Weekday      49.70        79.00  ;
+*$offtext
+$ontext
+Table Energy_Rate(Days,p)"Price of MegaWatt hour during different days and within period p ($ per MWh)"
+              pLow        pHigh
+Sunday       49.70        49.70
+Saturday     49.70        64.35
+Weekday      49.70        49.70  ;
+$offtext
 *===============================================
 SCALAR
 Convert                        Conversion factor from cfs to ac-ft per hour (0.0014*60)/0.083/
@@ -130,6 +138,12 @@ EQ4_MaxR(FlowPattern,d,p)                        Max Release for any day type du
 EQ5_MinR(FlowPattern,d,p)                        Min Release for any day type with flows during any period p but it will not work when NumDays will be zero (cfs)
 EQ6_ZeroFlowDays(FlowPattern,d,p)                No release for any day type during any period p when Num_Days equal to zero(cfs)
 EQ7_Rel_Range(FlowPattern,d)                     Constraining the daily release range but it will not work when NumDays will be zero(cfs per day)
+
+EQ7a_AlternativeDays_Relrange                    Constraining release change between on-peak of current day and off-peak of next day to be less than or equal to 8000 (cfs)
+EQ7b_AlternativeDays_Relrange                    Constraining release change between on-peak of current day and off-peak of next day to be less than or equal to 8000 (cfs)
+EQ7c_AlternativeDays_Relrange                    Constraining release change between on-peak of current day and off-peak of next day to be less than or equal to 8000 (cfs)
+
+
 EQ8_Monthtlyrel                                  Constraining total monthly release volume (ac-ft)
 EQ9_RelVolume                                    Total volume from different types of day in the month (ac-ft)
 
@@ -172,6 +186,10 @@ EQ5_MinR(FlowPattern,d,p)$(Num_Days(FlowPattern,d) gt 0)..                     R
 EQ6_ZeroFlowDays(FlowPattern,d,p)$(Num_Days(FlowPattern,d) eq 0)..             Release(FlowPattern,d,p)=e=0;
 
 EQ7_Rel_Range(FlowPattern,d)$(Num_Days(FlowPattern,d) gt 0)..                  Release(FlowPattern,d,"pHigh")- Release(FlowPattern,d,"pLow")=l=Daily_RelRange;
+
+EQ7a_AlternativeDays_Relrange$(Num_days("Unsteady","Sunday") gt 0)..          Release("Unsteady","Saturday","pHigh")- Release("Unsteady","Sunday","pLow")=l=Daily_RelRange;
+EQ7b_AlternativeDays_Relrange$(Num_days("Unsteady","Saturday") gt 0) ..       Release("Unsteady","Weekday","pHigh")- Release("Unsteady","Saturday","pLow")=l=Daily_RelRange;
+EQ7c_AlternativeDays_Relrange$(Num_days("Unsteady","Sunday") gt 0)..          Release("Unsteady","Sunday","pHigh")- Release("Unsteady","Weekday","pLow")=l=Daily_RelRange;
 
 *EQ8_  constraining the overall monthly released volume..
 EQ8_Monthtlyrel..                                                              TotMonth_volume=e= Released_vol;

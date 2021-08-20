@@ -1,0 +1,37 @@
+[PROJECT]
+
+[RP:SEPTEMBER18_SAT_SUN-WEEKDAY_MODEL]
+1=
+
+[RP:SEPT18_PRICE_CONTRACT]
+1=
+
+[GDXDISP: Convert Par 0]
+PlaneDim=0
+RowDim=0
+Squeeze=1
+SqTrail0=0
+Order=
+Decim=7
+PlaneRownr=-1
+
+[OPENWINDOW_1]
+FILE0=E:\Class project\GCD_BugFlowExperiment\September 2018\Updated_Sat-Sun-Weekday\Sept_ContractPrice.gdx
+FILE1=E:\Class project\GCD_BugFlowExperiment\September 2018\Updated_Sat-Sun-Weekday\Sept18_Price_Contract.gms
+FILE2=E:\Class project\GCD_BugFlowExperiment\September 2018\Updated_Sat-Sun-Weekday\Sept18_Price_Contract.lst
+FILE3=E:\Class project\GCD_BugFlowExperiment\September 2018\Updated_Sat-Sun-Weekday\September18_Sat_Sun-Weekday_Model.gms
+FILE4=E:\Class project\GCD_BugFlowExperiment\September 2018\Updated_Sat-Sun-Weekday\Sept_ContractPrice.gdx
+MAXIM=0
+TOP=2
+LEFT=3
+HEIGHT=695
+WIDTH=1224
+
+[GDXDISP: FStore Par 3]
+PlaneDim=0
+RowDim=2
+Squeeze=1
+SqTrail0=0
+Order=1,2,3
+Decim=7
+PlaneRownr=-1

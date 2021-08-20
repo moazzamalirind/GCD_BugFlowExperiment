@@ -127,7 +127,6 @@ ObjectiveVal                   Objective functions value ($)
 storage                        Reservoir storage at the end of the month (acre-ft)
 Released_vol                   Total water released during the month (ac-ft)
 
-*$ontext
 Revenue_zeroSteadyFlow         Revenue genereated from all flowpatterns daytypes and periods when zero number of steady low flow day($)
 
 Positive Variables
@@ -206,9 +205,9 @@ EQ6_ZeroFlowDays(FlowPattern,d,p)$(Num_Days(FlowPattern,d) eq 0)..             R
 
 EQ7_Rel_Range(FlowPattern,d)$(Num_Days(FlowPattern,d) gt 0)..                  Release(FlowPattern,d,"pHigh")- Release(FlowPattern,d,"pLow")=l=Daily_RelRange;
 
-EQ7a_AlternativeDays_Relrange..                                                Release("HydroPeak","Sunday","pHigh")- Release("HydroPeak","Saturday","pLow")=l=Daily_RelRange;
-EQ7b_AlternativeDays_Relrange..                                                Release("HydroPeak","Saturday","pHigh")- Release("HydroPeak","Weekday","pLow")=l=Daily_RelRange;
-EQ7c_AlternativeDays_Relrange..                                                Release("HydroPeak","Sunday","pHigh")- Release("HydroPeak","Weekday","pLow")=l=Daily_RelRange;
+EQ7a_AlternativeDays_Relrange$(Num_days("HydroPeak","Sunday") gt 0)..           Release("HydroPeak","Saturday","pHigh")- Release("HydroPeak","Sunday","pLow")=l=Daily_RelRange;
+EQ7b_AlternativeDays_Relrange$(Num_days("HydroPeak","Saturday") gt 0) ..        Release("HydroPeak","Weekday","pHigh")- Release("HydroPeak","Saturday","pLow")=l=Daily_RelRange;
+EQ7c_AlternativeDays_Relrange..                                                 Release("HydroPeak","Sunday","pHigh")- Release("HydroPeak","Weekday","pLow")=l=Daily_RelRange;
 
 
 *EQ8_  constraining the overall monthly released volume..
@@ -251,7 +250,7 @@ EQ21a_Unsteady_WeekdayRev(FlowPattern,d,p)$(Num_Days("Steady","Sunday") gt 0).. 
 *=====================================================================================
 *possibility no:1
 * I am assuming that on-peak is less than no bugflow and offpeak greater than no bugflow.
-$ontext
+*$ontext
 EQ21b_Unsteady_SaturdayRev_onpeak(FlowPattern,d,p)$(Num_Days("Steady","Sunday") gt 0)..            Revenue("HydroPeak","Saturday","pHigh") =e=  [{ Release("HydroPeak","Saturday","pHigh")* Energy_Price("Saturday","Contract","pHigh")-(Nobugflow_Rel("Saturday","pHigh")-Release("HydroPeak","Saturday","pHigh"))*Energy_Price("Saturday","Market","pHigh")}*Duration("pHigh")*0.03715]* Num_Days("HydroPeak","Saturday");
 
 EQ21c_Unsteady_SaturdayRev_offpeak(FlowPattern,d,p)$(Num_Days("Steady","Sunday") gt 0)..           Revenue("HydroPeak","Saturday","pLow")=e=  [{ Nobugflow_Rel("Saturday","pLow")* Energy_Price("Saturday","Contract","pLow")+(Release("HydroPeak","Saturday","pLow")- Nobugflow_Rel("Saturday","pLow"))*Energy_Price("Saturday","Market","pLow")}*Duration("pLow")*0.03715]* Num_Days("HydroPeak","Saturday");
@@ -259,13 +258,13 @@ EQ21c_Unsteady_SaturdayRev_offpeak(FlowPattern,d,p)$(Num_Days("Steady","Sunday")
 EQ21d_Unsteady_SundayRev_onpeak(FlowPattern,d,p)$(Num_Days("Steady","Sunday") gt 0)..             Revenue("HydroPeak","Sunday","pHigh")=e=  [{ Release("HydroPeak","Sunday","pHigh")* Energy_Price("Sunday","Contract","pHigh")-(Nobugflow_Rel("Sunday","pHigh")-Release("HydroPeak","Sunday","pHigh"))*Energy_Price("Sunday","Market","pHigh")}*Duration("pHigh")*0.03715]* Num_Days("HydroPeak","Sunday");
 
 EQ21e_Unsteady_SundayRev_offpeak(FlowPattern,d,p)$(Num_Days("Steady","Sunday") gt 0)..             Revenue("HydroPeak","Sunday","pLow")=e=  [{ Nobugflow_Rel("Sunday","pLow")* Energy_Price("Sunday","Contract","pLow")+(Release("HydroPeak","Sunday","pLow")- Nobugflow_Rel("Sunday","pLow"))*Energy_Price("Sunday","Market","pLow")}*Duration("pLow")*0.03715]* Num_Days("HydroPeak","Sunday");
-$offtext
+*$offtext
 *=====================================================================================
 
 *=====================================================================================
 *possibility no:2
 * I am assuming that on-peak is greater than no bug flow  and offpeak less than no bugflow.
-*$ontext
+$ontext
 EQ21b_Unsteady_SaturdayRev_onpeak(FlowPattern,d,p)$(Num_Days("Steady","Sunday") gt 0)..            Revenue("HydroPeak","Saturday","pHigh") =e=  [{ Nobugflow_Rel("Saturday","pHigh") * Energy_Price("Saturday","Contract","pHigh")+(Release("HydroPeak","Saturday","pHigh")- Nobugflow_Rel("Saturday","pHigh"))*Energy_Price("Saturday","Market","pHigh")}*Duration("pHigh")*0.03715]* Num_Days("HydroPeak","Saturday");
 
 EQ21c_Unsteady_SaturdayRev_offpeak(FlowPattern,d,p)$(Num_Days("Steady","Sunday") gt 0)..           Revenue("HydroPeak","Saturday","pLow")=e=  [{ Release("HydroPeak","Saturday","pLow")* Energy_Price("Saturday","Contract","pLow")-(Nobugflow_Rel("Saturday","pLow")-Release("HydroPeak","Saturday","pLow"))*Energy_Price("Saturday","Market","pLow")}*Duration("pLow")*0.03715]* Num_Days("HydroPeak","Saturday");
@@ -273,7 +272,7 @@ EQ21c_Unsteady_SaturdayRev_offpeak(FlowPattern,d,p)$(Num_Days("Steady","Sunday")
 EQ21d_Unsteady_SundayRev_onpeak(FlowPattern,d,p)$(Num_Days("Steady","Sunday") gt 0)..             Revenue("HydroPeak","Sunday","pHigh")=e=  [{ Nobugflow_Rel("Sunday","pHigh")* Energy_Price("Sunday","Contract","pHigh")+(Release("HydroPeak","Sunday","pHigh")- Nobugflow_Rel("Sunday","pHigh"))*Energy_Price("Sunday","Market","pHigh")}*Duration("pHigh")*0.03715]* Num_Days("HydroPeak","Sunday");
 
 EQ21e_Unsteady_SundayRev_offpeak(FlowPattern,d,p)$(Num_Days("Steady","Sunday") gt 0)..             Revenue("HydroPeak","Sunday","pLow")=e=  [{ Release("HydroPeak","Sunday","pLow")* Energy_Price("Sunday","Contract","pLow")-(Nobugflow_Rel("Sunday","pLow")-Release("HydroPeak","Sunday","pLow"))*Energy_Price("Sunday","Market","pLow")}*Duration("pLow")*0.03715]* Num_Days("HydroPeak","Sunday");
-*$offtext
+$offtext
 *=====================================================================================
 
 EQ21f_Steadydays_Onpeak(FlowPattern,d,p)$(Num_Days("Steady","Sunday") gt 0)..                                                                 Revenue("Steady",d,"pHigh")=e=   [{ Release("Steady",d,"pHigh")* Energy_Price(d,"Contract","pHigh")-(Nobugflow_Rel(d,"pHigh")-Release("Steady",d,"pHigh"))*Energy_Price(d,"Market","pHigh")}*Duration("pHigh")*0.03715]* Num_Days("Steady",d);
@@ -389,12 +388,12 @@ DISPLAY FStore,XStore,RStore,Sstore;
 *The unconstrained model doesnot control the unsteady Saturaday and Sunday releases except it only has minimum release constriant. (comment out equation 11 and equation 13 to make  Maximum revenue/Saturday-Sunday-Weekday model)
 
 * Dump all input data and results to a GAMS gdx file
-*Execute_Unload "Pricing_Model.gdx";
+Execute_Unload "Pricing_Model.gdx";
 * Dump the gdx file to an Excel workbook
-*Execute "gdx2xls Pricing_Model.gdx"
+Execute "gdx2xls Pricing_Model.gdx"
 
 * Dump all input data and results to a GAMS gdx file
-Execute_Unload "Pricing_Model_poss2.gdx";
+*Execute_Unload "Pricing_Model_poss2.gdx";
 * Dump the gdx file to an Excel workbook
-Execute "gdx2xls Pricing_Model_poss2.gdx"
+*Execute "gdx2xls Pricing_Model_poss2.gdx"
 

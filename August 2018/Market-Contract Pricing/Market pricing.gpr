@@ -66,24 +66,171 @@ Order=
 Decim=7
 PlaneRownr=-1
 
-[RP:AUGUST18_UNCONSTRAINED]
-1=
+[SOLVERS]
+CNS=CONOPT
+DNLP=CONOPT
+LP=CONOPT
+NLP=CONOPT
+QCP=CONOPT
+RMINLP=CONOPT
+RMIP=CONOPT
+RMIQCP=CONOPT
+
+[GDXDISP: Revenue_zeroSteadyFlow Var 0]
+PlaneDim=0
+RowDim=0
+Squeeze=1
+SqTrail0=0
+Order=1
+Decim=7
+PlaneRownr=-1
+
+[GDXDISP: offpeak_Saturady Par 3]
+PlaneDim=0
+RowDim=3
+Squeeze=1
+SqTrail0=0
+Order=1,2,3
+Decim=7
+PlaneRownr=-1
+
+[GDXDISP: Offpeak_Steady Par 3]
+PlaneDim=0
+RowDim=3
+Squeeze=1
+SqTrail0=0
+Order=1,2,3
+Decim=7
+PlaneRownr=-1
+
+[GDXDISP: offpeak_Sunday Par 3]
+PlaneDim=0
+RowDim=3
+Squeeze=1
+SqTrail0=0
+Order=1,2,3
+Decim=7
+PlaneRownr=-1
+
+[GDXDISP: onpeak_Saturady Par 3]
+PlaneDim=0
+RowDim=3
+Squeeze=1
+SqTrail0=0
+Order=1,2,3
+Decim=7
+PlaneRownr=-1
+
+[GDXDISP: Onpeak_Steady Par 3]
+PlaneDim=0
+RowDim=3
+Squeeze=1
+SqTrail0=0
+Order=1,2,3
+Decim=7
+PlaneRownr=-1
+
+[GDXDISP: onpeak_Sunday Par 3]
+PlaneDim=0
+RowDim=3
+Squeeze=1
+SqTrail0=0
+Order=1,2,3
+Decim=7
+PlaneRownr=-1
+
+[GDXDISP: Rev Par 6]
+PlaneDim=0
+RowDim=5
+Squeeze=1
+SqTrail0=0
+Order=1,2,4,5,6,3
+Decim=7
+PlaneRownr=-1
+
+[GDXDISP: XXXXXXXXXXX Equ 3]
+PlaneDim=0
+RowDim=3
+Squeeze=1
+SqTrail0=0
+Order=1,2,3,4
+Decim=7
+PlaneRownr=-1
+
+[GDXDISP: Sstore Par 3]
+PlaneDim=0
+RowDim=3
+Squeeze=1
+SqTrail0=0
+Order=1,2,3
+Decim=7
+PlaneRownr=-1
 
 [RP:AUGUST18_PRICING]
 1=
 
+[GDXDISP: Nobugflow_Rel Par 2]
+PlaneDim=0
+RowDim=2
+Squeeze=1
+SqTrail0=0
+Order=1,2
+Decim=7
+PlaneRownr=-1
+
+[GDXDISP: Inflow Par 0]
+PlaneDim=0
+RowDim=0
+Squeeze=1
+SqTrail0=0
+Order=
+Decim=7
+PlaneRownr=-1
+
+[RP:AUGUST18_PRICING_UPDATED]
+1=
+
+[GDXDISP: modpar Set 1]
+PlaneDim=0
+RowDim=1
+Squeeze=1
+SqTrail0=0
+Order=1
+Decim=7
+PlaneRownr=-1
+
+[RP:AUGUST18_PARTIAL]
+1=
+
+[RP:UNTITLED_1]
+1=
+
+[RP:AUGUST18_PRICING_UPDATED3]
+1=
+
+[RP:AUGUST18_UNCONSTRAINED]
+1=
+
+[RP:AUGUST18_MARKET PRICING]
+1=
+
 [MRUFILES]
-1=E:\Class project\GCD_BugFlowExperiment\August 2018\Saturday_Sunday_Weekday\August18_Sat_Sun-Weekday_Model.gms
+1=E:\Class project\GCD_BugFlowExperiment\August 2018\Saturday_Sunday_Weekday\Unconstrained_Model.gdx
+2=E:\Class project\GCD_BugFlowExperiment\August 2018\Saturday_Sunday_Weekday\August18_Unconstrained.gms
+3=E:\Class project\GCD_BugFlowExperiment\August 2018\Market-Contract Pricing\Pricing_Model_poss3.gdx
+4=E:\Class project\GCD_BugFlowExperiment\August 2018\Market-Contract Pricing\August18_Unconstrained.lst
+5=E:\Class project\GCD_BugFlowExperiment\August 2018\Market-Contract Pricing\August18_Pricing_Updated3.lst
+6=E:\Class project\GCD_BugFlowExperiment\August 2018\Market-Contract Pricing\August18_Pricing_Updated3.gms
+7=E:\Class project\GCD_BugFlowExperiment\August 2018\Market-Contract Pricing\Untitled_1.gms
 
 [OPENWINDOW_1]
-FILE0=E:\Class project\GCD_BugFlowExperiment\August 2018\Market-Contract Pricing\August18_Pricing.gms
-FILE1=E:\Class project\GCD_BugFlowExperiment\August 2018\Market-Contract Pricing\August18_Pricing.lst
-FILE2=E:\Class project\GCD_BugFlowExperiment\August 2018\Market-Contract Pricing\Pricing_Model.gdx
-FILE3=E:\Class project\GCD_BugFlowExperiment\August 2018\Saturday_Sunday_Weekday\August18_Unconstrained.gms
-FILE4=E:\Class project\GCD_BugFlowExperiment\August 2018\Saturday_Sunday_Weekday\Unconstrained_Model.gdx
-FILE5=E:\Class project\GCD_BugFlowExperiment\August 2018\Market-Contract Pricing\Pricing_Model.gdx
+FILE0=E:\Class project\GCD_BugFlowExperiment\August 2018\Market_Contract pricing(Final)\August18_Market pricing.gms
+FILE1=E:\Class project\GCD_BugFlowExperiment\August 2018\Market_Contract pricing(Final)\Pricing_Model.gdx
+FILE2=E:\Class project\GCD_BugFlowExperiment\August 2018\Market-Contract Pricing\August18_Market pricing.lst
+FILE3=E:\Class project\GCD_BugFlowExperiment\August 2018\Market-Contract Pricing\Pricing_Model.gdx
+FILE4=E:\Class project\GCD_BugFlowExperiment\August 2018\Market-Contract Pricing\Pricing_Model.gdx
 MAXIM=0
-TOP=3
-LEFT=0
+TOP=7
+LEFT=8
 HEIGHT=710
-WIDTH=1160
+WIDTH=1170
