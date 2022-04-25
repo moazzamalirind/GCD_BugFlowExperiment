@@ -21,7 +21,7 @@ This study quantifies tradeoffs between the number of days of steady reservoir r
 The optimization model with constraint method was used to calculate the tradeoffs. The model runs for one month with two sub-daily timesteps and is subjected to reservoir’s physical and managerial constraints. Estimates include scenarios that vary monthly release volume, weekend offset release, weekday on- and off-peak energy prices, and price type (market and contract). The results help design a program where ecosystem managers can purchase additional days of steady releases from hydropower producers and compensate the producers for the lost hydropower revenue.
 	
 ________________________________________________________________________________________________________________________________________________________________________________
-Objectives
+## Objectives
 
 •	Quantify tradeoffs between ecosystem (number of steady low flow days) and traditional management (monthly hydropower revenue) objectives
 
@@ -29,7 +29,7 @@ Objectives
 
 •	Identify strategies which can utilize the tradeoffs and help ecosystem manager’s decision of purchasing or trading number of steady flow days across the months.
 _________________________________________________________________________________________________________________________________________________________________________________
-Features of the study
+## Features of the study
 
 1. Easy-to-use tool which can work with numerous total monthly volumes, on-and off-peaks energy pricing differential, and offset release between off-peak weekday and weekend scenarios.
 
@@ -44,7 +44,7 @@ Features of the study
 6. The study is replicable and adaptable to other sites and designer flow experimet (e.g. HFEs)
 
 _________________________________________________________________________________________________________________________________________________________________________________
-Model Formulation
+## Model Formulation
 _________________________________________________________________________________________________________________________________________________________________________________
 Explanations of Respository Contents
 
@@ -56,7 +56,7 @@ c) Linear Sat-Sun-Weekday Model
 
 Each model folder has description about the model, inputs, outputs, directions to encourage reproducibility, and validation. The folder named documents contains all the paperwork e.g. proposal, article, and revelant docs.
 _________________________________________________________________________________________________________________________________________________________________________________
-Required Softwares
+## Required Softwares
 
 1. General Algebraic Modeling System (GAMS), which can be freely downloaded from (https://www.gams.com/download/) but need License to run the model.
 
@@ -64,7 +64,7 @@ Required Softwares
 
 3. Microsoft Excel. 
 ________________________________________________________________________________________________________________________________________________________________________________
-Recommended Citation
+## Recommended Citation
 
 Moazzam Ali Rind and David E. Rosenberg (2022). "Bugs buy water from hydropower producers: modeling, tradeoffs, and multi-objective management". Utah State University, Logan, Utah. https://github.com/moazzamalirind/GCD_BugFlowExperiment
 
