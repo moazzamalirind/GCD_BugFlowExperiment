@@ -52,7 +52,7 @@ ________________________________________________________________________________
 
 
 _________________________________________________________________________________________________________________________________________________________________________________
-Explanations of Respository Contents
+**Details of Respository Contents**
 
 There are three different models developed and analyzed in this study:
 
