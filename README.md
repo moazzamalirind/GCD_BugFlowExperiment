@@ -64,11 +64,11 @@ Each model folder has description about the model, inputs, outputs, directions t
 _________________________________________________________________________________________________________________________________________________________________________________
 ## Required Softwares
 
-1. General Algebraic Modeling System (GAMS), which can be freely downloaded from (https://www.gams.com/download/) but need License to run the model.
+1. General Algebraic Modeling System (GAMS), which can be freely downloaded from (https://www.gams.com/download/). We used GAMS 30.3 version and acquired license to run the model.
 
 2. R and R studio, which are open source softwares used for the results visualization. R can be downloaded from (https://www.r-project.org/) and RStudio is available at (https://rstudio.com/).
 
-3. Microsoft Excel. 
+3. Microsoft Excel. We used Office 2016 for this analysis.
 ________________________________________________________________________________________________________________________________________________________________________________
 ## Recommended Citation
 
