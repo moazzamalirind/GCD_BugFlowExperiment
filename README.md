@@ -1,53 +1,60 @@
 _________________________________________________________________________________________________
-## Bugs buy water from hydropower producers: modeling, tradeoffs, and multi-objective management
+## Bugs Buy Steady Releases from Hydropower Producers to Encourage more Synergistic Reservoir Management 
 _________________________________________________________________________________________________
 
-This study is part of my M.S. degree in Civil and Environmental Engineering at Utah State University, Utah, USA.
+This study is part of my M.S. degree in Civil and Environmental Engineering at **Utah State University, Utah, USA**
 
 The research is part of Future of the Colorado River Project and partially funded by Higher Education Commission (HEC) Pakistan
 
-Corresponding Author: Moazzam Ali Rind (moazzamalirind@gmail.com)
+Corresponding Author: **Moazzam Ali Rind** (moazzamalirind@gmail.com)
 
-Advised by: Dr. David E. Rosenberg (http://rosenberg.usu.edu/)
+Advised by: **Dr. David E. Rosenberg** (http://rosenberg.usu.edu/)
 
 Starting Date: 6/1/2019
 
-Lasted updated: 7/5/2021
+Lasted updated: 4/24/2022
 _________________________________________________________________________________________________________________________________________________________________________________
 
-Project Summary: 
-	This study quantifies tradeoffs between the number of days of steady reservoir release and hydropower objectives. The steady flow day— constanst releases throughout the day —helps aquatic invertebrates lay and hatch eggs. A Bug Flow Experiment for Glen Canyon Dam where weekend summer releases were kept low and steady has been executed since 2018. The overarching question is: how does hydropower revenue vary as steady flow days expand from weekends to weekdays?
-    
-	The optimization model with constraint method was used to calculate the tradeoffs. The model runs for one month with two sub-daily timesteps and is subjected to reservoir’s physical and managerial constraints. A non-linear and two linear (Weekend-Weekday and Sun-Sat-Weekday) models are developed and tested. Comparison amongst linear models help understand the importance of Saturday’s flow pattern (Steady or unsteady) for monthly revenue. Finally, tradeoffs of months guides ecosystem manager’s decision of purchasing additional bug flow days and paying off the hydropower revenue lost.
-    
+## Project Summary: 
+
+This study quantifies tradeoffs between the number of days of steady reservoir release and hydropower objectives. The steady flow day— constant releases throughout the day —helps aquatic invertebrates lay and hatch eggs. A Bug Flow Experiment for Glen Canyon Dam where weekend summer releases were kept low and steady has been executed since 2018. The overarching questions are:1) How does hydropower revenue vary as steady flow days expand from weekends to weekdays?                      2) How to use tradeoff results to suggest an ecosystem manager budget, number, and timing for promising days to purchase steady releases from hydropower producers? 
+The optimization model with constraint method was used to calculate the tradeoffs. The model runs for one month with two sub-daily timesteps and is subjected to reservoir’s physical and managerial constraints. Estimates include scenarios that vary monthly release volume, weekend offset release, weekday on- and off-peak energy prices, and price type (market and contract). The results help design a program where ecosystem managers can purchase additional days of steady releases from hydropower producers and compensate the producers for the lost hydropower revenue.
+	
+________________________________________________________________________________________________________________________________________________________________________________
+## Objectives
+
+•	Quantify tradeoffs between ecosystem (number of steady low flow days) and traditional management (monthly hydropower revenue) objectives.
+
+•	Factors influencing the shape and position of the tradeoff curve (e.g. price differential between on- and off-peak during weekdays, monthly release volume, offset releases, price type (Market and Contract), and days tempelate (Weekday-Weekday vs Saturday-Sunday-Weekday)).
+
+•	Tradeoff variation across the months and how these tradeoffs can help hydropower producers and ecosystem managers better understand how to resolve the conflict between hydropower and ecosystem objectives.
 _________________________________________________________________________________________________________________________________________________________________________________
-Objectives
+## Features of the study
 
-•	Quantify tradeoffs between ecosystem (number of steady low flow days) and traditional management (monthly hydropower revenue) objectives
+1. We have transformed a monthly linear hydropower objective with 744 hourly release decisions (24 hours *31 days) to a linear problem with only 6 sub-daily decisions i.e: 3 day type (Saturday, Sunday, and Weekday) and 2 periods per day.
 
-•	Demonstrate how different influencing factors e.g. price differential between on- and off-peaks during weekdays, energy prices between weekdays and weekend, total monthly release volume etc. controls the cost associated with the Bug Flow Experiment (i.e. shape and position of the tradeoff curves)
+2. The model can produce results for scenarios: monthly release volumes,on-and off-peaks energy pricing differential, offset release between off-peak weekday and weekend, and price type (market and contract).
 
-•	Identify strategies which can utilize the tradeoffs and help ecosystem manager’s decision of purchasing or trading number of steady flow days across the months.
-_________________________________________________________________________________________________________________________________________________________________________________
-Features of the study
+3. Only two periodic releases per day and those releases remain constant for the month under similar flowpattern (Steady and hydropeak).
 
-1. Easy-to-use tool which can work with numerous total monthly volumes, on-and off-peaks energy pricing differential, and offset release between off-peak weekday and weekend scenarios.
+4. Concept of bugs buying water from hydropower producers by paying the losses. Tradeoffs of the months provide purchase price ($/day) of different day types during months, hence, ecosystem managers make informed purchase decisions. 
 
-2. The quantification metrics used are non-technical. The hydropower objective is in millions of dollars ($) and the ecosystem objective is in number of low steady flow days.
+5. Example of trade-off analysis used for multi-objective decision making.
 
-3. Minimize the daily release decisions from 24 to 2.
-
-4. Tradeoffs for different months help visualize the variation of pareto curves across  months and guide decision of number of steady low flow days during each month.
-
-5. A good example of trade-off analysis used for multi-objective decision making.
-
-6. The study is replicable and adaptable to other sites and designer flow experimet (e.g. HFEs)
+6. The study is replicable and adaptable to other sites and designer flow experiments (e.g. HFEs)
 
 _________________________________________________________________________________________________________________________________________________________________________________
-Model Formulation
-_________________________________________________________________________________________________________________________________________________________________________________
-Explanations of Respository Contents
+## Model Formulation
 
+
+![image](https://user-images.githubusercontent.com/46287583/165018551-6ae1fef8-0059-4f9e-909e-1126a49c73b5.png)
+
+
+
+_________________________________________________________________________________________________________________________________________________________________________________
+**Details of Respository Contents**
+
+adsad
 There are three different models developed and analyzed in this study:
 
 a) Nonlinear Model 
@@ -56,15 +63,15 @@ c) Linear Sat-Sun-Weekday Model
 
 Each model folder has description about the model, inputs, outputs, directions to encourage reproducibility, and validation. The folder named documents contains all the paperwork e.g. proposal, article, and revelant docs.
 _________________________________________________________________________________________________________________________________________________________________________________
-Required Softwares
+## Required Softwares
 
-1. General Algebraic Modeling System (GAMS), which can be freely downloaded from (https://www.gams.com/download/) but need License to run the model.
+1. General Algebraic Modeling System (GAMS), which can be freely downloaded from (https://www.gams.com/download/). We used GAMS 30.3 version and acquired license to run the model.
 
 2. R and R studio, which are open source softwares used for the results visualization. R can be downloaded from (https://www.r-project.org/) and RStudio is available at (https://rstudio.com/).
 
-3. Microsoft Excel. 
+3. Microsoft Excel. We used Office 2016 for this analysis.
 ________________________________________________________________________________________________________________________________________________________________________________
-Recommended Citation
+## Recommended Citation
 
-Moazzam Ali Rind and David E. Rosenberg (2021). "Bugs buy water from hydropower producers: modeling, tradeoffs, and multi-objective management". Utah State University, Logan, Utah. https://github.com/moazzamalirind/GCD_BugFlowExperiment
+Moazzam Ali Rind and David E. Rosenberg (2022). "Bugs buy water from hydropower producers: modeling, tradeoffs, and multi-objective management". Utah State University, Logan, Utah. https://github.com/moazzamalirind/GCD_BugFlowExperiment
 
