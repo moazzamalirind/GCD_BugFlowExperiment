@@ -31,17 +31,17 @@ ________________________________________________________________________________
 _________________________________________________________________________________________________________________________________________________________________________________
 ## Features of the study
 
-1. Easy-to-use tool which can work with numerous total monthly volumes, on-and off-peaks energy pricing differential, and offset release between off-peak weekday and weekend scenarios.
+1. We have transformed a monthly linear hydropower objective with 744 hourly release decisions (24 hours *31 days) to a linear problem with only 6 sub-daily decisions i.e: 3 day type (Saturday, Sunday, and Weekday) and 2 periods per day.
 
-2. The quantification metrics used are non-technical. The hydropower objective is in millions of dollars ($) and the ecosystem objective is in number of low steady flow days.
+2. The model can produce results for scenarios: monthly release volumes,on-and off-peaks energy pricing differential, offset release between off-peak weekday and weekend, and price type (market and contract).
 
-3. Minimize the daily release decisions from 24 to 2.
+3. Only two periodic releases per day and those releases remain constant for the month under similar flowpattern (Steady and hydropeak).
 
-4. Tradeoffs for different months help visualize the variation of pareto curves across  months and guide decision of number of steady low flow days during each month.
+4. Concept of bugs buying water from hydropower producers by paying the losses. Tradeoffs of the months provide purchase price ($/day) of different day types during months, hence, ecosystem managers make informed purchase decisions. 
 
-5. A good example of trade-off analysis used for multi-objective decision making.
+5. Example of trade-off analysis used for multi-objective decision making.
 
-6. The study is replicable and adaptable to other sites and designer flow experimet (e.g. HFEs)
+6. The study is replicable and adaptable to other sites and designer flow experiments (e.g. HFEs)
 
 _________________________________________________________________________________________________________________________________________________________________________________
 ## Model Formulation
