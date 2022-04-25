@@ -23,11 +23,11 @@ The optimization model with constraint method was used to calculate the tradeoff
 ________________________________________________________________________________________________________________________________________________________________________________
 ## Objectives
 
-•	Quantify tradeoffs between ecosystem (number of steady low flow days) and traditional management (monthly hydropower revenue) objectives
+•	Quantify tradeoffs between ecosystem (number of steady low flow days) and traditional management (monthly hydropower revenue) objectives.
 
-•	Demonstrate how different influencing factors e.g. price differential between on- and off-peaks during weekdays, energy prices between weekdays and weekend, total monthly release volume etc. controls the cost associated with the Bug Flow Experiment (i.e. shape and position of the tradeoff curves)
+•	Factors influencing the shape and position of the tradeoff curve (e.g. price differential between on- and off-peak during weekdays, monthly release volume, offset releases, price type (Market and Contract), and days tempelate (Weekday-Weekday vs Saturday-Sunday-Weekday)).
 
-•	Identify strategies which can utilize the tradeoffs and help ecosystem manager’s decision of purchasing or trading number of steady flow days across the months.
+•	Tradeoff variation across the months and how these tradeoffs can help hydropower producers and ecosystem managers better understand how to resolve the conflict between hydropower and ecosystem objectives.
 _________________________________________________________________________________________________________________________________________________________________________________
 ## Features of the study
 
