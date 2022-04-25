@@ -6,9 +6,9 @@ This study is part of my M.S. degree in Civil and Environmental Engineering at U
 
 The research is part of Future of the Colorado River Project and partially funded by Higher Education Commission (HEC) Pakistan
 
-Corresponding Author: Moazzam Ali Rind (moazzamalirind@gmail.com)
+Corresponding Author: **Moazzam Ali Rind** (moazzamalirind@gmail.com)
 
-Advised by: Dr. David E. Rosenberg (http://rosenberg.usu.edu/)
+Advised by: **Dr. David E. Rosenberg** (http://rosenberg.usu.edu/)
 
 Starting Date: 6/1/2019
 
