@@ -55,9 +55,9 @@ ________________________________________________________________________________
 **Details of Respository Contents**
 
 Basically there are three distinct folders:
-a. Months of 2018
-b. Supporting Data
-c. Documents
+**a.** Months of 2018
+**b.** Supporting Data
+**c.** Documents
 
 **a. Months of 2018:**
 
