@@ -64,8 +64,9 @@ Each of the month folder has three sub-folders: Contract_Price_Model, Contract-M
 For example: Folder " March 2018". The Contract_Price_model sub-folder has project file (.gpr), GAMS code file (.gms), and GAMS output files (e.g. .gdx, .xlxs, .lst, etc.). There are no input files because the code file has all the inputs defined. To run the model for scenarios, please update inputs in the code file. Also, it is not necessary to use the given project file (.gpr); instead you can create a new project in GAMS IDE and easily run the code file in that new project if you own a valid GAMS license.                                                                                                                                                      Similarly, Market-Contract_Price_Model subfolder has project file (.gpr), GAMS code file (.gms), and GAMS output files (e.g. .gdx, .xlxs, .lst, etc.) for the Market-Contract price model version. There are ample comments in the code files which are expected to help users understand and navigate easily. Finally, Miscellaneous sub-folder contains validation files, observed hydrographs, and Excel file comparing results from both model versions (Contract and Market-Contract price models).         
 
 **b. Supporting Data**
-
-
+This folder contains energy Rates used in the analysis and some gathered historical energy prices. Unfortunately, there are minimum details available related to energy prices. There are observed hydrographs from 2013 to 2021 and those excel files have some initial data analysis, visualization, and selections. Models Results Summary.xlxs file has compilation of results from model versions and scenarios. Finally, hydropower fluctuation file has rough estimate of power variation from change in reservior storage level.
+ 
+**c. Documents**
 
 
 _________________________________________________________________________________________________________________________________________________________________________________
