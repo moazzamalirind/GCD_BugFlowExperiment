@@ -67,8 +67,7 @@ For example: Folder " March 2018". The Contract_Price_model sub-folder has proje
 This folder contains energy Rates used in the analysis and some gathered historical energy prices. Unfortunately, there are minimum details available related to energy prices. There are observed hydrographs from 2013 to 2021 and those excel files have some initial data analysis, visualization, and selections. Models Results Summary.xlxs file has compilation of results from model versions and scenarios. Finally, hydropower fluctuation file has rough estimate of power variation from change in reservior storage level.
  
 **c. Documents**
-
-
+There are documents produced during this research including proposal and final thesis/article. There are also documents about different model version we reject due to various reasons. Mainly, thesis file will be sufficient to understand the overall study.
 _________________________________________________________________________________________________________________________________________________________________________________
 ## Required Softwares
 
