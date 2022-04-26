@@ -60,12 +60,15 @@ Basically there are three distinct folders:
 **c.** Documents
 
 **a. Months of 2018:**
+Each of the month folder has three sub-folders: Contract_Price_Model, Contract-Market_Price_Model, and Miscellaneous.
 
-There are three different models developed and analyzed in this study:
+For example: Folder " March 2018". The Contract_Price_model sub-folder has project file (.gpr), GAMS code file (.gms), and GAMS output files (e.g. .gdx, .xlxs, .lst, etc.). There are no input files because the code file has all the inputs defined. To run the model for scenarios, please update inputs in the code file. Also, it is not necessary to use the given project file (.gpr); instead you can create a new project in GAMS IDE and easily run the code file in that new project if you own a valid GAMS license.
 
-a) Nonlinear Model 
-b) Linear Weekend-Weekday Model
-c) Linear Sat-Sun-Weekday Model
+
+
+
+
+
 
 Each model folder has description about the model, inputs, outputs, directions to encourage reproducibility, and validation. The folder named documents contains all the paperwork e.g. proposal, article, and revelant docs.
 _________________________________________________________________________________________________________________________________________________________________________________
