@@ -53,8 +53,13 @@ ________________________________________________________________________________
 
 _________________________________________________________________________________________________________________________________________________________________________________
 **Details of Respository Contents**
+Basically there are three distinct folders:
+a. Months of 2018
+b. Supporting Data
+c. Documents
 
-adsad
+**a. Months of 2018:**
+
 There are three different models developed and analyzed in this study:
 
 a) Nonlinear Model 
