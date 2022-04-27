@@ -1,5 +1,6 @@
 ## April 2018
-###### Instructions
+
+**Directions to run the model and visualize results**.
 
 Two seperate models (Saturday-Sunday-Weekday and Weekend-Weekday) were developed and each of the folders have specific model's code, input, and output files. Besides, the folders also have validation run details (sub_folder named "Validation")
 
