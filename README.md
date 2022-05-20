@@ -75,6 +75,12 @@ ________________________________________________________________________________
 
 2. Microsoft Excel. We used Office 2016 for this analysis.
 ________________________________________________________________________________________________________________________________________________________________________________
+
+## Directions to Reproduce Results
+
+
+________________________________________________________________________________________________________________________________________________________________________________
+
 ## Recommended Citation
 
 Moazzam Ali Rind and David E. Rosenberg (2022). "Bugs Buy Steady Releases from Hydropower Producers to Encourage more Synergistic Reservoir Management". Utah State University, Logan, Utah. https://github.com/moazzamalirind/GCD_BugFlowExperiment
