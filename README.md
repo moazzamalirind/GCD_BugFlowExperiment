@@ -78,7 +78,7 @@ ________________________________________________________________________________
 
 ## Directions to Reproduce Results
 
-First download folders name: Models and Supporting Data. Save those folder on your local machine at any desired drive location. For example: E:\GAMS\Models and E:\GAMS/Supporting Data.
+First download folders name: Models and Supporting Data. Save those folder on your local machine at any desired drive location. For example: E:\GAMS\Models & E:\GAMS/Supporting Data.
 
 **Figure 1**
 1. Downloaded 15 mins observed hydrograph of August 2018 from: https://waterdata.usgs.gov/usa/nwis/uv?09380000
