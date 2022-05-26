@@ -1,0 +1,26 @@
+[PROJECT]
+
+[OPENWINDOW_1]
+MAXIM=0
+TOP=0
+LEFT=50
+HEIGHT=450
+WIDTH=400
+
+[GDXDISP: Convert Par 0]
+PlaneDim=0
+RowDim=0
+Squeeze=1
+SqTrail0=0
+Order=
+Decim=7
+PlaneRownr=-1
+
+[RP:AUGUST18_SAT_VALIDATION]
+1=
+
+[MRUFILES]
+1=C:\Users\Mooz\Documents\GitHub\GCD_BugFlowExperiment\Models\August 2018\Validation\August18_Sat_Validation.lst
+2=C:\Users\Mooz\Documents\GitHub\GCD_BugFlowExperiment\Models\August 2018\Validation\August18_Sat_Validation.gms
+3=C:\Users\Mooz\Documents\GitHub\GCD_BugFlowExperiment\Models\August 2018\Validation\Valid_SatModel_August.gdx
+4=C:\Users\Mooz\Documents\GitHub\GCD_BugFlowExperiment\Models\August 2018\Validation\Sat_Sun_Weekday_Validation.gpr
