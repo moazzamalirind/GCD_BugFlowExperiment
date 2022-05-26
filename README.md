@@ -81,7 +81,7 @@ ________________________________________________________________________________
 First download folders name: Models and Supporting Data. Save those folder on your local machine at any desired drive location. For example: E:\GAMS\Models & E:\GAMS/Supporting Data.
 
 **Figure 1**
-1. Downloaded 15 mins observed hydrograph of August 2018 from: https://waterdata.usgs.gov/usa/nwis/uv?09380000
+1. Download 15 mins observed hydrograph of August 2018 from: https://waterdata.usgs.gov/usa/nwis/uv?09380000
 2. Paste the downloaded data in the given Excel file. The Excel file named "Hydrographs_Observed_Used" is available in the Supporting Data folder (Supporting Data/Hydrographs_Observed_Used.xlsx). Move to the worksheet named "August_2018" and paste the downloaded release data against the time in the blue colored cells. You can visulaze the updated hydrograph in the worksheet named "August_2018 (Hydrograph)".
 
 
