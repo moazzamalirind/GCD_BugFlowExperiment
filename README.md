@@ -4,7 +4,7 @@ ________________________________________________________________________________
 
 This study is part of my M.S. degree in Civil and Environmental Engineering at **Utah State University, Utah, USA**
 
-The research is part of Future of the Colorado River Project and partially funded by Higher Education Commission (HEC) Pakistan
+The research is part of Future of the Colorado River Project and partially funded by Higher Education Commission (HEC), Pakistan
 
 Corresponding Author: **Moazzam Ali Rind** (moazzamalirind@gmail.com)
 
