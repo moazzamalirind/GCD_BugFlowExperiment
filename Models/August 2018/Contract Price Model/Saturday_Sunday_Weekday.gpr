@@ -689,13 +689,6 @@ PlaneRownr=-1
 [RP:AUGUST18_MARKET_DEBUGGING]
 1=
 
-[OPENWINDOW_1]
-MAXIM=0
-TOP=118
-LEFT=8
-HEIGHT=648
-WIDTH=1139
-
 [RP:AUGUST18_MARKET_PRICE -10UPNOOFFSET]
 1=
 
@@ -712,3 +705,13 @@ WIDTH=1139
 7=E:\GCD_BugFlowExperiment\August 2018\Updated Saturday_Sunday_Weekday\August18_Market_Price -10upnooffset.lst
 8=E:\GCD_BugFlowExperiment\August 2018\Updated Saturday_Sunday_Weekday\August18_Market_Price -10upnooffset.gms
 9=E:\GCD_BugFlowExperiment\August 2018\Updated Saturday_Sunday_Weekday\August18_Market_Debugging.gms
+
+[OPENWINDOW_1]
+FILE0=C:\Users\Mooz\Documents\GitHub\GCD_BugFlowExperiment\Models\August 2018\Contract Price Model\August18_Sat_Sun-Weekday_Model.gms
+FILE1=C:\Users\Mooz\Documents\GitHub\GCD_BugFlowExperiment\Models\August 2018\Contract Price Model\Sat-Sun-Weekday_August.gdx
+FILE2=C:\Users\Mooz\Documents\GitHub\GCD_BugFlowExperiment\Models\August 2018\Contract Price Model\Sat-Sun-Weekday_August.gdx
+MAXIM=0
+TOP=25
+LEFT=52
+HEIGHT=856
+WIDTH=541
