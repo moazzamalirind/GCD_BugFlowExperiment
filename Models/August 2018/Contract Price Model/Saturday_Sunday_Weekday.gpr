@@ -2,10 +2,10 @@
 
 [GDXDISP: FStore Par 3]
 PlaneDim=0
-RowDim=2
+RowDim=1
 Squeeze=1
 SqTrail0=0
-Order=1,2,3
+Order=3,1,2
 Decim=7
 PlaneRownr=-1
 
@@ -695,23 +695,29 @@ PlaneRownr=-1
 [RP:AUGUST18_SAT_SUN-WEEKDAY_MODEL]
 1=
 
+[RP:AUGUST18_PRICEDIFF]
+1=
+
 [MRUFILES]
-1=C:\Users\Mooz\Documents\GitHub\GCD_BugFlowExperiment\August 2018\Contract Price Model\August18_Sat_Sun-Weekday_Model.gms
-2=C:\Users\Mooz\Documents\GitHub\GCD_BugFlowExperiment\August 2018\Contract Price Model\Sat-Sun-Weekday_August.gdx
-3=C:\Users\Mooz\Documents\GitHub\GCD_BugFlowExperiment\August 2018\Contract Price Model\August18_Sat_Sun-Weekday_Model.lst
-4=E:\GCD_BugFlowExperiment\August 2018\Updated Saturday_Sunday_Weekday\August18_Price_Contract.gms
-5=E:\GCD_BugFlowExperiment\August 2018\Updated Saturday_Sunday_Weekday\August18_Market_Price.lst
-6=E:\GCD_BugFlowExperiment\August 2018\Updated Saturday_Sunday_Weekday\August18_Market_Price.gms
-7=E:\GCD_BugFlowExperiment\August 2018\Updated Saturday_Sunday_Weekday\August18_Market_Price -10upnooffset.lst
-8=E:\GCD_BugFlowExperiment\August 2018\Updated Saturday_Sunday_Weekday\August18_Market_Price -10upnooffset.gms
-9=E:\GCD_BugFlowExperiment\August 2018\Updated Saturday_Sunday_Weekday\August18_Market_Debugging.gms
+1=C:\Users\Mooz\Documents\GitHub\GCD_BugFlowExperiment\Models\August 2018\Contract Price Model\August18_Sat_Sun-Weekday_Model.gms
+2=C:\Users\Mooz\Documents\GitHub\GCD_BugFlowExperiment\August 2018\Contract Price Model\August18_Sat_Sun-Weekday_Model.gms
+3=C:\Users\Mooz\Documents\GitHub\GCD_BugFlowExperiment\August 2018\Contract Price Model\Sat-Sun-Weekday_August.gdx
+4=C:\Users\Mooz\Documents\GitHub\GCD_BugFlowExperiment\August 2018\Contract Price Model\August18_Sat_Sun-Weekday_Model.lst
+5=E:\GCD_BugFlowExperiment\August 2018\Updated Saturday_Sunday_Weekday\August18_Price_Contract.gms
+6=E:\GCD_BugFlowExperiment\August 2018\Updated Saturday_Sunday_Weekday\August18_Market_Price.lst
+7=E:\GCD_BugFlowExperiment\August 2018\Updated Saturday_Sunday_Weekday\August18_Market_Price.gms
+8=E:\GCD_BugFlowExperiment\August 2018\Updated Saturday_Sunday_Weekday\August18_Market_Price -10upnooffset.lst
 
 [OPENWINDOW_1]
-FILE0=C:\Users\Mooz\Documents\GitHub\GCD_BugFlowExperiment\Models\August 2018\Contract Price Model\August18_Sat_Sun-Weekday_Model.gms
-FILE1=C:\Users\Mooz\Documents\GitHub\GCD_BugFlowExperiment\Models\August 2018\Contract Price Model\Sat-Sun-Weekday_August.gdx
+FILE0=C:\Users\Mooz\Documents\GitHub\GCD_BugFlowExperiment\Models\August 2018\Contract Price Model\August18_PriceDiff.gms
+FILE1=C:\Users\Mooz\Documents\GitHub\GCD_BugFlowExperiment\Models\August 2018\Contract Price Model\August18_PriceDiff.lst
 FILE2=C:\Users\Mooz\Documents\GitHub\GCD_BugFlowExperiment\Models\August 2018\Contract Price Model\Sat-Sun-Weekday_August.gdx
+FILE3=C:\Users\Mooz\Documents\GitHub\GCD_BugFlowExperiment\Models\August 2018\Contract Price Model\Sat-Sun-Weekday_Current.gdx
+FILE4=C:\Users\Mooz\Documents\GitHub\GCD_BugFlowExperiment\Models\August 2018\Contract Price Model\Sat-Sun-Weekday_Half.gdx
+FILE5=C:\Users\Mooz\Documents\GitHub\GCD_BugFlowExperiment\Models\August 2018\Contract Price Model\Sat-Sun-Weekday_Zero.gdx
+FILE6=C:\Users\Mooz\Documents\GitHub\GCD_BugFlowExperiment\Models\August 2018\Contract Price Model\Sat-Sun-Weekday_Zero.gdx
 MAXIM=0
 TOP=25
 LEFT=52
 HEIGHT=856
-WIDTH=541
+WIDTH=972
