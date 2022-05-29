@@ -103,10 +103,17 @@ Extra: In case to change the solver, comment out code Line 158 by placing * info
 3. After run completion, you will see "Status: Normal completion". You should check if the solution is optimal (Look for sentense saying: Optimal Solution found). Since there are multiple scenairos in this model run so it is difficult to verify the status of each run. Alternative is to verify status of each run within ".gdx file".
 4. Click File/Open. Set the Files of type: GDX files (*.gdx). Open the file "Sat-Sun-Weekday_August". Scroll to Symbol "ModelResults". You be able to see ModStat and SolStat of each run. A value of 1 means optimal solution. For further details of ModStat and SolStat visit: https://www.gams.com/mccarlGuide/modelstat_tmodstat.htm
 5. After verifying the optimality of the runs, the results can be visualized using provided Excel file "Graphs.xlsx" (Models/August 2018/Contract Price Model/Graphs.xlsx). 
-6. Move to the worksheet "Tradeoff_Graph". You are required to update the values in the blue highligted cells. Those values can be found in the .gdx file or the output .xlsx file. Open "Sat-Sun-Weekday_August.xlxs" located in the project folder. Move to the worksheet "Fstore". You will see four populated columns (A-D). Figure 4 is for Zero offset (H1). So select only H1 in Offset column using the drop given drop down. 
+6. Move to the worksheet "Tradeoff_Graph". You are required to update the values in the blue highligted cells. Those values can be found in the .gdx file or the output .xlsx file. Open "Sat-Sun-Weekday_August.xlsx" located in the project folder. Move to the worksheet "Fstore". You will see four populated columns (A-D). Figure 4 is for Zero offset (H1). So select only H1 in Offset column using the drop given drop down. 
 7. Copy the Values from column D (Value) and paste those copied numbers in Tradeoff_Graph worksheet within the Graphs.xlsx. The trade-off graph available in the Graph_Tradeoff worksheet will be updated.
 
 **Figure 5**
+1. Within same Excel file "Graph.xlsx" you will see a worksheet named "Hydrograph_H0". This worksheet has hydrographs for different number of steady low flow days scenarios with 0.83 MAF (V2) release volume and zero offset release (H1).
+2. You are only required to replace the values in the blue highlighted cells. Those values are releases that can be found in "Sat-Sun-Weekday_August.xlsx" under parameter RStore. You have to set Offset column to H1 and tot_vol to V2. 
+3. Copy all the releases from the values column and paste those in Hydrograph_H0 worksheet within the Graphs.xlsx. The hydrograph on the right will be updated.
+
+**Figure 6**
+
+
 
 
 ________________________________________________________________________________________________________________________________________________________________________________
