@@ -109,7 +109,8 @@ Extra: In case to change the solver, comment out code Line 158 by placing * info
 **Figure 5**
 1. Within same Excel file "Graph.xlsx" you will see a worksheet named "Hydrograph_H0". This worksheet has hydrographs for different number of steady low flow days scenarios with 0.83 MAF (V2) release volume and zero offset release (H1).
 2. You are only required to replace the values in the blue highlighted cells. Those values are releases that can be found in "Sat-Sun-Weekday_August.xlsx" under parameter RStore. You have to set Offset column to H1 and tot_vol to V2. 
-3. Copy all the releases from the values column and paste those in Hydrograph_H0 worksheet within the Graphs.xlsx. The hydrograph on the right will be updated.
+3. Copy releases from the Value column and paste those in Hydrograph_H0 worksheet within the Graphs.xlsx. The hydrograph on the right will be updated.
+Extra: Worksheet Hydrograph_H1000 is provided as example of Hydrographs with 1000 CFS offset release.
 
 **Figure 6**
 
