@@ -283,7 +283,7 @@ DISPLAY FStore,XStore,RStore,Sstore;
 
 *------------------------------------------------------------------------------*
 
-*Following part of code creates  gdx and excel output file..
+*Following part of code creates gdx and excel output file..
 
 $ontext
 *Dump all input data and results to a GAMS gdx file
