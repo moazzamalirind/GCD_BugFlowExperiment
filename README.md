@@ -113,6 +113,10 @@ Extra: In case to change the solver, comment out code Line 158 by placing * info
 Extra: Worksheet Hydrograph_H1000 is provided as example of Hydrographs with 1000 CFS offset release.
 
 **Figure 6**
+1. Import the August18_PriceDiff.gms file into GAMS IDE (same procedure as defined in Figure 4). Now within the code you have to set different energy prices i.e. only active one pricing set for "Energy_Rate" parameter and save its results. In the code move down to line: 94 "Energy_Rate(Days,p)". You will see three energy price sets (Current, Half, and Zero). Your task is to active only pricing set by placing *infront of $ontext and $offtext. When the set will be actived then you will see the prices turned into green from gray color. The next is to scroll down at the bottom of the code where it says "following part of code creates gdx and excel output file..". You have to only active the chunk of code depending on which pricing set you have activated above. Run the model for each set of pricing (Current, Half, and Zero) seperately. 
+2. Open .gdx files for each of the runs: "Sat-Sun-Weekday_Current.gdx", "Sat-Sun-Weekday_Half.gdx", and "Sat-Sun-Weekday_Zero.gdx". 
+3. Open Graphs.xlsx and move to "Price_Differential" worksheet. Your job is you copy the hydropower power revenue values from .gdx file (go to "Fstore" symbol and copy the values). Within Fstore you can move the dimensions around e.g. bring cases to the vertical axis and Volume (V) and Offset (H) to the horizontal axis. Copy the values for H1 and paste those in the blue highlighted cells in Price_Differential worksheet against respected pricing set.  
+4. The graph at the bottom will be updated. Note: Don't confuse with any of the additional calculations in the worksheet. Those are additional computations which can be useful at later stages. 
 
 
 
