@@ -124,6 +124,12 @@ Extra: Worksheet Hydrograph_H1000 is provided as example of Hydrographs with 100
 3. Go to: GCD_BugFlowExperiment/Models/August 2018/Miscellaneous/Contract_vs_Market-Contract Results.xlsx. You are required to update values of the blue highlighted cells. For Saturday-Sunday-Weekday model, use values of Fstore symbol from Sat-Sun-Weekday_August.gdx or from Sat-Sun-Weekday_August.xlsx (Location:GCD_BugFlowExperiment\Models\August 2018\Contract Price Model). The results of the Market-Contract price model can be found from Fstore within Pricing_Model.gdx or Pricing_Model.gdx (Location: GCD_BugFlowExperiment\Models\August 2018\Market-Contract Price Model).
 4. The updated values will updated the tradeoff graph in the worksheet. Note: Additional calculations in the worksheet are for later stages.
 
+**Table 2**
+This table compiles hydropower revenue results of months of 2018. Here, you are required to use monthly models available in the Models folder (Location: GCD_BugFlowExperiment\Models).
+1. You are required to run model for each of the months seperately and gather results in Excel file named "Models Results Summary" (location: GCD_BugFlowExperiment\Supporting Data\Models Results Summary.xlsx) and worksheet "Market Price_Summary". 
+2. As an example, we are only mentioning process to reproduce results for March 2018. You are required to replicate the same procedure for other months and reproduce Table 2.
+3. 
+
 
 
 
