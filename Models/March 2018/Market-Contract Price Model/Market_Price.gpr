@@ -99,10 +99,8 @@ PlaneRownr=-1
 6=E:\GCD_BugFlowExperiment\March 2018\Saturday-Sunday-Weekday\March18_Sat_Sun-Weekday_Model.gms
 
 [OPENWINDOW_1]
-FILE0=C:\Users\Mooz\Documents\GitHub\GCD_BugFlowExperiment\March 2018\Market-Contract Price Model\March18_Market pricing.gms
-FILE1=C:\Users\Mooz\Documents\GitHub\GCD_BugFlowExperiment\March 2018\Market-Contract Price Model\March18_Market pricing.lst
-FILE2=C:\Users\Mooz\Documents\GitHub\GCD_BugFlowExperiment\March 2018\Market-Contract Price Model\Pricing_Model.gdx
-FILE3=C:\Users\Mooz\Documents\GitHub\GCD_BugFlowExperiment\March 2018\Market-Contract Price Model\Pricing_Model.gdx
+FILE0=C:\Users\Mooz\Documents\GitHub\GCD_BugFlowExperiment\Models\March 2018\Market-Contract Price Model\March18_Market pricing.gms
+FILE1=C:\Users\Mooz\Documents\GitHub\GCD_BugFlowExperiment\Models\March 2018\Market-Contract Price Model\March18_Market pricing.gms
 MAXIM=0
 TOP=0
 LEFT=0
