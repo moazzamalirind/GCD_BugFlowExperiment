@@ -77,6 +77,8 @@ ________________________________________________________________________________
 ________________________________________________________________________________________________________________________________________________________________________________
 
 ## Directions to Reproduce Results
+Note: Numbering of figures and tables are with reference to our under review article " Bugs Pay for Days of Steady Reservoir Releases to Reduce Costs to Hydropower Customers and Sustain Funds to Maintain Infrastructure". We will update link to that article once published. At this moment, the paper can be only accessed by email request.
+
 
 First download folders name: Models and Supporting Data. Save those folder on your local machine at any desired drive location. For example: E:\GAMS\Models & E:\GAMS\Supporting Data.
 
