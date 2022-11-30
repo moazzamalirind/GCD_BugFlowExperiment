@@ -82,7 +82,7 @@ Note: Numbering of figures and tables are with reference to our under review art
 
 First download folders name: Models and Supporting Data. Save those folder on your local machine at any desired drive location. For example: E:\GAMS\Models & E:\GAMS\Supporting Data.
 
-**Figure 1**
+**Figure 2**
 1. Download 15 mins observed hydrograph of August 2018 from: https://waterdata.usgs.gov/usa/nwis/uv?09380000
 2. Paste the downloaded data in the given Excel file. The Excel file named "Hydrographs_Observed_Used" is available in the Supporting Data folder (Supporting Data/Hydrographs_Observed_Used.xlsx). Move to the worksheet named "August_2018" and paste the downloaded release data against the time in the blue colored cells. You can visulaze the updated hydrograph in the worksheet named "August_2018 (Hydrograph)".
 
@@ -100,13 +100,13 @@ Extra: In case to change the solver, comment out code Line 158 by placing * info
 10. % Error = 100* (Model-Observed) /Observed. E.g. %Error = 100* (409289 - 392938)/392938 = 4.2%.
 
 **Figure 4**
-1. Within "Models" folder (you have already downloaded this folder in step before Figure 1) enter folder "August 2018". Next, open  "Contract Price Model" folder and then double click "Saturday_Sunday_Weekday.gpr" (Models/August 2018/Contract Price Model/Saturday_Sunday_Weekday.gpr). In case, the project is not saved at your desired location you can save it using "File/Save as". 
-2. Import the code file using File/Open/August18_Sat_Sun_Weekday_Model.gms. Main window with model code will appear. You are only required to run the model (all inputs are defined in the code) and the output files will be generated/updated in the project's folder. 
-3. After run completion, you will see "Status: Normal completion". You should check if the solution is optimal (Look for sentense saying: Optimal Solution found). Since there are multiple scenairos in this model run so it is difficult to verify the status of each run. Alternative is to verify status of each run within ".gdx file".
-4. Click File/Open. Set the Files of type: GDX files (*.gdx). Open the file "Sat-Sun-Weekday_August". Scroll to Symbol "ModelResults". You be able to see ModStat and SolStat of each run. A value of 1 means optimal solution. For further details of ModStat and SolStat visit: https://www.gams.com/mccarlGuide/modelstat_tmodstat.htm
-5. After verifying the optimality of the runs, the results can be visualized using provided Excel file "Graphs.xlsx" (Models/August 2018/Contract Price Model/Graphs.xlsx). 
-6. Move to the worksheet "Tradeoff_Graph". You are required to update the values in the blue highligted cells. Those values can be found in the .gdx file or the output .xlsx file. Open "Sat-Sun-Weekday_August.xlsx" located in the project folder. Move to the worksheet "Fstore". You will see four populated columns (A-D). Figure 4 is for Zero offset (H1). So select only H1 in Offset column using the drop given drop down. 
-7. Copy the Values from column D (Value) and paste those copied numbers in Tradeoff_Graph worksheet within the Graphs.xlsx. The trade-off graph available in the Graph_Tradeoff worksheet will be updated.
+1. Go to location containig monthly models (e.g. GCD_BugFlowExperiment/Models/August 2018). Next, open  "Contract Price Model" folder and then double click "Saturday_Sunday_Weekday.gpr" (Models/August 2018/Contract Price Model/Saturday_Sunday_Weekday.gpr). Please save your GAMS project at the derired location you can save it using "File/Save as" (prefferably within same directy of monthly model folder).
+3.Import the code file using File/Open/August18_Sat_Sun_Weekday_Model.gms. Main window with model code will appear. You are only required to run the model (all inputs are defined in the code) and the output files will be generated/updated in the same project folder. 
+4. After run completion, you will see "Status: Normal completion". You should check if the solution is optimal (Look for sentense saying: Optimal Solution found). Since there are multiple scenairos in this model run so it is difficult to verify the status of each run. Alternative is to verify status of each run within ".gdx file".
+5. Click File/Open. Set the Files of type: GDX files (*.gdx). Open the file "Sat-Sun-Weekday_August". Scroll to parameter "ModelResults". You will be able to see ModStat and SolStat of each run. A value of 1 means optimal solution. For further details of ModStat and SolStat visit: https://www.gams.com/mccarlGuide/modelstat_tmodstat.htm
+6. After verifying the optimality of the runs, the results can be visualized using provided Excel file "Graphs.xlsx" (Models/August 2018/Contract Price Model/Graphs.xlsx). 
+7. Move to the worksheet "Tradeoff_Graph". You are required to update the values in the blue highligted cells. Those values can be found in the .gdx file or the output .xlsx file. Open "Sat-Sun-Weekday_August.xlsx" located in the project folder. Move to the worksheet "Fstore". You will see four populated columns (A-D). Figure 4 is for Zero offset (H1). So select only H1 in Offset column using the  drop down. 
+8. Copy the Values from column D (Value) and paste those copied numbers in Tradeoff_Graph worksheet within the Graphs.xlsx. The trade-off graph in the Graph_Tradeoff worksheet will be updated.
 
 **Figure 5**
 1. Within same Excel file "Graph.xlsx" you will see a worksheet named "Hydrograph_H0". This worksheet has hydrographs for different number of steady low flow days scenarios with 0.83 MAF (V2) release volume and zero offset release (H1).
@@ -114,31 +114,53 @@ Extra: In case to change the solver, comment out code Line 158 by placing * info
 3. Copy releases from the Value column and paste those in Hydrograph_H0 worksheet within the Graphs.xlsx. The hydrograph on the right will be updated.
 Extra: Worksheet Hydrograph_H1000 is provided as example of Hydrographs with 1000 CFS offset release.
 
-**Figure 6**
+
+**Figure 6*
+1. We need results from both Contract Price and Market-Contract Price models. You have already acquired Contract Price (Saturday-Sunday-Weekday) Model results in Figure 4 above. You are required to run Market-Contract Price model whose code is available within folder: GCD_BugFlowExperiment/Models/August 2018/Market-Contract Price Model/August18_Market pricing.gms. 
+2. You are required to run the model code similar to previous figures. After successful completion of the run, the output files will be updated. 
+3. Go to: GCD_BugFlowExperiment/Models/August 2018/Miscellaneous/Contract_vs_Market-Contract Results.xlsx. You are required to update values of the blue highlighted cells. For Saturday-Sunday-Weekday model, use values of Fstore parameter from Sat-Sun-Weekday_August.gdx or from Sat-Sun-Weekday_August.xlsx (Location:GCD_BugFlowExperiment\Models\August 2018\Contract Price Model). The results of the Market-Contract price model can be found from Fstore within Pricing_Model.gdx or Pricing_Model.gdx (Location: GCD_BugFlowExperiment\Models\August 2018\Market-Contract Price Model).
+5. Updated values will automatically update the tradeoff graph in the worksheet. Note: Additional calculations in the worksheet are for later stages.
+
+**Table 2**
+This table compiles hydropower revenue results of months of 2018. Here, you are required to use monthly models available in the Models folder (Location: GCD_BugFlowExperiment\Models).
+1. You are required to run model for each of the months seperately and gather results in Excel file named "Models Results Summary" (location: GCD_BugFlowExperiment\Supporting Data\Models Results Summary.xlsx) and worksheet "Market Price_Summary". 
+2. As an example, we are only mentioning process to reproduce results for March 2018. You are required to replicate the same procedure for other months inorder to reproduce Table 2.
+3. Move to March 2018 folder within Models folder. Enter into Market-Contract Price Model folder and get the March18_Market Pricing.gms. Follow the same procedure i.e. either import the Code (.gms) file within the available project "Market_Price.gpr" or create a new project in GAMS IDE.
+4. Code file has all the required inputs and you are only expected to run the model by pressing F9 or Run button. Successfull run will update the output files (e.g. .gdx, .xlsx, etc.) within project folder.
+5. Open Pricing_Model excel sheet (Location: GCD_BugFlowExperiment\Models\March 2018\Market-Contract Price Model\Pricing_Model.xlsx) and move to FStore Worksheet. 
+6. Table 2 is for H4 (i.e. 1000 CFS offset release) and V2 (0.83 MAF) release volume. Set H4 in column A, V1 and V2 in Column B. Copy values of V1 and V2 and paste those in "Models Results Summary.xlsx" (location: GCD_BugFlowExperiment\Supporting Data\Models Results Summary.xlsx ) and Market Price_Summary worksheet. You will see blue highlighted cells. Paste the copied values in the highlighted cells. Be careful with placing the values on their respective positions. 
+7. Values of Table 2 are given in green highlighted cells. 
+8. Repeat same procedure for Months of 2018. 
+
+===============================================================================================
+
+## Supplementary
+
+**Figure S2 , S3, S4*
+1. Download hydrographs at: https://waterdata.usgs.gov/usa/nwis/uv?09380000
+
+**Figure S5*
+
+**Figure S6*
+
+**Figure S7*
 1. Import the August18_PriceDiff.gms file into GAMS IDE (same procedure as defined in Figure 4). Now within the code you have to set different energy prices i.e. only active one pricing set for "Energy_Rate" parameter and save its results. In the code move down to line: 94 "Energy_Rate(Days,p)". You will see three energy price sets (Current, Half, and Zero). Your task is to active only pricing set by placing *infront of $ontext and $offtext. When the set will be actived then you will see the prices turned into green from gray color. The next is to scroll down at the bottom of the code where it says "following part of code creates gdx and excel output file..". You have to only active the chunk of code depending on which pricing set you have activated above. Run the model for each set of pricing (Current, Half, and Zero) seperately. 
 2. Open .gdx files for each of the runs: "Sat-Sun-Weekday_Current.gdx", "Sat-Sun-Weekday_Half.gdx", and "Sat-Sun-Weekday_Zero.gdx". 
 3. Open Graphs.xlsx and move to "Price_Differential" worksheet. Your job is you copy the hydropower power revenue values from .gdx file (go to "Fstore" symbol and copy the values). Within Fstore you can move the dimensions around e.g. bring cases to the vertical axis and Volume (V) and Offset (H) to the horizontal axis. Copy the values for H1 and paste those in the blue highlighted cells in Price_Differential worksheet against respected pricing set.  
 4. The graph at the bottom will be updated. Note: Don't confuse with any of the additional calculations in the worksheet. Those are additional computations which can be useful at later stages. 
 
-**Figure 7**
-1. We need results from both Contract Price and Market-Contract Price models. You have already acquired Contract Price (Saturday-Sunday-Weekday) Model results in Figure 4 above. You are required to run Market-Contract Price model whose code is available within folder: GCD_BugFlowExperiment/Models/August 2018/Market-Contract Price Model/August18_Market pricing.gms. 
-2. You are required to run the model code similar to previous figures. After successful completion of the run, the output files will be updated. 
-3. Go to: GCD_BugFlowExperiment/Models/August 2018/Miscellaneous/Contract_vs_Market-Contract Results.xlsx. You are required to update values of the blue highlighted cells. For Saturday-Sunday-Weekday model, use values of Fstore symbol from Sat-Sun-Weekday_August.gdx or from Sat-Sun-Weekday_August.xlsx (Location:GCD_BugFlowExperiment\Models\August 2018\Contract Price Model). The results of the Market-Contract price model can be found from Fstore within Pricing_Model.gdx or Pricing_Model.gdx (Location: GCD_BugFlowExperiment\Models\August 2018\Market-Contract Price Model).
-4. The updated values will updated the tradeoff graph in the worksheet. Note: Additional calculations in the worksheet are for later stages.
-
-**Table 2**
-This table compiles hydropower revenue results of months of 2018. Here, you are required to use monthly models available in the Models folder (Location: GCD_BugFlowExperiment\Models).
-1. You are required to run model for each of the months seperately and gather results in Excel file named "Models Results Summary" (location: GCD_BugFlowExperiment\Supporting Data\Models Results Summary.xlsx) and worksheet "Market Price_Summary". 
-2. As an example, we are only mentioning process to reproduce results for March 2018. You are required to replicate the same procedure for other months and reproduce Table 2.
-3. Move to March 2018 folder within Models folder. Enter Market-Contract Price Model folder and get the March18_Market Pricing.gms. Now follow the same procedure i.e. either import the Code (.gms) file within the given project file "Market_Price.gpr" or create a new project in GAMS IDE and import the code file.
-4. Code file has all the required inputs and you are only expected to run the model by pressing F9 or Run button. Successfull run will update the output files (e.g. .gdx, .xlsx, etc.) within project folder.
-5. Open Pricing_Model (Location: GCD_BugFlowExperiment\Models\March 2018\Market-Contract Price Model\Pricing_Model.xlsx) and move to FStore Worksheet. 
-6. Table 2 is for H4 (i.e. 1000 CFS offset release) and V2 (0.83 MAF) release volume. Set H4 in column A, V1 and V2 in Column B. Copy the values of V1 and V2 and paste those in "Models Results Summary.xlsx" (location: GCD_BugFlowExperiment\Supporting Data\Models Results Summary.xlsx ) and Market Price_Summary worksheet. You will see blue highlighted cells. Paste the copied values in the highlighted cells. Be careful with placing the values on their respective positions. 
-7. Values of Table 2 are given in green highlighted cells. 
-8. Repeat same procedure for Months of 2018. 
+**Figure S8*
 
 
+**Table S2*
+This is extention of Table 1 and follow the similar produce for different months. You can use excel file named " Model Results Summary" and worksheet named "Validation_Results" to compile results from monthly models. 
 
+**Table S3*
+
+**Table S4*
+1. Use file: GCD_BugFlowExperiment/Supporting Data/Hydropower_Fluctuations (2018).xlsx.
+2. We used data from USBR website (https://www.usbr.gov/uc/water/crsp/cs/gcd.html) for elevation and average monthly cfs (discharge), and back calculated the head. 
+3. We made some coarse assumptions regarding dam efficiency (discussed in the excel file).
 
 
 ________________________________________________________________________________________________________________________________________________________________________________
