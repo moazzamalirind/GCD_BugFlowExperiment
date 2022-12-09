@@ -71,7 +71,7 @@ There are documents produced during this research including proposal and final t
 _________________________________________________________________________________________________________________________________________________________________________________
 ## Required Softwares
 
-1. General Algebraic Modeling System (GAMS), which can be freely downloaded from (https://www.gams.com/download/). We used GAMS 30.3 version and acquired license to run the model.
+1. General Algebraic Modeling System (GAMS), which can be freely downloaded from (https://www.gams.com/download/). We used GAMS 30.3 version and acquired license to run the model (https://dotclip.gams.com/Api/DownloadDistribution.aspx?token=MTE1NQ-QzEwMDA2NDE0).
 
 If you don't posses a valid license, you can install any of the current version of GAMS and open the output files (e.g. .gdx) without running the model code (.gms files).  You are not required to have a license to open output files. License for specific version of GAMS is only required to run the code files (.gms). Both code  and output files are provided in the revelant folders.
 
