@@ -168,5 +168,5 @@ ________________________________________________________________________________
 
 ## Recommended Citation
 
-Moazzam Ali Rind and David E. Rosenberg (2022). "Bugs Buy Steady Releases from Hydropower Producers to Encourage more Synergistic Reservoir Management". Utah State University, Logan, Utah. https://github.com/moazzamalirind/GCD_BugFlowExperiment
+Moazzam Ali Rind and David E. Rosenberg (2024). "Bugs Buy Steady Releases from Hydropower Producers to Encourage more Synergistic Reservoir Management". Utah State University, Logan, Utah. https://github.com/moazzamalirind/GCD_BugFlowExperiment
 
