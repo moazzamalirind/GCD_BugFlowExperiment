@@ -33,24 +33,29 @@ PlaneRownr=-1
 [RP:APRIL18_SAT_SUN-WEEKDAY_MODEL]
 1=
 
-[RP:APRIL18_MARKET PRICING]
-1=
-
 [RP:MARCH18_MARKET PRICING]
 1=
 
+[RP:APRIL18_MARKET PRICING]
+1=
+
+[RP:APRIL18_MARKETPRICING_UPDATED]
+1=
+
 [MRUFILES]
-1=E:\GCD_BugFlowExperiment\March 2018\Market-Contract Price\March18_Market pricing.gms
-2=E:\GCD_BugFlowExperiment\March 2018\Market-Contract Price\Pricing_Model.gdx
-3=E:\GCD_BugFlowExperiment\April 2018\Updated_Sat-Sun-Weekday\Sat-Sun-Weekday_April.gdx
-4=E:\GCD_BugFlowExperiment\April 2018\Updated_Sat-Sun-Weekday\April18_Sat_Sun-Weekday_Model.gms
-5=E:\GCD_BugFlowExperiment\August 2018\Market_Contract pricing(Final)\Pricing_Model.gdx
+1=E:\GCD_BugFlowExperiment\April 2018\Market-Contract Pricing\April18_Market pricing.gms
+2=E:\GCD_BugFlowExperiment\April 2018\Market-Contract Pricing\April18_Market pricing.lst
+3=E:\GCD_BugFlowExperiment\April 2018\Market-Contract Pricing\Pricing_Model.gdx
+4=E:\GCD_BugFlowExperiment\March 2018\Market-Contract Price\March18_Market pricing.gms
+5=E:\GCD_BugFlowExperiment\March 2018\Market-Contract Price\Pricing_Model.gdx
+6=E:\GCD_BugFlowExperiment\April 2018\Updated_Sat-Sun-Weekday\Sat-Sun-Weekday_April.gdx
+7=E:\GCD_BugFlowExperiment\April 2018\Updated_Sat-Sun-Weekday\April18_Sat_Sun-Weekday_Model.gms
+8=E:\GCD_BugFlowExperiment\August 2018\Market_Contract pricing(Final)\Pricing_Model.gdx
 
 [OPENWINDOW_1]
-FILE0=E:\GCD_BugFlowExperiment\April 2018\Market-Contract Pricing\April18_Market pricing.gms
-FILE1=E:\GCD_BugFlowExperiment\April 2018\Market-Contract Pricing\April18_Market pricing.lst
-FILE2=E:\GCD_BugFlowExperiment\April 2018\Market-Contract Pricing\Pricing_Model.gdx
-FILE3=E:\GCD_BugFlowExperiment\April 2018\Market-Contract Pricing\Pricing_Model.gdx
+FILE0=C:\Users\Mooz\Documents\GitHub\GCD_BugFlowExperiment\Models\April 2018\Market-Contract Price Model\April18_Marketpricing_Updated.gms
+FILE1=C:\Users\Mooz\Documents\GitHub\GCD_BugFlowExperiment\Models\April 2018\Market-Contract Price Model\April18_Marketpricing_Updated.lst
+FILE2=C:\Users\Mooz\Documents\GitHub\GCD_BugFlowExperiment\Models\April 2018\Market-Contract Price Model\April18_Marketpricing_Updated.lst
 MAXIM=0
 TOP=0
 LEFT=0

@@ -27,23 +27,38 @@ PlaneRownr=-1
 [RP:SEPT18_MARKET PRICING]
 1=
 
+[RP:AUGUST18_MARKETPRICING_UPDATED]
+1=
+
+[RP:OCTOBER18_MARKETPRICING_UPDATED]
+1=
+
+[RP:APRIL18_MARKETPRICING_UPDATED]
+1=
+
+[RP:SEPT18_MARKETPRICING_UPDATED]
+1=
+
+[RP:JUNE18_MARKETPRICING_UPDATED]
+1=
+
 [MRUFILES]
-1=E:\GCD_BugFlowExperiment\September 2018\Market-Contract Price\Sept18_Market pricing.lst
-2=E:\GCD_BugFlowExperiment\September 2018\Market-Contract Price\Sept18_Market pricing.gms
-3=E:\GCD_BugFlowExperiment\September 2018\Market-Contract Price\Pricing_Model.gdx
-4=E:\GCD_BugFlowExperiment\August 2018\Market_Contract pricing(Final)\August18_Market pricing_Upated.gms
-5=E:\GCD_BugFlowExperiment\August 2018\Market_Contract pricing(Final)\Pricing_Updated.gdx
-6=E:\GCD_BugFlowExperiment\September 2018\Saturday_Sunday_Weekday\Sat-Sun-Weekday_September.gdx
-7=E:\GCD_BugFlowExperiment\September 2018\Saturday_Sunday_Weekday\September18_Sat_Sun-Weekday_Model.gms
-8=E:\GCD_BugFlowExperiment\September 2018\Updated_Sat-Sun-Weekday\September18_Sat_Sun-Weekday_Model.gms
+1=C:\Users\Mooz\Documents\GitHub\GCD_BugFlowExperiment\Models\June 2018\Market-Contract Price Model\June18_Marketpricing_Updated.gms
+2=C:\Users\Mooz\Documents\GitHub\GCD_BugFlowExperiment\Models\April 2018\Market-Contract Price Model\April18_Marketpricing_Updated.gms
+3=C:\Users\Mooz\Documents\GitHub\GCD_BugFlowExperiment\Models\October 2018\Market-Contract Price Model\October18_Marketpricing_Updated.gms
+4=C:\Users\Mooz\Documents\GitHub\GCD_BugFlowExperiment\Models\August 2018\Market-Contract Price Model\August18_MarketPricing_Updated.gms
+5=E:\GCD_BugFlowExperiment\September 2018\Market-Contract Price\Sept18_Market pricing.lst
+6=E:\GCD_BugFlowExperiment\September 2018\Market-Contract Price\Sept18_Market pricing.gms
+7=E:\GCD_BugFlowExperiment\September 2018\Market-Contract Price\Pricing_Model.gdx
+8=E:\GCD_BugFlowExperiment\August 2018\Market_Contract pricing(Final)\August18_Market pricing_Upated.gms
+9=E:\GCD_BugFlowExperiment\August 2018\Market_Contract pricing(Final)\Pricing_Updated.gdx
 
 [OPENWINDOW_1]
-FILE0=C:\Users\Mooz\Documents\GitHub\GCD_BugFlowExperiment\September 2018\Market-Contract Price Model\Pricing_Model.gdx
-FILE1=C:\Users\Mooz\Documents\GitHub\GCD_BugFlowExperiment\September 2018\Market-Contract Price Model\Sept18_Market pricing.gms
-FILE2=C:\Users\Mooz\Documents\GitHub\GCD_BugFlowExperiment\September 2018\Market-Contract Price Model\Sept18_Market pricing.lst
-FILE3=C:\Users\Mooz\Documents\GitHub\GCD_BugFlowExperiment\September 2018\Market-Contract Price Model\Pricing_Model.gdx
+FILE0=C:\Users\Mooz\Documents\GitHub\GCD_BugFlowExperiment\Models\September 2018\Market-Contract Price Model\Sept18_Marketpricing_Updated.gms
+FILE1=C:\Users\Mooz\Documents\GitHub\GCD_BugFlowExperiment\Models\September 2018\Market-Contract Price Model\Sept18_Marketpricing_Updated.lst
+FILE2=C:\Users\Mooz\Documents\GitHub\GCD_BugFlowExperiment\Models\September 2018\Market-Contract Price Model\Sept18_Marketpricing_Updated.gms
 MAXIM=0
-TOP=0
-LEFT=0
+TOP=2
+LEFT=10
 HEIGHT=911
 WIDTH=1069

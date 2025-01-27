@@ -24,18 +24,23 @@ PlaneRownr=-1
 [RP:OCTOBER18_MARKET PRICING]
 1=
 
+[RP:OCTOBER18_MARKETPRICING_UPDATED]
+1=
+
+[RP:SEPT18_MARKETPRICING_UPDATED]
+1=
+
 [MRUFILES]
-1=E:\GCD_BugFlowExperiment\October 2018\Market-Contract Price\Pricing_Model.gdx
-2=E:\GCD_BugFlowExperiment\October 2018\Market-Contract Price\October18_Market pricing.lst
-3=E:\GCD_BugFlowExperiment\October 2018\Market-Contract Price\October18_Market pricing.gms
-4=E:\GCD_BugFlowExperiment\July 2018\Market-Contract Price\July18_Market pricing.gms
+1=C:\Users\Mooz\Documents\GitHub\GCD_BugFlowExperiment\Models\September 2018\Market-Contract Price Model\Sept18_Marketpricing_Updated.gms
+2=E:\GCD_BugFlowExperiment\October 2018\Market-Contract Price\Pricing_Model.gdx
+3=E:\GCD_BugFlowExperiment\October 2018\Market-Contract Price\October18_Market pricing.lst
+4=E:\GCD_BugFlowExperiment\October 2018\Market-Contract Price\October18_Market pricing.gms
+5=E:\GCD_BugFlowExperiment\July 2018\Market-Contract Price\July18_Market pricing.gms
 
 [OPENWINDOW_1]
-FILE0=C:\Users\Mooz\Documents\GitHub\GCD_BugFlowExperiment\October 2018\Contract Price Model\Sat-Sun-Weekday_October.gdx
-FILE1=C:\Users\Mooz\Documents\GitHub\GCD_BugFlowExperiment\October 2018\Market-Contract Price Model\October18_Market pricing.gms
-FILE2=C:\Users\Mooz\Documents\GitHub\GCD_BugFlowExperiment\October 2018\Market-Contract Price Model\October18_Market pricing.lst
-FILE3=C:\Users\Mooz\Documents\GitHub\GCD_BugFlowExperiment\October 2018\Market-Contract Price Model\Pricing_Model.gdx
-FILE4=C:\Users\Mooz\Documents\GitHub\GCD_BugFlowExperiment\October 2018\Contract Price Model\Sat-Sun-Weekday_October.gdx
+FILE0=C:\Users\Mooz\Documents\GitHub\GCD_BugFlowExperiment\Models\October 2018\Market-Contract Price Model\October18_Marketpricing_Updated.gms
+FILE1=C:\Users\Mooz\Documents\GitHub\GCD_BugFlowExperiment\Models\October 2018\Market-Contract Price Model\October18_Marketpricing_Updated.lst
+FILE2=C:\Users\Mooz\Documents\GitHub\GCD_BugFlowExperiment\Models\October 2018\Market-Contract Price Model\October18_Marketpricing_Updated.lst
 MAXIM=0
 TOP=0
 LEFT=0

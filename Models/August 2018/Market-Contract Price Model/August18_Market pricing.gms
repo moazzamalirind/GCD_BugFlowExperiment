@@ -29,7 +29,7 @@ Set
 ;
 
 
-* Alias create imageo f the set.
+* Alias create image of the set.
 Alias (d,Days);
 Alias (FlowPattern,FlowType);
 
@@ -85,6 +85,7 @@ Duration("pLow")= 8;
 Duration("pHigh")= 16;
 *  High period weightage in a day( 16 Hours or 16 by 24 i.e:0.67 of day)
 
+*$ontext
 Table Days_Distribution(FlowType,Days,Nu_SteadyDays) "number of steady and unsteady saturdays sundays and weekdays in the month"
                          case1   case2   case3   case4   case5   case6  case7   case8   case9   case10   case11   case12
 Steady. Sunday            0       1        2       4      4        4      4       4       4       4         4         4
@@ -93,8 +94,24 @@ Steady. Saturday          0       0        0       0      2        4      4     
 HydroPeak. Saturday       4       4        4       4      2        0      0       0       0       0         0         0
 Steady. Weekday           0       0        0       0      0        0      1       2       7       12        17        23
 HydroPeak. Weekday        23      23       23      23     23       23     22      21      16      11        6         0     ;
+*$offtext
+
+$ontext
+* This is just for trial and supposed to be deleted later.
+Table Days_Distribution(FlowType,Days,Nu_SteadyDays) "number of steady and unsteady saturdays sundays and weekdays in the month"
+                         case1   case2   case3   case4   case5   case6  case7   case8   case9   case10   case11   case12
+Steady. Sunday            0       4        4       4      4        4      4       4       4       4         4         4
+HydroPeak. Sunday         4       0        0       0      0        0      0       0       0       0         0         0
+Steady. Saturday          0       4        4       4      4        4      4       4       4       4         4         4
+HydroPeak. Saturday       4       0        0       0      0        0      0       0       0       0         0         0
+Steady. Weekday           0       0        1       2      3        4      5       6       7       12        17        23
+HydroPeak. Weekday        23      23       22      21     20       19     18      17      16      11        6         0     ;
+$offtext
 
 Table Energy_Price(d,Price,p)"Price of MegaWatt hour during different days and within period p ($ per MWh)"
+
+$ontext
+*This consider market price increase is only $5/mwh flat
                       pLow        pHigh
 Sunday.Contract       49.70       49.70
 Sunday.Market         55.0        55.0
@@ -102,8 +119,32 @@ Saturday.Contract     49.70       64.35
 Saturday.Market       55.0        70.0
 Weekday.Contract      49.70       79.00
 Weekday.Market        55.0        84.00;
+$offtext
 
-Table Nobugflow_Rel(tot_vol,Days,p)"Observed releases of different monthly volume on daytypes d and period p  (cfs)"
+$ontext
+*Scenario with market price is increased to $20/mwh flat
+                      pLow        pHigh
+Sunday.Contract       49.70       49.70
+Sunday.Market         69.00       69.00
+Saturday.Contract     49.70       64.35
+Saturday.Market       69.00       84.00
+Weekday.Contract      49.70       79.00
+Weekday.Market        69.0        99.00;
+$offtext
+
+*$ontext
+*Scenario with market price is increased to $10/mwh flat
+                      pLow        pHigh
+Sunday.Contract       49.70       49.70
+Sunday.Market         59.00       59.00
+Saturday.Contract     49.70       64.35
+Saturday.Market       59.00       74.00
+Weekday.Contract      49.70       79.00
+Weekday.Market        59.0        89.00;
+*$offtext
+
+*$ontext
+Table Nobugflow_Rel(tot_vol,Days,p)"Observed releases of different monthly volume on daytypes d and period p (cfs)"
 *V1 The release volume of March 2016 was ~0.72 MAF.
 *V2 The release volume of August 2015 was ~0.83 MAF.
 *V3 The release volume of August 2017 was ~0.94 MAF.
@@ -117,6 +158,7 @@ V2.Weekday      10983.1      15029.9
 V3.Sunday       12820.3      13802.0
 V3.Saturday     13039.8      15509.4
 V3.Weekday      13115.5      16659.9    ;
+*$offtext
 *===============================================
 SCALAR
 Convert                        Conversion factor from cfs to ac-ft per hour (0.0014*60)/0.083/
@@ -159,7 +201,7 @@ EQ6_ZeroFlowDays(FlowPattern,d,p)                No release for any day type dur
 EQ7_Rel_Range(FlowPattern,d)                     Constraining the daily release range but it will not work when NumDays will be zero(cfs per day)
 EQ8_AlternativeDays_Relrange                     Constraining release change between on-peak of current day and off-peak of next day to be less than or equal to 8000 (cfs)
 EQ9_AlternativeDays_Relrange                     Constraining release change between on-peak of current day and off-peak of next day to be less than or equal to 8000 (cfs)
-EQ10_AlternativeDays_Relrange                  Constraining release change between on-peak of current day and off-peak of next day to be less than or equal to 8000 (cfs)
+EQ10_AlternativeDays_Relrange                    Constraining release change between on-peak of current day and off-peak of next day to be less than or equal to 8000 (cfs)
 
 EQ11_Monthtlyrel                                 Constraining total monthly release volume (ac-ft)
 EQ12_RelVolume                                   Total volume from different types of day in the month (ac-ft)
@@ -186,15 +228,8 @@ EQ19_OnPeak_UnsteadyDay(d)                       Constraining on-peak unsteady d
 EQ20_EnergyGen_Max(FlowPattern,d,p)              Maximum Energy Generation Limit of the Glen Caynon Dam(MW)
 EQ21_EnergyGen(FlowPattern,d,p)                  Energy generated in each period p during different day types (MWh)
 
-*Objective Functions
-
-EQ22_Unsteady_days                              Revenue generated during unsteady Days ($).  For all scenarios except hydropeaking hydrograph--Zero Steady low flow days($)
-
-EQ23_Equation(d,p)                               To tackle Unbounded ray error in case of flat hydrograph
-EQ24_Steadydays_Onpeak                          Revenue generated during on-peak Steadyday ($).
-EQ25_Steadydays_Offpeak                         Revenue generated during off-peak Steadyday ($)
-EQ26_TotalRevenue                               Total monthly Hydropower Revenue generated($). The revenue has all daytypes and all flowpatterns with both market and contract prices.
 ;
+
 
 
 *------------------------------------------------------------------------------*
@@ -239,35 +274,124 @@ EQ15a_offpeak_Saturday$(Num_days("HydroPeak","Saturday") gt 0)..                
 EQ16_OnPeak_Sunday$(Num_days("HydroPeak","Sunday") gt 0)..                       Release("HydroPeak","Sunday","pHigh")=e= Release("HydroPeak","Weekday","pHigh")-2000;
 EQ16a_offpeak_Sunday$(Num_days("HydroPeak","Sunday") gt 0)..                     Release("HydroPeak","Sunday","pLow")=e= Release("HydroPeak","Weekday","pLow");
 
-EQ17_Steady_Saturdays(p)$(Num_Days("Steady","Saturday")gt 0)..   Release("Steady","Saturday",p)=e= Release("Steady","Sunday",p);
+EQ17_Steady_Saturdays(p)$(Num_Days("Steady","Saturday")gt 0)..                   Release("Steady","Saturday",p)=e= Release("Steady","Sunday",p);
 
 ** Eq 18 assumes that steady weekday equals the steady sunday releases.
-EQ18_Steady_Weekdays(p)$(Num_Days("Steady","Weekday")gt 0)..     Release("Steady","Weekday",p)=e= Release("Steady","Sunday",p);
+EQ18_Steady_Weekdays(p)$(Num_Days("Steady","Weekday")gt 0)..                     Release("Steady","Weekday",p)=e= Release("Steady","Sunday",p);
 
-EQ19_OnPeak_UnsteadyDay(d)$(Num_Days("HydroPeak",d)gt 0)..                    Release("HydroPeak",d,"pHigh")=g= Release("HydroPeak",d,"pLow");
+EQ19_OnPeak_UnsteadyDay(d)$(Num_Days("HydroPeak",d)gt 0)..                       Release("HydroPeak",d,"pHigh")=g= Release("HydroPeak",d,"pLow");
 
-EQ20_EnergyGen_Max(FlowPattern,d,p)..                                          Energy_Gen(FlowPattern,d,p)=l= 1320*Duration(p);
+EQ20_EnergyGen_Max(FlowPattern,d,p)..                                            Energy_Gen(FlowPattern,d,p)=l= 1320*Duration(p);
 *Maximum Energy Generation capacity of GCD (MWH).. Source https://www.usbr.gov/uc/rm/crsp/gc
-EQ21_EnergyGen(FlowPattern,d,p)..                                              Energy_Gen(FlowPattern,d,p)=e= Release(FlowPattern,d,p)*Duration(p)*0.03715;
+EQ21_EnergyGen(FlowPattern,d,p)..                                                Energy_Gen(FlowPattern,d,p)=e= Release(FlowPattern,d,p)*Duration(p)*0.03715;
 * Energy generation formula used in WAPA Execl model..
 
-*==============================Objective Function======================================
-EQ22_Unsteady_days(FlowPattern,d,p)$((Num_Days("Steady","Sunday") gt 0)and(Num_Days("Hydropeak","Weekday") gt 0))..          Revenue("HydroPeak",d,p)=e= [{Observed_Rel(d,p)* Energy_Price(d,"Contract",p)+ (Release("HydroPeak",d,p)- Observed_Rel(d,p))*Energy_Price(d,"Market",p)}*0.03715*Duration(p)]* Num_Days("HydroPeak",d);
+*+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+* Model for Zero steady Low flow day scenario.
 
-EQ23_Equation(d,p)$(Num_Days("Hydropeak","Weekday") eq 0)..                                                                   Revenue("HydroPeak",d,p)=e=0;
+Equation
+EQ27_ZeroBugDays_Revenue                         Revenue generated from all flowpatterns daytypes and periods with zero steady low flow days($)
+;
 
-EQ24_Steadydays_Onpeak(FlowPattern,d,p)$(Num_Days("Steady","Sunday") gt 0)..                        Revenue("Steady",d,"pHigh")=e=  [{Release("Steady",d,"pHigh")* Energy_Price(d,"Contract","pHigh")-(Observed_Rel(d,"pHigh")-Release("Steady",d,"pHigh"))*Energy_Price(d,"Market","pHigh")}*Duration("pHigh")*0.03715]* Num_Days("Steady",d);
-EQ25_Steadydays_Offpeak(FlowPattern,d,p)$(Num_Days("Steady","Sunday") gt 0)..                       Revenue("Steady",d,"pLow")=e=  [{Observed_Rel(d,"pLow")* Energy_Price(d,"Contract","pLow") + (Release("Steady",d,"pLow")- Observed_Rel(d,"pLow"))*Energy_Price(d,"Market","pLow")}*Duration("pLow")*0.03715]* Num_Days("Steady",d);
+EQ27_ZeroBugDays_Revenue$(Num_Days("Steady","Sunday") eq 0)..            Revenue_zeroSteadyFlow =e= sum(FlowPattern,sum(d, sum(p,Energy_Gen(FlowPattern,d,p)*Energy_Price(d,"Contract",p))*Num_Days(FlowPattern,d)));
 
-EQ26_TotalRevenue..                                                                                ObjectiveVal=e= Sum((FlowPattern,d,p),Revenue(FlowPattern,d,p));
 
 *------------------------------------------------------------------------------*
 
-MODEL Model1 Find value of hydropower revenue using LP/ALL/;
+MODEL Model0 Find value of hydropower revenue at zero steady flow days using LP/ALL/;
+*MODEL Model0 Find value of hydropower revenue at zero steady flow days using LP/EQ1_ResMassBal,EQ2_reqpowerstorage,EQ3_maxstor,EQ4_MaxR,EQ5_MinR,EQ6_ZeroFlowDays,
+*EQ7_Rel_Range,EQ8_AlternativeDays_Relrange,EQ9_AlternativeDays_Relrange,EQ10_AlternativeDays_Relrange,EQ11_Monthtlyrel,EQ12_RelVolume,EQ13_SteadyFlow_Day,
+*EQ14_OffsetRel,EQ15_OnPeak_Saturday,EQ15a_offpeak_Saturday,EQ16_OnPeak_Sunday,EQ16a_offpeak_Sunday,EQ17_Steady_Saturdays,EQ18_Steady_Weekdays,
+*EQ19_OnPeak_UnsteadyDay,EQ20_EnergyGen_Max,EQ21_EnergyGen,EQ27_ZeroBugDays_Revenue/;
+*This model is for zero steady low flow days only
+
+
+Num_Days(FlowType,Days)= Days_Distribution(FlowType,Days,"Case1")+ EPS;
+
+Loop((Offset,tot_vol),
+*Loop((Offset,tot_vol)$((ord(Offset) eq 1) and (ord(tot_vol) eq 1)),
+
+Weekend_Rel= Diff_Release(Offset);
+TotMonth_volume = Vol_monthlyrelease(tot_vol);
+*Observed_Rel(Days,p)= Nobugflow_Rel(tot_vol,Days,p);
+*addded this above line
+
+option LP= CPLEX;
+
+Solve Model0 using LP MAXIMIZE Revenue_zeroSteadyFlow;
+
+
+* All the following lines of code are saving values for different parameters
+  FStore(Offset,tot_vol,"Case1")=Revenue_zeroSteadyFlow.L;
+
+* XStore store the energy generated (Mwh/day) during different types of days
+   XStore(Offset,tot_vol,"Case1",FlowType,Days)= sum (p,Energy_Gen.L(FlowType,Days,p))+ EPS;
+
+* RStore store the reservoir releases (cfs) during different types of days and scenarios.
+   RStore(Offset,tot_vol,"Case1",FlowType,Days,p)= Release.L(FlowType,Days,p)+ EPS;
+
+*Sstore store the end of month reservoir storage (ac-ft)
+   Sstore(Offset,tot_vol,"Case1")= storage.L;
+
+
+*Saving the model status for different scenarios.
+   ModelResults(Offset,tot_vol,"Case1","SolStat")= Model0.solvestat;
+   ModelResults(Offset,tot_vol,"Case1","ModStat")= Model0.modelstat;
+);
+
+**  Observed releases are considered as baseline to calculate surplus and deficit energy in the Market-Contract model
+
+*PARAMETER FlowAtZeroSteadyDays(FlowType,Days,p) ;     This paramater is required incase we are considering modeled releases of unsteady hydrograph as a baseline for market price calculations.
+
+
+************************************* Additional Equations for market model
+EQUATIONS
+*Objective Functions
+
+EQ22a_Unsteady_days_Onpeak                       Revenue generated during on-peak unsteady Days ($).  For all scenarios except hydropeaking hydrograph--Zero Steady low flow days and for all steady low flow days.
+EQ22b_Unsteady_days_Offpeak                      Revenue generated during on-peak unsteady Days ($).  For all scenarios except hydropeaking hydrograph--Zero Steady low flow days and for all steady low flow days
+
+EQ23_Equation(d,p)                               To tackle Unbounded ray error in case of flat hydrograph
+EQ24_Steadydays_Onpeak                           Revenue generated during on-peak Steadyday ($).
+EQ25_Steadydays_Offpeak                          Revenue generated during off-peak Steadyday ($)
+EQ26_TotalRevenue                                Total monthly Hydropower Revenue generated($). The revenue has all daytypes and all flowpatterns with both market and contract prices.
+;
+
+
+
+*==============================Objective Function======================================
+*EQ22_Unsteady_days(d,p)$((Num_Days("Steady","Sunday") gt 0)and(Num_Days("Hydropeak","Weekday") gt 0))..          Revenue("HydroPeak",d,p)=e= [{FlowAtZeroSteadyDays("HydroPeak",d,p)* Energy_Price(d,"Contract",p)+ (Release("HydroPeak",d,p)- FlowAtZeroSteadyDays("HydroPeak",d,p))*Energy_Price(d,"Market",p)}*0.03715*Duration(p)]* Num_Days("HydroPeak",d);
+
+EQ22a_Unsteady_days_Onpeak(d)$((Num_Days("Steady","Sunday") gt 0)and(Num_Days("Hydropeak","Weekday") gt 0))..          Revenue("HydroPeak",d,"pHigh")=e= [{Observed_Rel(d,"pHigh")*Energy_Price(d,"Contract","pHigh") + (Release("HydroPeak",d,"pHigh")- Observed_Rel(d,"pHigh"))*Energy_Price(d,"Market","pHigh")}*0.03715*Duration("pHigh")]* Num_Days("HydroPeak",d);
+EQ22b_Unsteady_days_Offpeak(d)$((Num_Days("Steady","Sunday") gt 0)and(Num_Days("Hydropeak","Weekday") gt 0))..          Revenue("HydroPeak",d,"pLow")=e= [{Release("HydroPeak",d,"pLow")*Energy_Price(d,"Contract","pLow") - (Observed_Rel(d,"pLow")- Release("HydroPeak",d,"pLow"))*Energy_Price(d,"Market","pLow")}*0.03715*Duration("pLow")]* Num_Days("HydroPeak",d);
+
+
+EQ23_Equation(d,p)$(Num_Days("Hydropeak","Weekday") eq 0)..                          Revenue("HydroPeak",d,p)=e=0;
+
+EQ24_Steadydays_Onpeak(d)$(Num_Days("Steady","Sunday") gt 0)..         Revenue("Steady",d,"pHigh")=e=  [{Release("Steady",d,"pHigh")* Energy_Price(d,"Contract","pHigh")-[(Observed_Rel(d,"pHigh")-Release("Steady",d,"pHigh"))*Energy_Price(d,"Market","pHigh")]}*Duration("pHigh")*0.03715]* Num_Days("Steady",d);
+****EQ24_Steadydays_Onpeak(d)$(Num_Days("Steady","Sunday") gt 0)..         Revenue("Steady",d,"pHigh")=e=  [{Release("Steady",d,"pHigh")* Energy_Price(d,"Contract","pHigh")-(FlowAtZeroSteadyDays("Steady",d,"pHigh")-Release("Steady",d,"pHigh"))*Energy_Price(d,"Market","pHigh")}*Duration("pHigh")*0.03715]* Num_Days("Steady",d);
+EQ25_Steadydays_Offpeak(d)$(Num_Days("Steady","Sunday") gt 0)..        Revenue("Steady",d,"pLow")=e=  [{Release("Steady",d,"pLow")* Energy_Price(d,"Contract","pLow")-[(Observed_Rel(d,"pLow")-Release("Steady",d,"pLow"))*Energy_Price(d,"Market","pLow")]}*Duration("pLow")*0.03715]* Num_Days("Steady",d);
+*****EQ25_Steadydays_Offpeak(d)$(Num_Days("Steady","Sunday") gt 0)..        Revenue("Steady",d,"pLow")=e=  [{FlowAtZeroSteadyDays("Steady",d,"pLow")* Energy_Price(d,"Contract","pLow") + (Release("Steady",d,"pLow")- FlowAtZeroSteadyDays("Steady",d,"pLow"))*Energy_Price(d,"Market","pLow")}*Duration("pLow")*0.03715]* Num_Days("Steady",d);
+
+**I am intentionally making two seperate equations 24 for onpeak and 25 for offpeak. I want to control both differently and clearly.
+*********************Have to identify the case (number of steady days) when steady low period releases exceed observed releases.
+
+
+EQ26_TotalRevenue..                                                                  ObjectiveVal=e= Sum((FlowPattern,d,p),Revenue(FlowPattern,d,p));
+
+*------------------------------------------------------------------------------*
+
+MODEL Model1 Find value of hydropower revenue using LP/EQ1_ResMassBal,EQ2_reqpowerstorage,EQ3_maxstor,EQ4_MaxR,EQ5_MinR,EQ6_ZeroFlowDays,EQ7_Rel_Range,
+EQ8_AlternativeDays_Relrange,EQ9_AlternativeDays_Relrange,EQ10_AlternativeDays_Relrange,EQ11_Monthtlyrel,EQ12_RelVolume,EQ13_SteadyFlow_Day,EQ14_OffsetRel,
+EQ15_OnPeak_Saturday,EQ15a_offpeak_Saturday,EQ16_OnPeak_Sunday,EQ16a_offpeak_Sunday,EQ17_Steady_Saturdays,EQ18_Steady_Weekdays,EQ19_OnPeak_UnsteadyDay,
+EQ20_EnergyGen_Max,EQ21_EnergyGen,EQ22a_Unsteady_days_Onpeak,EQ22b_Unsteady_days_Offpeak,EQ23_Equation,EQ24_Steadydays_Onpeak,EQ25_Steadydays_Offpeak,EQ26_TotalRevenue/;
 *This model is for all cases of steady flow days. But the results of zero steady low flow days scenario are incorrect so we need seperate model for that.
 
-Loop((Offset,tot_vol,Nu_SteadyDays),
 
+Loop((Offset,tot_vol,Nu_SteadyDays)$(ord(Nu_SteadyDays) gt 1),
+*Loop((Offset,tot_vol,Nu_SteadyDays)$((ord(Offset) eq 1)and(ord(tot_vol) eq 1)and(ord(Nu_SteadyDays) eq 2) ),
+
+*FlowAtZeroSteadyDays(FlowType,d,p) = RStore("H1",tot_vol,"Case1",FlowType,d,p);
 Weekend_Rel= Diff_Release(Offset);
 TotMonth_volume = Vol_monthlyrelease(tot_vol);
 Observed_Rel(Days,p)= Nobugflow_Rel(tot_vol,Days,p);
@@ -302,52 +426,6 @@ Rev(Offset,tot_vol,Nu_SteadyDays,FlowType,Days,p)=  Revenue.L(FlowType,Days,p) +
 );
 
 
-*+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-* Model for Zero steady Low flow day scenario.
-
-Equation
-EQ27_ZeroBugDays_Revenue                         Revenue generated from all flowpatterns daytypes and periods with zero steady low flow days($)
-;
-
-EQ27_ZeroBugDays_Revenue$(Num_Days("Steady","Sunday") eq 0)..            Revenue_zeroSteadyFlow =e= sum(FlowPattern,sum(d, sum(p,Energy_Gen(FlowPattern,d,p)*Energy_Price(d,"Contract",p))*Num_Days(FlowPattern,d)));
-
-
-*------------------------------------------------------------------------------*
-
-MODEL Model0 Find value of hydropower revenue at zero steady flow days using LP/ALL/;
-*This model is for zero steady low flow days only
-
-
-Num_Days(FlowType,Days)= Days_Distribution(FlowType,Days,"Case1")+ EPS;
-
-Loop((Offset,tot_vol),
-
-Weekend_Rel= Diff_Release(Offset);
-TotMonth_volume = Vol_monthlyrelease(tot_vol);
-
-
-option LP= CPLEX;
-
-Solve Model0 using LP MAXIMIZE Revenue_zeroSteadyFlow;
-
-
-* All the following lines of code are saving values for different parameters
-  FStore(Offset,tot_vol,"Case1")=Revenue_zeroSteadyFlow.L;
-
-* XStore store the energy generated (Mwh/day) during different types of days
-   XStore(Offset,tot_vol,"Case1",FlowType,Days)= sum (p,Energy_Gen.L(FlowType,Days,p))+ EPS;
-
-* RStore store the reservoir releases (cfs) during different types of days and scenarios.
-   RStore(Offset,tot_vol,"Case1",FlowType,Days,p)= Release.L(FlowType,Days,p)+ EPS;
-
-*Sstore store the end of month reservoir storage (ac-ft)
-   Sstore(Offset,tot_vol,"Case1")= storage.L;
-
-
-*Saving the model status for different scenarios.
-   ModelResults(Offset,tot_vol,"Case1","SolStat")= Model0.solvestat;
-   ModelResults(Offset,tot_vol,"Case1","ModStat")= Model0.modelstat;
-);
 
 
 DISPLAY FStore,XStore,RStore,Sstore;
@@ -357,9 +435,9 @@ DISPLAY FStore,XStore,RStore,Sstore;
 *Following part of code creates  gdx and excel output file..
 
 * Dump all input data and results to a GAMS gdx file
-Execute_Unload "Pricing_Model.gdx";
+Execute_Unload "Pricing_Model_New_2.gdx";
 * Dump the gdx file to an Excel workbook
-Execute "gdx2xls Pricing_Model.gdx"
+Execute "gdx2xls Pricing_Model_New_2.gdx"
 
 
 

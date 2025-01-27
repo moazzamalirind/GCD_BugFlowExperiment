@@ -30,20 +30,26 @@ PlaneRownr=-1
 [RP:JUNE18_MARKET PRICING]
 1=
 
+[RP:JUNE18_MARKETPRICING_UPDATED]
+1=
+
+[RP:SEPT18_MARKETPRICING_UPDATED]
+1=
+
 [MRUFILES]
-1=C:\Users\Mooz\Documents\GitHub\GCD_BugFlowExperiment\June 2018\Contract Price Model\Sat-Sun-Weekday_June.gdx
-2=C:\Users\Mooz\Documents\GitHub\GCD_BugFlowExperiment\June 2018\Market-Contract Price Model\Pricing_Model.gdx
-3=E:\GCD_BugFlowExperiment\June 2018\Market-Contract Price\Pricing_Model.gdx
-4=E:\GCD_BugFlowExperiment\June 2018\Market-Contract Price\June18_Market pricing.lst
-5=E:\GCD_BugFlowExperiment\June 2018\Market-Contract Price\June18_Market pricing.gms
-6=E:\GCD_BugFlowExperiment\May 2018\Market-Contract Price\May18_Market pricing.gms
-7=E:\GCD_BugFlowExperiment\June 2018\Updated_Sat-Sun-Weekday\Sat-Sun-Weekday_June.gdx
-8=E:\GCD_BugFlowExperiment\June 2018\Updated_Sat-Sun-Weekday\June18_Saturday.gms
+1=C:\Users\Mooz\Documents\GitHub\GCD_BugFlowExperiment\Models\June 2018\Market-Contract Price Model\June18_Marketpricing_Updated.gms
+2=C:\Users\Mooz\Documents\GitHub\GCD_BugFlowExperiment\June 2018\Contract Price Model\Sat-Sun-Weekday_June.gdx
+3=C:\Users\Mooz\Documents\GitHub\GCD_BugFlowExperiment\June 2018\Market-Contract Price Model\Pricing_Model.gdx
+4=E:\GCD_BugFlowExperiment\June 2018\Market-Contract Price\Pricing_Model.gdx
+5=E:\GCD_BugFlowExperiment\June 2018\Market-Contract Price\June18_Market pricing.lst
+6=E:\GCD_BugFlowExperiment\June 2018\Market-Contract Price\June18_Market pricing.gms
+7=E:\GCD_BugFlowExperiment\May 2018\Market-Contract Price\May18_Market pricing.gms
+8=E:\GCD_BugFlowExperiment\June 2018\Updated_Sat-Sun-Weekday\Sat-Sun-Weekday_June.gdx
 
 [OPENWINDOW_1]
-FILE0=C:\Users\Mooz\Documents\GitHub\GCD_BugFlowExperiment\June 2018\Market-Contract Price Model\June18_Market pricing.gms
-FILE1=C:\Users\Mooz\Documents\GitHub\GCD_BugFlowExperiment\June 2018\Market-Contract Price Model\June18_Market pricing.lst
-FILE2=C:\Users\Mooz\Documents\GitHub\GCD_BugFlowExperiment\June 2018\Market-Contract Price Model\June18_Market pricing.gms
+FILE0=C:\Users\Mooz\Documents\GitHub\GCD_BugFlowExperiment\Models\June 2018\Market-Contract Price Model\June18_Marketpricing_Updated.lst
+FILE1=C:\Users\Mooz\Documents\GitHub\GCD_BugFlowExperiment\Models\September 2018\Market-Contract Price Model\Sept18_Marketpricing_Updated.gms
+FILE2=C:\Users\Mooz\Documents\GitHub\GCD_BugFlowExperiment\Models\June 2018\Market-Contract Price Model\June18_Marketpricing_Updated.lst
 MAXIM=0
 TOP=0
 LEFT=0
