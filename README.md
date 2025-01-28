@@ -64,10 +64,15 @@ ________________________________________________________________________________
 2. Microsoft Excel. We used Office 2016 for this analysis.
 ________________________________________________________________________________________________________________________________________________________
 ## Directions to Reproduce Results
+The following instructions will help users reproduce the results in "Final_Draft_JHI_2025.pdf.
 
-First download folders name: Models and Supporting Data. Save those folder on your local machine at any desired drive location. For example: E:\GAMS\Models & E:\GAMS\Supporting Data.
+First download folder name "Months of 2018". Save the folder on your local machine at any desired drive location. For example: E:\GAMS\Models
 
 **Figure 1**
+
+This location map was created using ArcMap 10.8 (GIS).
+
+**Figure 2**
 1. Download 15 mins observed hydrograph of August 2018 from: https://waterdata.usgs.gov/usa/nwis/uv?09380000
 2. Paste the downloaded data in the given Excel file. The Excel file named "Hydrographs_Observed_Used" is available in the Supporting Data folder (Supporting Data/Hydrographs_Observed_Used.xlsx). Move to the worksheet named "August_2018" and paste the downloaded release data against the time in the blue colored cells. You can visulaze the updated hydrograph in the worksheet named "August_2018 (Hydrograph)".
 
