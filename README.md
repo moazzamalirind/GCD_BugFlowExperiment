@@ -47,7 +47,7 @@ ________________________________________________________________________________
 ## Model Formulation
 
 
-![image](https://user-images.githubusercontent.com/46287583/165018551-6ae1fef8-0059-4f9e-909e-1126a49c73b5.png)
+![image](https://github.com/moazzamalirind/GCD_BugFlowExperiment/blob/main/Supporting%20Data/Model_Structure.png)
 
 
 
