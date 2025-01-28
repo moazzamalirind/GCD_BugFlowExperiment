@@ -52,18 +52,21 @@ Each of the month folder has three sub-folders: Contract_Price_Model, Contract-M
 For example: Folder "March 2018". The Contract Price model sub-folder has project file (.gpr), GAMS code file (.gms), and GAMS output files (e.g. .gdx, .xlxs, .lst, etc.). The code file contains all predefined inputs and includes comments explaining the inputs and functions. This makes it adaptable for various scenarios by simply updating the inputs. The provided project file (.gpr) is only for convenience. Alternatively, users with a valid GAMS license can create a new project in the GAMS IDE and run the code file directly. Similarly, Market-Contract Price Model subfolder contains project file (.gpr), GAMS code file (.gms), and GAMS output files (e.g. .gdx, .xlxs, .lst, etc.) for the Market-Contract price model version. The code file includes sufficient comments to help users understand differences and navigate easily. Finally, Miscellaneous sub-folder contains validation files, observed hydrographs, and Excel file comparing results from both model versions (Contract_vs_Market-Contract Results.xlxs).
 
 **b. Supporting Data**
-This folder contains energy Rates used in the analysis and some gathered historical energy prices. Unfortunately, there are minimum details available related to energy prices. There are observed hydrographs from 2013 to 2021 and those excel files have some initial data analysis, visualization, and selections. Models Results Summary.xlxs file has compilation of results from model versions and scenarios. Hydropower fluctuation file has rough estimate of power variation from change in reservior storage level. Finally, there is a folder named "Weekend-Weekday" that has files from a model version with only 2 day types: Weekend-Weekday. We didn't focus this version of the model for analysis because it overshadows the importance of Saturday energy prices.
+This folder contains energy Rates used in the analysis and some gathered historical energy prices. Unfortunately, there are minimum details available related to energy prices. There are observed hydrographs from 2013 to 2021 and those excel files have some initial data analysis, visualization, and selections. Hydropower fluctuation file has rough estimate of power variation from change in reservior storage level. 
+
+???Models Results Summary.xlxs file has compilation of results from model versions and scenarios. 
+
+?? There is a folder named "Weekend-Weekday" that contains 
+Finally, there is a folder named "Weekend-Weekday" that has files from a model version with only 2 day types: Weekend-Weekday. We didn't focus this version of the model for analysis because it overshadows the importance of Saturday energy prices.
  
 **c. Documents**
 There are documents produced during this research including proposal and final thesis/article. There are also documents about different model version we reject due to various reasons. Mainly, thesis file will be sufficient to understand the overall study.
 _________________________________________________________________________________________________________________________________________________________________________________
 ## Required Softwares
-
-1. General Algebraic Modeling System (GAMS), which can be freely downloaded from (https://www.gams.com/download/). We used GAMS 30.3 version and acquired license to run the model.
+1. General Algebraic Modeling System (GAMS), which can be freely downloaded from (https://www.gams.com/download/). We used GAMS version 30.3 and acquired license to run the model.
 
 2. Microsoft Excel. We used Office 2016 for this analysis.
-________________________________________________________________________________________________________________________________________________________________________________
-
+________________________________________________________________________________________________________________________________________________________
 ## Directions to Reproduce Results
 
 First download folders name: Models and Supporting Data. Save those folder on your local machine at any desired drive location. For example: E:\GAMS\Models & E:\GAMS\Supporting Data.
