@@ -68,13 +68,18 @@ The following instructions will help users reproduce the results in "Final_Draft
 
 First download folder name "Months of 2018". Save the folder on your local machine at any desired drive location. For example: E:\GAMS\Models
 
-**Figure 1**
-
-This location map was created using ArcMap 10.8 (GIS).
+**Figure 1** This location map was created using ArcMap 10.8 (GIS).
 
 **Figure 2**
 1. Download 15 mins observed hydrograph of August 2018 from: https://waterdata.usgs.gov/usa/nwis/uv?09380000
-2. Paste the downloaded data in the given Excel file. The Excel file named "Hydrographs_Observed_Used" is available in the Supporting Data folder (Supporting Data/Hydrographs_Observed_Used.xlsx). Move to the worksheet named "August_2018" and paste the downloaded release data against the time in the blue colored cells. You can visulaze the updated hydrograph in the worksheet named "August_2018 (Hydrograph)".
+2. Paste the downloaded data into the "Hydrographs_Observed_Used.xlsx" file located in the Supporting Data folder. In the "August_2018" worksheet, paste the release data into the blue-colored cells corresponding to the time. View the updated hydrograph in the "August_2018 (Hydrograph)" worksheet.
+
+**Figure 3** We developed this conceptual model in Microsoft PowerPoint 2016 to illustrate how contract and market pricing may affect the release schedule.
+
+**Figure 4**
+
+
+
 
 **Table 1**
 1. Download folder named "Validation" available at GCD_BugFlowExperiment/Models/August 2018/Validation and save downloaded folder at your desired location. 
