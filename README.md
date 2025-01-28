@@ -25,7 +25,6 @@ ________________________________________________________________________________
 •	Monthly Tradeoff variations and how these tradeoffs can help hydropower producers and ecosystem managers better understand and address the conflict between hydropower generation and ecosystem objectives.
 _________________________________________________________________________________________________________________________________________________________________________________
 ## Features of the study
-
 1. We have transformed a monthly linear hydropower objective with 744 hourly release decisions (24 hours *31 days) to a linear problem with only 6 sub-daily decisions i.e: 3 day type (Saturday, Sunday, and Weekday) and 2 periods per day.
 
 2. The model can produce results for scenarios: monthly release volumes, on-and off-peaks energy pricing differential, offset release between off-peak weekday and weekend, and price type (market and contract).
@@ -37,8 +36,7 @@ ________________________________________________________________________________
 5. Example of trade-off analysis used for multi-objective decision making.
 
 6. The study is replicable and adaptable to other sites and designer flow experiments (e.g. HFEs)
-
-_________________________________________________________________________________________________________________________________________________________________________________
+_______________________________________________________________________________________________________________________________________________________________________________
 ## Model Formulation
 ![image](https://github.com/moazzamalirind/GCD_BugFlowExperiment/blob/main/Supporting%20Data/Model_Structure.png)
 ________________________________________________________________________________________________________________________________________________________________________________
