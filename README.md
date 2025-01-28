@@ -28,9 +28,9 @@ ________________________________________________________________________________
 
 1. We have transformed a monthly linear hydropower objective with 744 hourly release decisions (24 hours *31 days) to a linear problem with only 6 sub-daily decisions i.e: 3 day type (Saturday, Sunday, and Weekday) and 2 periods per day.
 
-2. The model can produce results for scenarios: monthly release volumes,on-and off-peaks energy pricing differential, offset release between off-peak weekday and weekend, and price type (market and contract).
+2. The model can produce results for scenarios: monthly release volumes, on-and off-peaks energy pricing differential, offset release between off-peak weekday and weekend, and price type (market and contract).
 
-3. Only two periodic releases per day and those releases remain constant for the month under similar flowpattern (Steady and hydropeak).
+3. Only two periodic releases per day and those releases remain constant for the month under similar flowpatterns (Steady and hydropeak).
 
 4. Concept of bugs buying water from hydropower producers by paying the losses. Tradeoffs of the months provide purchase price ($/day) of different day types during months, hence, ecosystem managers make informed purchase decisions. 
 
@@ -40,13 +40,8 @@ ________________________________________________________________________________
 
 _________________________________________________________________________________________________________________________________________________________________________________
 ## Model Formulation
-
-
 ![image](https://github.com/moazzamalirind/GCD_BugFlowExperiment/blob/main/Supporting%20Data/Model_Structure.png)
-
-
-
-_________________________________________________________________________________________________________________________________________________________________________________
+________________________________________________________________________________________________________________________________________________________________________________
 **Details of Respository Contents**
 
 Basically there are three distinct folders:
