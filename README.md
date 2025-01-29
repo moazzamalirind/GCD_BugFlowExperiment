@@ -87,18 +87,14 @@ First download folder name "Months of 2018". Save the folder on your local machi
 7. Open "Sat-Sun-Weekday_August.xlsx" located in the project output folder. Move to the worksheet "Fstore". You will see four populated columns (A-D). Figure 4 is for Zero offset (H1). So select only H1 in Offset column using filter function.  
 8. Copy the values from column D (Value) and paste them into the Tradeoff_Graph worksheet in Graphs.xlsx. The trade-off graph in Graph_Tradeoff will update automatically.
 
-**Table 1**
-1. Download folder named "Validation" available at GCD_BugFlowExperiment/Models/August 2018/Validation and save downloaded folder at your desired location. 
-2. You will see number of files with different extensions (e.g. .gms, .log, .lst, .lxi, .xls, .gpr). These are input and output files of two validation models: a) Hourly model (hourly releases and  energy prices are model inputs) b) Saturday-Sunday-Weekday model (periodic releases and energy prices for different daytypes are model inputs). Note: Details of the hourly releases and energy prices, as well as, estimation of periodic releases and energy prices are present in excel file " Input_August2018.xlsx".
-3. Now open GAMS IDE. Click start => gamside or if you have IDE icon on desktop double click that. A blank GAMS interface will show up. 
-4. Either you can create a new project (File/Project/New Project) or you can open the given project "Validation.gpr" in the downloaded folder. Use only one method. In case you decided to create a new project, save that new project in the same folder where other downloaded files are located. Once you will be able to create or open a project then the top most bar will tell you the location of the project you are working in.
-5. Now we have to bring the code file (.gms) into our project. Click File/Open. Open Window will appear. Set Files of type: Gams files (*.gms). Now if your project and files are saved in the same folder you will see two files: a) August18_Sat_Validation b) August2018_Validation(Hourly). Click one and click open. For instance, the first one we are opening is Saturday-Sunday-Weekday day model code so click August18_Sat_Validation. The code file contains all neccessary inputs and there is no need of modification or any external input file. All you have to do is run the model. There are couple of ways to run the model. A) Press F9 on your keyboard. B) Click the Run icon available in the icon bar (Hint: Point your mouse at each of the icons and it will tell you the functionality of that icon).
-6. When the model will run another dialog window will appear showing status of the run. You will see "Status: Normal completion" after the run was completed. You should also check if the solution is optimal (Look for sentense saying: Optimal Solution found). You have successfully run the model and all the output files are updated. Note: We have used CPLEX Solver throughout our study (Line 158 in the .gms file). This is a linear model so it will work with any linear solver. 
-Extra: In case to change the solver, comment out code Line 158 by placing * infornt of the line. Now Click File/Options. In the options window go to the Solvers tab and click any linear solver of your choice. Click Ok and your solver is now changed.
-7. In similar manner you can run the Hourly model by opening "August2018_Validation(Hourly).gms" and run the model. This code requires external input file. So it's necessary that "Input_August2018.xlsx" should be available in the same project folder.
-8. Now you can visulaze results either using GAMS platform or using MS-Excel output file (.xlsx). For instance, using GAMS IDE. Click File/Open. Change Files of type to GDX files (*.gdx). Now you will see two files: a) Valid_August2018(Hourly) b) Valid_SatModel_August. Open both files one at a time.
-9. To understand what different Symbol represent, please refer the details given in the code files (.gms). Here, Click Released_vol and you will find the total released volume value (Level). The energy generated is represented by symbol Xstore. For example, adding values of d1 to d31 will give total monthly energy generation from the hourly model. In case of Saturday-Sunday-Weekday model, Xstore is giving periodic energy generation of different daytypes. The monthly energy generation will be summation of energy during daytype. Monthly energy generation=  15141.4 + 26211.3+ 15141.4 + 27691.6 + 89804.7 + 235298.9 = 409289.3.
-10. % Error = 100* (Model-Observed) /Observed. E.g. %Error = 100* (409289 - 392938)/392938 = 4.2%.
+
+
+
+
+
+
+
+
 
 
 
@@ -133,11 +129,30 @@ This table compiles hydropower revenue results of months of 2018. Here, you are 
 
 
 
+### Supplemantary Section
+
+**Table 1**
+1. Download folder named "Validation" available at GCD_BugFlowExperiment/Models/August 2018/Validation and save downloaded folder at your desired location. 
+2. You will see number of files with different extensions (e.g. .gms, .log, .lst, .lxi, .xls, .gpr). These are input and output files of two validation models: a) Hourly model (hourly releases and  energy prices are model inputs) b) Saturday-Sunday-Weekday model (periodic releases and energy prices for different daytypes are model inputs). Note: Details of the hourly releases and energy prices, as well as, estimation of periodic releases and energy prices are present in excel file " Input_August2018.xlsx".
+3. Now open GAMS IDE. Click start => gamside or if you have IDE icon on desktop double click that. A blank GAMS interface will show up. 
+4. Either you can create a new project (File/Project/New Project) or you can open the given project "Validation.gpr" in the downloaded folder. Use only one method. In case you decided to create a new project, save that new project in the same folder where other downloaded files are located. Once you will be able to create or open a project then the top most bar will tell you the location of the project you are working in.
+5. Now we have to bring the code file (.gms) into our project. Click File/Open. Open Window will appear. Set Files of type: Gams files (*.gms). Now if your project and files are saved in the same folder you will see two files: a) August18_Sat_Validation b) August2018_Validation(Hourly). Click one and click open. For instance, the first one we are opening is Saturday-Sunday-Weekday day model code so click August18_Sat_Validation. The code file contains all neccessary inputs and there is no need of modification or any external input file. All you have to do is run the model. There are couple of ways to run the model. A) Press F9 on your keyboard. B) Click the Run icon available in the icon bar (Hint: Point your mouse at each of the icons and it will tell you the functionality of that icon).
+6. When the model will run another dialog window will appear showing status of the run. You will see "Status: Normal completion" after the run was completed. You should also check if the solution is optimal (Look for sentense saying: Optimal Solution found). You have successfully run the model and all the output files are updated. Note: We have used CPLEX Solver throughout our study (Line 158 in the .gms file). This is a linear model so it will work with any linear solver. 
+Extra: In case to change the solver, comment out code Line 158 by placing * infornt of the line. Now Click File/Options. In the options window go to the Solvers tab and click any linear solver of your choice. Click Ok and your solver is now changed.
+7. In similar manner you can run the Hourly model by opening "August2018_Validation(Hourly).gms" and run the model. This code requires external input file. So it's necessary that "Input_August2018.xlsx" should be available in the same project folder.
+8. Now you can visulaze results either using GAMS platform or using MS-Excel output file (.xlsx). For instance, using GAMS IDE. Click File/Open. Change Files of type to GDX files (*.gdx). Now you will see two files: a) Valid_August2018(Hourly) b) Valid_SatModel_August. Open both files one at a time.
+9. To understand what different Symbol represent, please refer the details given in the code files (.gms). Here, Click Released_vol and you will find the total released volume value (Level). The energy generated is represented by symbol Xstore. For example, adding values of d1 to d31 will give total monthly energy generation from the hourly model. In case of Saturday-Sunday-Weekday model, Xstore is giving periodic energy generation of different daytypes. The monthly energy generation will be summation of energy during daytype. Monthly energy generation=  15141.4 + 26211.3+ 15141.4 + 27691.6 + 89804.7 + 235298.9 = 409289.3.
+10. % Error = 100* (Model-Observed) /Observed. E.g. %Error = 100* (409289 - 392938)/392938 = 4.2%.
+
+
+
+
+
 
 
 ________________________________________________________________________________________________________________________________________________________________________________
 
-## Recommended Citation
+### Recommended Citation
 
 Moazzam Ali Rind and David E. Rosenberg (2022). "Bugs Buy Steady Releases from Hydropower Producers to Encourage more Synergistic Reservoir Management". Utah State University, Logan, Utah. https://github.com/moazzamalirind/GCD_BugFlowExperiment
 
