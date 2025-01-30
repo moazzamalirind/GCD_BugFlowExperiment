@@ -77,18 +77,35 @@ First download folder name "Months of 2018". Save the folder on your local machi
 **Figure 3** We developed this conceptual model in Microsoft PowerPoint 2016 to illustrate how contract and market pricing may affect the release schedule.
 
 **Figure 4**
-
-1. Within "Months of 2018" folder (you have already downloaded this folder in a step before Figure 1) enter folder "August 2018". Open "Contract Price Model" folder and then double click "Saturday_Sunday_Weekday.gpr" (Models/August 2018/Contract Price Model/Saturday_Sunday_Weekday.gpr). If the project is not saved in your desired location, use "File > Save As" in GAMS IDE to save.
+1. Within "Months of 2018" folder (you have already downloaded this folder in a step before Figure 1) enter folder "August 2018". Open "Contract Price Model" folder and then double click "Saturday_Sunday_Weekday.gpr" (Months of 2018/August 2018/Contract Price Model/Saturday_Sunday_Weekday.gpr). If the project is not saved in your desired location, use "File > Save As" in GAMS IDE to save.
 2. Import the code file using File/Open/August18_Sat_Sun_Weekday_Model.gms. Main window with model code will appear. You are only required to run the model (all inputs are defined in the code) and the output files will be generated/updated in the project's folder. 
 3. After successful run, you will see "Status: Normal completion". You should check if the solution is optimal (Look for sentense saying: Optimal Solution found). Since there are multiple scenairos in this model run so it is difficult to verify the status of each run. Alternative is to verify status of each run within ".gdx file".
 4. Click File/Open. Set the Files of type: GDX files (*.gdx). Open the file "Sat-Sun-Weekday_August". Scroll to Symbol "ModelResults". You be able to see ModStat and SolStat of each run. A value of 1 means optimal solution. For further details of ModStat and SolStat visit: https://www.gams.com/mccarlGuide/modelstat_tmodstat.htm
-5. After verifying the optimality of the runs, the results can be visualized using provided Excel file "Graphs.xlsx" (Models/August 2018/Contract Price Model/Graphs.xlsx). 
+5. After verifying the optimality of the runs, the results can be visualized using provided Excel file "Graphs.xlsx" (Months of 2018/August 2018/Contract Price Model/Graphs.xlsx). 
 6. Move to the worksheet "Tradeoff_Graph". You are required to update the values in the blue highligted cells. Those values can be found in the .gdx file or the output .xlsx file.
 7. Open "Sat-Sun-Weekday_August.xlsx" located in the project output folder. Move to the worksheet "Fstore". You will see four populated columns (A-D). Figure 4 is for Zero offset (H1). So select only H1 in Offset column using filter function.  
 8. Copy the values from column D (Value) and paste them into the Tradeoff_Graph worksheet in Graphs.xlsx. The trade-off graph in Graph_Tradeoff will update automatically.
 
+**Figure 5**  The figure compares two model versions (contract-only vs. market-contract pricing) and illustrates how varying price increases affect trade-offs.
+1. For the contract-only model, enter the same folder as in Figure 4 (Months of 2018/August 2018/Contract Price Model).
+2. Since you’ve already run the code in Figure 4, rerunning the model is unnecessary. You just have to use the output which is available in "Sat-Sun-Weekday_August.xlsx". Move to the worksheet "Fstore" and use the filter function to select only the values for H4 (1000 CFS offset). This information will be used in the next step.
+3. Move to the Market-Contract Price Model (Months of 2018/August 2018/Market-Contract Price Model). You can use the GAMS project using Market_Pricing.gpr or create a new one similar to Figure 4.
+4. Open the code file (August18_MarketPricing_Updated.gms) within the GAMS IDE. The code takes care of both market pricings (+$5/MWh and +$30/MWh) and produce all the required results. The user is not required to change the code unless you want to test different scenarios.
+5. You are required to paste all the required hydropeaking values in the Graphs_August.xlsx (Months of 2018/August 2018/Market-Contract Price Model/Graphs_August.xlsx). The values are required to be pasted in the Tradeoff_Final_Compare worksheet. There are clear instructions about where to paste the values.
+6. The values should come from either .gdx files (Months of 2018/August 2018/Market-Contract Price ModelPricing_Model_Updated.gdx and Months of 2018/August 2018/Contract Price Model/Sat-Sun-Weekday_August.gdx) or the excel output files (Months of 2018/August 2018/Market-Contract Price Model/Pricing_Model_Updated.xlsx and Months of 2018/August 2018/Contract Price Model/Sat-Sun-Weekday_August.xlsx).
+Note: The process for acquiring Fstore values is the same as in Figure 4, but now you should only select data for the H4 offset scenario.
+   
 
 
+
+
+
+
+**Figure XXX**
+1. We need results from both Contract Price and Market-Contract Price models. You have already acquired Contract Price (Saturday-Sunday-Weekday) Model results in Figure 4 above. You are required to run Market-Contract Price model whose code is available within folder: GCD_BugFlowExperiment/Models/August 2018/Market-Contract Price Model/August18_Market pricing.gms. 
+2. You are required to run the model code similar to previous figures. After successful completion of the run, the output files will be updated. 
+3. Go to: GCD_BugFlowExperiment/Models/August 2018/Miscellaneous/Contract_vs_Market-Contract Results.xlsx. You are required to update values of the blue highlighted cells. For Saturday-Sunday-Weekday model, use values of Fstore symbol from Sat-Sun-Weekday_August.gdx or from Sat-Sun-Weekday_August.xlsx (Location:GCD_BugFlowExperiment\Models\August 2018\Contract Price Model). The results of the Market-Contract price model can be found from Fstore within Pricing_Model.gdx or Pricing_Model.gdx (Location: GCD_BugFlowExperiment\Models\August 2018\Market-Contract Price Model).
+4. The updated values will updated the tradeoff graph in the worksheet. Note: Additional calculations in the worksheet are for later stages.
 
 
 
