@@ -1,5 +1,5 @@
 _________________________________________________________________________________________________
-## Bugs Buy Steady Releases from Hydropower Producers to Encourage more Synergistic Reservoir Management 
+## Bugs Buy Steady Releases from Hydropower Producers to Reduce Hydropeaking Ecosystem Conflict 
 _________________________________________________________________________________________________
 
 This study is part of my M.S. degree in Civil and Environmental Engineering at **Utah State University, Utah, USA**
@@ -107,6 +107,7 @@ Note: Fstore values are also available within Pricing_Model_Updated.xlsx. Use th
 7. The table needs slope values which you can get from Graphs_XXX.xlsx file. For example, March slope values can be found in Graph_March.xlsx (Months of 2018/March 2018/Market-Contract Price Model/Graphs_March.xlsx). In that file, use the worksheet "Tradeoff_Graphs_Updated". There are PriceScen 1 ($5/MWh) and PriceScen 2 ($30/MWh) in that worksheet. Follow the provided instructions and paste the Fstore values in the suggested columns. The column with Difference is your required slope. For table 1, we are using PriceScen 1 ($5/MWh) only.
 8. All the copied values will be pasted in the file Market_Price_Summary_Table1.xlsx (location: GCD_BugFlowExperiment/Supporting Data/Market_Price_Summary_Table1.xlsx). Look for Market Price_Table1_5MWh worksheet and insert the fstore values of each months in the designated places. Find the Market Price_Table1_5MWh worksheet and insert the Fstore values for each month in the designated cells. For example, place March slope values in row 7 (cleared cells). Gray-shaded cells represent the percentage change from the zero steady low flow days value and will be calculated automatically.
 11. Repeat this procedure for all 2018 months to fully populate Table 1.
+
 ### Supplemantary Section
 
 **Figure XXX**
@@ -160,14 +161,9 @@ Extra: In case to change the solver, comment out code Line 158 by placing * info
 10. % Error = 100* (Model-Observed) /Observed. E.g. %Error = 100* (409289 - 392938)/392938 = 4.2%.
 
 
-
-
-
-
-
 ________________________________________________________________________________________________________________________________________________________________________________
 
 ### Recommended Citation
 
-Moazzam Ali Rind and David E. Rosenberg (2022). "Bugs Buy Steady Releases from Hydropower Producers to Encourage more Synergistic Reservoir Management". Utah State University, Logan, Utah. https://github.com/moazzamalirind/GCD_BugFlowExperiment
+Moazzam Ali Rind and David E. Rosenberg (2025). "Bugs Buy Steady Releases from Hydropower Producers to Reduce Hydropeaking Ecosystem Conflict". Utah State University, Logan, Utah. https://github.com/moazzamalirind/GCD_BugFlowExperiment
 
