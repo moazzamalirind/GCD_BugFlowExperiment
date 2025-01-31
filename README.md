@@ -109,6 +109,14 @@ Note: Fstore values are also available within Pricing_Model_Updated.xlsx. Use th
 11. Repeat this procedure for all 2018 months to fully populate Table 1.
 
 ### Supplemantary Section
+**Figure S1**
+We received hourly energy prices from WAPA and compiled them in Energy Rates_2014.xlsx (GCD_BugFlowExperiment/Supporting Data/Energy Rates_2014.xlsx). For example, the August worksheet in Energy Rates_2014.xlsx contains observed energy prices for August.
+
+**Figure S2, S3, and S4**
+These observed releases were obtained from USGS 09380000 Colorado River at Lees Ferry, AZ (https://waterdata.usgs.gov/nwis/uv?site_no=09380000&legacy=1)). Refer Hydrographs_Observed_Used (location: GCD_BugFlowExperiment/Supporting Data/Hydrographs_Observed_Used.xlsx).
+
+**Figure S5**
+We created the model structure flow diagram in Microsoft PowerPoint.
 
 **Figure XXX**
 1. We need results from both Contract Price and Market-Contract Price models. You have already acquired Contract Price (Saturday-Sunday-Weekday) Model results in Figure 4 above. You are required to run Market-Contract Price model whose code is available within folder: GCD_BugFlowExperiment/Models/August 2018/Market-Contract Price Model/August18_Market pricing.gms. 
