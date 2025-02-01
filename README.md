@@ -72,7 +72,7 @@ First download folder name "Months of 2018". Save the folder on your local machi
 
 **Figure 2**
 1. Download 15 mins observed hydrograph of August 2018 from: https://waterdata.usgs.gov/usa/nwis/uv?09380000
-2. Paste the downloaded data into the "Hydrographs_Observed_Used.xlsx" file located in the Supporting Data folder. In the "August_2018" worksheet, paste the release data into the blue-colored cells corresponding to the time. View the updated hydrograph in the "August_2018 (Hydrograph)" worksheet.
+2. Paste the downloaded data into the "Hydrographs_Observed_Used.xlsx" file located in the Supporting Data folder. In the "August_2018" worksheet, paste the release data into the blue-colored cells corresponding to the time. The Saturday-Sunday-Weekday model release values are the observed releases average over the on- and off-peak periods and then averaged over the month for the daytypes. In other words, these are observed values which are just formated in the Saturday-Sunday-Weekday model template. View the updated hydrograph in the "August_2018 (Hydrograph)" worksheet.
 
 **Figure 3** We developed this conceptual model in Microsoft PowerPoint 2016 to illustrate how contract and market pricing may affect the release schedule.
 
@@ -117,6 +117,13 @@ These observed releases were obtained from USGS 09380000 Colorado River at Lees 
 
 **Figure S5**
 We created the model structure flow diagram in Microsoft PowerPoint.
+
+**Figure S6**
+These are observed releases from August 2018 at USGS 09380000 Colorado River at Lees Ferry, AZ. Refer to= Hydrographs_Observed_Used (location: GCD_BugFlowExperiment/Supporting Data/Hydrographs_Observed_Used.xlsx) and then move to August_2018(Hydrograph). The release data acquired was 15min time step (observed), then we averaged that to hourly time step (Hourly) and again averaged over the on and off-peak periods during different daytypes over the month. We only expect the user to acquire the 15 mins time step release data and paste those releases in August_2018 worksheet (GCD_BugFlowExperiment/Supporting Data/Hydrographs_Observed_Used.xlsx). The updated hydrograph can be seen in the "August_2018 (Hydrograph)" worksheet.
+
+**Figure S7**
+
+
 
 **Figure XXX**
 1. We need results from both Contract Price and Market-Contract Price models. You have already acquired Contract Price (Saturday-Sunday-Weekday) Model results in Figure 4 above. You are required to run Market-Contract Price model whose code is available within folder: GCD_BugFlowExperiment/Models/August 2018/Market-Contract Price Model/August18_Market pricing.gms. 
