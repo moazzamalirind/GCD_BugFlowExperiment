@@ -123,8 +123,11 @@ These are observed releases from August 2018 at USGS 09380000 Colorado River at 
 
 **Figure S7**
 For August 2018, we compare observed daily genergy generated with model estimates using hourly and saturday-sunday-weekday releases from Figure S6. 
-1. Download the daily energy generated at Glen Canyon Dam (https://www.usbr.gov/uc/rm/crsp/gc/index.html). You can also find this observed data in GCD_BugFlowExperiment/Supporting Data/Models Results Summary.xlsx and within "Data_Summary" worksheet.
-2. 
+1. Download the daily energy generated at Glen Canyon Dam (https://www.usbr.gov/uc/rm/crsp/gc/index.html). You can also find this observed data in GCD_BugFlowExperiment/Supporting Data/Models Results Summary.xlsx and within "Data_Summary" spreadsheet.
+2. In the "Engery_Validation_2018" spreadsheet we only expect user to update the blue highlighted columns. "Observed" values can be obtained from previous step (i.e., Figure S7, step 1).
+3. Hourly energy values can be generated using the hourly validation code (GCD_BugFlowExperiment/Months of 2018/August 2018/Validation/August2018_Validation(Hourly).gms). The code require an input file "Input_August2018.xlsx" (GCD_BugFlowExperiment/Months of 2018/August 2018/Validation/Input_August2018.xlsx). The user must keep this input file in the project folder for GAMS IDE to detect it. The file contains observed releases at various time steps, which are fed directly into the model, requiring only the estimation of energy generation and hydropeaking values. The output energy generation values can be found using Valid_August2018.gdx or Valid_August2018.xlsx under Energy_Gen. It should be noted that Energy_Gen from the model is at an hourly time step. The user must sum the hourly values for each day (e.g., sum all for d1, then d2, etc.) and enter only the daily totals in the "Energy_Validation_2018" spreadsheet under the "hourly" column (GCD_BugFlowExperiment/Supporting Data/Models Results Summary.xlsx).
+
+
 
 **Figure 7**
 1. We need results from both Contract Price and Market-Contract Price models. You have already acquired Contract Price (Saturday-Sunday-Weekday) Model results in Figure 4 above. You are required to run Market-Contract Price model whose code is available within folder: GCD_BugFlowExperiment/Models/August 2018/Market-Contract Price Model/August18_Market pricing.gms. 
