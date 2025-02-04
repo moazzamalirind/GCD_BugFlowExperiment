@@ -119,9 +119,10 @@ These observed releases were obtained from USGS 09380000 Colorado River at Lees 
 We created the model structure flow diagram in Microsoft PowerPoint.
 
 **Figure S6**
-These are observed releases from August 2018 at USGS 09380000 Colorado River at Lees Ferry, AZ. Refer to= Hydrographs_Observed_Used (location: GCD_BugFlowExperiment/Supporting Data/Hydrographs_Observed_Used.xlsx) and then move to August_2018(Hydrograph). The release data acquired was 15min time step (observed), then we averaged that to hourly time step (Hourly) and again averaged over the on and off-peak periods during different daytypes over the month. We only expect the user to acquire the 15 mins time step release data and paste those releases in August_2018 worksheet (GCD_BugFlowExperiment/Supporting Data/Hydrographs_Observed_Used.xlsx). The updated hydrograph can be seen in the "August_2018 (Hydrograph)" worksheet.
+These are observed releases from August 2018 at USGS 09380000 Colorado River at Lees Ferry, AZ. Refer to Hydrographs_Observed_Used (location: GCD_BugFlowExperiment/Supporting Data/Hydrographs_Observed_Used.xlsx) and then move to August_2018(Hydrograph). The release data acquired was 15min time step (observed), then we averaged that to hourly time step (Hourly) and again averaged over the on and off-peak periods during different daytypes over the month. We only expect the user to acquire the 15 mins time step release data and paste those releases in August_2018 worksheet (GCD_BugFlowExperiment/Supporting Data/Hydrographs_Observed_Used.xlsx). The updated hydrograph can be seen in the "August_2018 (Hydrograph)" worksheet.
 
 **Figure S7**
+For August 2018, we compare observed daily genergy generated with model estimates using hourly and saturday-sunday-weekday releases from Figure S6.
 
 
 
