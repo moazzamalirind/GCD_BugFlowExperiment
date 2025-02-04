@@ -122,7 +122,15 @@ We created the model structure flow diagram in Microsoft PowerPoint.
 These are observed releases from August 2018 at USGS 09380000 Colorado River at Lees Ferry, AZ. Refer to Hydrographs_Observed_Used (location: GCD_BugFlowExperiment/Supporting Data/Hydrographs_Observed_Used.xlsx) and then move to August_2018(Hydrograph). The release data acquired was 15min time step (observed), then we averaged that to hourly time step (Hourly) and again averaged over the on and off-peak periods during different daytypes over the month. We only expect the user to acquire the 15 mins time step release data and paste those releases in August_2018 worksheet (GCD_BugFlowExperiment/Supporting Data/Hydrographs_Observed_Used.xlsx). The updated hydrograph can be seen in the "August_2018 (Hydrograph)" worksheet.
 
 **Figure S7**
-For August 2018, we compare observed daily genergy generated with model estimates using hourly and saturday-sunday-weekday releases from Figure S6.
+For August 2018, we compare observed daily genergy generated with model estimates using hourly and saturday-sunday-weekday releases from Figure S6. 
+1. Download the daily energy generated at Glen Canyon Dam (https://www.usbr.gov/uc/rm/crsp/gc/index.html). You can also find this observed data in GCD_BugFlowExperiment/Supporting Data/Models Results Summary.xlsx and within "Data_Summary" worksheet.
+2. 
+
+**Figure 7**
+1. We need results from both Contract Price and Market-Contract Price models. You have already acquired Contract Price (Saturday-Sunday-Weekday) Model results in Figure 4 above. You are required to run Market-Contract Price model whose code is available within folder: GCD_BugFlowExperiment/Models/August 2018/Market-Contract Price Model/August18_Market pricing.gms. 
+2. You are required to run the model code similar to previous figures. After successful completion of the run, the output files will be updated. 
+3. Go to: GCD_BugFlowExperiment/Models/August 2018/Miscellaneous/Contract_vs_Market-Contract Results.xlsx. You are required to update values of the blue highlighted cells. For Saturday-Sunday-Weekday model, use values of Fstore symbol from Sat-Sun-Weekday_August.gdx or from Sat-Sun-Weekday_August.xlsx (Location:GCD_BugFlowExperiment\Models\August 2018\Contract Price Model). The results of the Market-Contract price model can be found from Fstore within Pricing_Model.gdx or Pricing_Model.gdx (Location: GCD_BugFlowExperiment\Models\August 2018\Market-Contract Price Model).
+4. The updated values will updated the tradeoff graph in the worksheet. Note: Additional calculations in the worksheet are for later stages.
 
 
 
@@ -144,11 +152,7 @@ Extra: Worksheet Hydrograph_H1000 is provided as example of Hydrographs with 100
 3. Open Graphs.xlsx and move to "Price_Differential" worksheet. Your job is you copy the hydropower power revenue values from .gdx file (go to "Fstore" symbol and copy the values). Within Fstore you can move the dimensions around e.g. bring cases to the vertical axis and Volume (V) and Offset (H) to the horizontal axis. Copy the values for H1 and paste those in the blue highlighted cells in Price_Differential worksheet against respected pricing set.  
 4. The graph at the bottom will be updated. Note: Don't confuse with any of the additional calculations in the worksheet. Those are additional computations which can be useful at later stages. 
 
-**Figure 7**
-1. We need results from both Contract Price and Market-Contract Price models. You have already acquired Contract Price (Saturday-Sunday-Weekday) Model results in Figure 4 above. You are required to run Market-Contract Price model whose code is available within folder: GCD_BugFlowExperiment/Models/August 2018/Market-Contract Price Model/August18_Market pricing.gms. 
-2. You are required to run the model code similar to previous figures. After successful completion of the run, the output files will be updated. 
-3. Go to: GCD_BugFlowExperiment/Models/August 2018/Miscellaneous/Contract_vs_Market-Contract Results.xlsx. You are required to update values of the blue highlighted cells. For Saturday-Sunday-Weekday model, use values of Fstore symbol from Sat-Sun-Weekday_August.gdx or from Sat-Sun-Weekday_August.xlsx (Location:GCD_BugFlowExperiment\Models\August 2018\Contract Price Model). The results of the Market-Contract price model can be found from Fstore within Pricing_Model.gdx or Pricing_Model.gdx (Location: GCD_BugFlowExperiment\Models\August 2018\Market-Contract Price Model).
-4. The updated values will updated the tradeoff graph in the worksheet. Note: Additional calculations in the worksheet are for later stages.
+.
 
 **Table 2**
 This table compiles hydropower revenue results of months of 2018. Here, you are required to use monthly models available in the Models folder (Location: GCD_BugFlowExperiment\Models).
