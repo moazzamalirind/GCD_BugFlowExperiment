@@ -157,10 +157,9 @@ PlaneRownr=-1
 4=C:\Users\Mooz\Documents\GitHub\GCD_BugFlowExperiment\Models\August 2018\Validation\Sat_Sun_Weekday_Validation.gpr
 
 [OPENWINDOW_1]
-FILE0=C:\Users\Mooz\Documents\GitHub\GCD_BugFlowExperiment\Models\August 2018\Validation\August18_Sat_Validation.gms
-FILE1=C:\Users\Mooz\Documents\GitHub\GCD_BugFlowExperiment\Models\August 2018\Validation\Valid_August2018(Hourly).gdx
-FILE2=C:\Users\Mooz\Documents\GitHub\GCD_BugFlowExperiment\Models\August 2018\Validation\Valid_SatModel_August.gdx
-FILE3=C:\Users\Mooz\Documents\GitHub\GCD_BugFlowExperiment\Models\August 2018\Validation\Valid_SatModel_August.gdx
+FILE0=C:\Users\Mooz\Documents\GitHub\GCD_BugFlowExperiment\Months of 2018\August 2018\Validation\August18_Sat_Validation.gms
+FILE1=C:\Users\Mooz\Documents\GitHub\GCD_BugFlowExperiment\Months of 2018\August 2018\Validation\August18_Sat_Validation.lst
+FILE2=C:\Users\Mooz\Documents\GitHub\GCD_BugFlowExperiment\Months of 2018\August 2018\Validation\August18_Sat_Validation.lst
 MAXIM=0
 TOP=0
 LEFT=50
