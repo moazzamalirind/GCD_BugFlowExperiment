@@ -40,5 +40,5 @@ G 680 Energy_Gen
 B 698 E x e c u t i o n
 I 700 FStore
 I 702 XStore
-I 708 RStore
-I 719 Sstore
+I 712 RStore
+I 723 Sstore

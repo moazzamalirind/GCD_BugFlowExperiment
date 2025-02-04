@@ -46,7 +46,7 @@ TotMonth_volume                       To represent total monthly volume (acre-ft
 
 FStore                                Storing objective function values ($$)
 
-XStore(d,p)                          Store Energy Generated during different periods on types of days (MWh)
+XStore(d)                            Store Energy Generated during different periods on types of days (MWh)
 RStore(d,p)                          Store Release values during different types of days (cfs)
 Sstore                               Store Storage Values over different cases(ac-ft)
 
@@ -166,8 +166,8 @@ Solve Model1 using LP MAXIMIZE ObjectiveVal;
    FStore= ObjectiveVal.L;
 
 * XStore store the energy generated (Mwh/day) during different types of days
-*XStore(d)= sum (p,Energy_Gen.L(d,p))+ EPS;
-   XStore(d,p) = Energy_Gen.L(d,p)*Num_Days(d)+ EPS;
+XStore(d)= sum (p,Energy_Gen.L(d,p))+ EPS;
+*XStore(d,p) = Energy_Gen.L(d,p)*Num_Days(d)+ EPS;
 
 * RStore store the reservoir releases (cfs) during different types of days and scenarios.
    RStore(d,p)= Release.L(d,p)+ EPS;

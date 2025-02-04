@@ -53,9 +53,8 @@ PlaneRownr=-1
 8=E:\GCD_BugFlowExperiment\August 2018\Market_Contract pricing(Final)\Pricing_Model.gdx
 
 [OPENWINDOW_1]
-FILE0=C:\Users\Mooz\Documents\GitHub\GCD_BugFlowExperiment\Models\April 2018\Market-Contract Price Model\April18_Marketpricing_Updated.gms
-FILE1=C:\Users\Mooz\Documents\GitHub\GCD_BugFlowExperiment\Models\April 2018\Market-Contract Price Model\April18_Marketpricing_Updated.lst
-FILE2=C:\Users\Mooz\Documents\GitHub\GCD_BugFlowExperiment\Models\April 2018\Market-Contract Price Model\April18_Marketpricing_Updated.lst
+FILE0=C:\Users\Mooz\Documents\GitHub\GCD_BugFlowExperiment\Months of 2018\April 2018\Market-Contract Price Model\April18_Market pricing.gms
+FILE1=C:\Users\Mooz\Documents\GitHub\GCD_BugFlowExperiment\Months of 2018\April 2018\Market-Contract Price Model\April18_Market pricing.gms
 MAXIM=0
 TOP=0
 LEFT=0
