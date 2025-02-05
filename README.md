@@ -84,7 +84,11 @@ First download folders name: Models and Supporting Data. Save those folder on yo
 1. Download 15 mins observed hydrograph of August 2018 from: https://waterdata.usgs.gov/usa/nwis/uv?09380000
 2. Paste the downloaded data in the given Excel file. The Excel file named "Hydrographs_Observed_Used" is available in the Supporting Data folder (Supporting Data/Hydrographs_Observed_Used.xlsx). Move to the worksheet named "August_2018" and paste the downloaded release data against the time in the blue colored cells. You can visulaze the updated hydrograph in the worksheet named "August_2018 (Hydrograph)".
 
-**Table 1**
+**Table S1**
+This table compiles outputs from validation runs and compares them with observed data, including the % error between modeled and observed energy generation. It also displays the energy prices used for each month.
+We outline steps to reproduce results for a single month (e.g. March 2018), expecting users to apply them for all other months. All results should be entered in the "Validation_Results" sheet of Models Results Summary.xlsx (GCD_BugFlowExperiment/Supporting Data/Models Results Summary.xlsx).
+1. 
+
 1. Download folder named "Validation" available at GCD_BugFlowExperiment/Models/August 2018/Validation and save downloaded folder at your desired location. 
 2. You will see number of files with different extensions (e.g. .gms, .log, .lst, .lxi, .xls, .gpr). These are input and output files of two validation models: a) Hourly model (hourly releases and  energy prices are model inputs) b) Saturday-Sunday-Weekday model (periodic releases and energy prices for different daytypes are model inputs). Note: Details of the hourly releases and energy prices, as well as, estimation of periodic releases and energy prices are present in excel file " Input_August2018.xlsx".
 3. Now open GAMS IDE. Click start => gamside or if you have IDE icon on desktop double click that. A blank GAMS interface will show up. 
@@ -96,6 +100,9 @@ Extra: In case to change the solver, comment out code Line 158 by placing * info
 8. Now you can visulaze results either using GAMS platform or using MS-Excel output file (.xlsx). For instance, using GAMS IDE. Click File/Open. Change Files of type to GDX files (*.gdx). Now you will see two files: a) Valid_August2018(Hourly) b) Valid_SatModel_August. Open both files one at a time.
 9. To understand what different Symbol represent, please refer the details given in the code files (.gms). Here, Click Released_vol and you will find the total released volume value (Level). The energy generated is represented by symbol Xstore. For example, adding values of d1 to d31 will give total monthly energy generation from the hourly model. In case of Saturday-Sunday-Weekday model, Xstore is giving periodic energy generation of different daytypes. The monthly energy generation will be summation of energy during daytype. Monthly energy generation=  15141.4 + 26211.3+ 15141.4 + 27691.6 + 89804.7 + 235298.9 = 409289.3.
 10. % Error = 100* (Model-Observed) /Observed. E.g. %Error = 100* (409289 - 392938)/392938 = 4.2%.
+
+
+
 
 **Figure 4**
 1. Within "Models" folder (you have already downloaded this folder in step before Figure 1) enter folder "August 2018". Next, open  "Contract Price Model" folder and then double click "Saturday_Sunday_Weekday.gpr" (Models/August 2018/Contract Price Model/Saturday_Sunday_Weekday.gpr). In case, the project is not saved at your desired location you can save it using "File/Save as". 
