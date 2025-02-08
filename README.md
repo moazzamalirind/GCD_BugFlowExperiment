@@ -65,7 +65,7 @@ ________________________________________________________________________________
 2. Microsoft Excel. We used Office 2016 for this analysis.
 ________________________________________________________________________________________________________________________________________________________
 ## Directions to Reproduce Results
-The following instructions will help users reproduce the results in "Final_Draft_JHI_2025.pdf.
+The following instructions will help users reproduce the results in "Final_Draft_JHI_2025.pdf ([Documents/Final_Draft_JHI_2025.pdf](https://github.com/moazzamalirind/GCD_BugFlowExperiment/blob/recovery3/Documents/Final_Draft_JHI_2025.pdf)
 
 First download folder name "Months of 2018". Save the folder on your local machine at any desired drive location. For example: E:\GAMS\Models
 
