@@ -38,7 +38,8 @@ ________________________________________________________________________________
 6. The study is replicable and adaptable to other sites and designer flow experiments (e.g. HFEs)
 _______________________________________________________________________________________________________________________________________________________________________________
 ## Model Formulation
-![image](https://github.com/moazzamalirind/GCD_BugFlowExperiment/blob/main/Supporting%20Data/Model_Structure.png)
+![image](https://github.com/moazzamalirind/GCD_BugFlowExperiment/blob/recovery/Supporting%20Data/Model_Structure.png)
+
 ________________________________________________________________________________________________________________________________________________________________________________
 **Details of Respository Contents**
 
