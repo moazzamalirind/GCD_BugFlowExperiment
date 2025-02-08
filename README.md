@@ -77,7 +77,8 @@ First download folder name "Months of 2018". Save the folder on your local machi
 
 **Figure 3** We developed this conceptual model in Microsoft PowerPoint 2016 to illustrate how contract and market pricing may affect the release schedule.
 
-**Figure 4**
+**Figure 4** The figure estimates tradeoffs between hydropeaking values and steady low-flow days, based on a three-daytype model (Saturday, Sunday, Weekday) with zero-offset releases and contract energy pricing. 
+
 1. Within "Months of 2018" folder (you have already downloaded this folder in a step before Figure 1) enter folder "August 2018". Open "Contract Price Model" folder and then double click "Saturday_Sunday_Weekday.gpr" (Months of 2018/August 2018/Contract Price Model/Saturday_Sunday_Weekday.gpr). If the project is not saved in your desired location, use "File > Save As" in GAMS IDE to save.
 2. Import the code file using File/Open/August18_Sat_Sun_Weekday_Model.gms. Main window with model code will appear. You are only required to run the model (all inputs are defined in the code) and the output files will be generated/updated in the project's folder. 
 3. After successful run, you will see "Status: Normal completion". You should check if the solution is optimal (Look for sentense saying: Optimal Solution found). Since there are multiple scenairos in this model run so it is difficult to verify the status of each run. Alternative is to verify status of each run within ".gdx file".
