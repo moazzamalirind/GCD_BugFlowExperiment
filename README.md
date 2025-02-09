@@ -139,24 +139,12 @@ Note: The .xlsx file includes additional datasets and analysis methods (e.g., pr
 When the model will run another dialog window will appear showing status of the run. You will see "Status: Normal completion" after the run was completed. You should also check if the solution is optimal (Look for sentense saying: Optimal Solution found). You have successfully run the model and all the output files are updated.
 
 _Note:_ We used the CPLEX Solver throughout our study, as our model is linear and CPLEX was well-suited for this analysis. Users can switch solvers by commenting out the line "option LP= CPLEX" (add * at the beginning of the line). Available solvers can be found under File > Options. In the Options window, navigate to the Solvers tab, select a linear solver of your choice, click OK, and the solver will be updated.
-
-
-5. The outputs will be available in Valid_March2018(2Periods).gdx or Valid_March2018(2Periods).xlsx files. Move to the worksheet "Scalar", the value of "TotMonth_volume" parameter represents released volume (Ac-ft/Month). In the same worksheet (Scalar), the sum of parameters XStore_Steady + XStore_unsteady produce the total monthly energy generated (MWh).
-6. 
-
-
-
-Now we have to bring the code file (.gms) into our project. Click File/Open. Open Window will appear. Set Files of type: Gams files (*.gms). Now if your project and files are saved in the same folder you will see two files: a) August18_Sat_Validation b) August2018_Validation(Hourly). Click one and click open. For instance, the first one we are opening is Saturday-Sunday-Weekday day model code so click August18_Sat_Validation. The code file contains all neccessary inputs and there is no need of modification or any external input file. All you have to do is run the model. There are couple of ways to run the model. A) Press F9 on your keyboard. B) Click the Run icon available in the icon bar (Hint: Point your mouse at each of the icons and it will tell you the functionality of that icon).
-When the model will run another dialog window will appear showing status of the run. You will see "Status: Normal completion" after the run was completed. You should also check if the solution is optimal (Look for sentense saying: Optimal Solution found). You have successfully run the model and all the output files are updated. Note: We have used CPLEX Solver throughout our study (Line 158 in the .gms file). This is a linear model so it will work with any linear solver. Extra: In case to change the solver, comment out code Line 158 by placing * infornt of the line. Now Click File/Options. In the options window go to the Solvers tab and click any linear solver of your choice. Click Ok and your solver is now changed.
-In similar manner you can run the Hourly model by opening "August2018_Validation(Hourly).gms" and run the model. This code requires external input file. So it's necessary that "Input_August2018.xlsx" should be available in the same project folder.
-Now you can visulaze results either using GAMS platform or using MS-Excel output file (.xlsx). For instance, using GAMS IDE. Click File/Open. Change Files of type to GDX files (*.gdx). Now you will see two files: a) Valid_August2018(Hourly) b) Valid_SatModel_August. Open both files one at a time.
-To understand what different Symbol represent, please refer the details given in the code files (.gms). Here, Click Released_vol and you will find the total released volume value (Level). The energy generated is represented by symbol Xstore. For example, adding values of d1 to d31 will give total monthly energy generation from the hourly model. In case of Saturday-Sunday-Weekday model, Xstore is giving periodic energy generation of different daytypes. The monthly energy generation will be summation of energy during daytype. Monthly energy generation= 15141.4 + 26211.3+ 15141.4 + 27691.6 + 89804.7 + 235298.9 = 409289.3.
-% Error = 100* (Model-Observed) /Observed. E.g. %Error = 100* (409289 - 392938)/392938 = 4.2%.
-
-
-
-
-
+4. The outputs will be available in Valid_March2018(2Periods).gdx or Valid_March2018(2Periods).xlsx files. Move to the worksheet "Scalar", the value of "TotMonth_volume" parameter represents released volume (Ac-ft/Month). In the same worksheet (Scalar), the sum of parameters XStore_Steady + XStore_unsteady produce the total monthly energy generated (MWh).
+5. The %error is generated using the formula % Error = 100* (Model-Observed) /Observed. For example, %Error = 100* (375426 - 363797)/375426 = 3.2%.
+6. The parameter FStore in the same worksheet (Scalar) captures the total monthly hydropeaking value ($). 
+We believe the user can replicate the above steps for the hourly code (March2018_Validation(Hourly)) and produce the required outputs. 
+7. For the Saturday-Sunday-Weekday model, a separate validation folder is available under Contract Price (e.g., GCD_BugFlowExperiment/Months of 2018/March 2018/Contract Price Model/Validation). Users should replicate the steps used for the 2-periods code, run the March18_Sat_Validation.gms, and generate all required outputs.
+8. Here, we have outlined the steps to reproduce results for March. However, the same steps apply to all months from April to October. Once all results are entered into Results Summary.xlsx, you will have a completed Table S1.
 
 
 
@@ -167,8 +155,6 @@ To understand what different Symbol represent, please refer the details given in
 2. You are required to run the model code similar to previous figures. After successful completion of the run, the output files will be updated. 
 3. Go to: GCD_BugFlowExperiment/Models/August 2018/Miscellaneous/Contract_vs_Market-Contract Results.xlsx. You are required to update values of the blue highlighted cells. For Saturday-Sunday-Weekday model, use values of Fstore symbol from Sat-Sun-Weekday_August.gdx or from Sat-Sun-Weekday_August.xlsx (Location:GCD_BugFlowExperiment\Models\August 2018\Contract Price Model). The results of the Market-Contract price model can be found from Fstore within Pricing_Model.gdx or Pricing_Model.gdx (Location: GCD_BugFlowExperiment\Models\August 2018\Market-Contract Price Model).
 4. The updated values will updated the tradeoff graph in the worksheet. Note: Additional calculations in the worksheet are for later stages.
-
-
 
 **Figure XXX**
 1. We need results from both Contract Price and Market-Contract Price models. You have already acquired Contract Price (Saturday-Sunday-Weekday) Model results in Figure 4 above. You are required to run Market-Contract Price model whose code is available within folder: GCD_BugFlowExperiment/Models/August 2018/Market-Contract Price Model/August18_Market pricing.gms. 
