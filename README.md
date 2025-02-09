@@ -146,6 +146,19 @@ We believe the user can replicate the above steps for the hourly code (March2018
 7. For the Saturday-Sunday-Weekday model, a separate validation folder is available under Contract Price (e.g., GCD_BugFlowExperiment/Months of 2018/March 2018/Contract Price Model/Validation). Users should replicate the steps used for the 2-periods code, run the March18_Sat_Validation.gms, and generate all required outputs.
 8. Here, we have outlined the steps to reproduce results for March. However, the same steps apply to all months from April to October. Once all results are entered into Results Summary.xlsx, you will have a completed Table S1.
 
+**Figure S8** This figure presents hydrograph estimates from the Saturday-Sunday-Weekday model for August 2018, showing a snapshot with a 0.83 MAF release volume and a zero-offset release scenario.
+1. Move to Graphs.xlsx file available at GCD_BugFlowExperiment/Months of 2018/August 2018/Contract Price Model. Hover to worksheet "Hydrograph_H0".
+2. Update only the blue-highlighted cells; the hydrograph will update automatically. The value can be obtained by running the code file at GCD_BugFlowExperiment/Months of 2018/August 2018/Contract Price Model/August18_Sat_Sun-Weekday_Model.gms.
+3. At this stage, users should be familiar with running GAMS code in GAMS IDE. If not, refer to previous figures and tables for instructions.
+4. After successful simulation, we expect the user to collect outputs from Sat-Sun-Weekday_August.xlsx (GCD_BugFlowExperiment/Months of 2018/August 2018/Contract Price Model/August18_Sat_Sun-Weekday_August.xlsx). Move to RStore worksheet. Filter the Offset to H1 and tot_vol to V2. Copy releases from the Value column.
+5. Paste the copied values in Hydrograph_H0 worksheet within Graphs.xlsx ( GCD_BugFlowExperiment/Months of 2018/August 2018/Contract Price Model/Graphs.xlsx). The hydrograph on the right will be updated.
+Extra: Worksheet Hydrograph_H1000 is provided as example of Hydrographs with 1000 CFS offset release.
+
+**Figure S9**
+
+**Table S2**
+**Table S3**
+**Table S4**
 
 
 
@@ -163,10 +176,7 @@ We believe the user can replicate the above steps for the hourly code (March2018
 4. The updated values will updated the tradeoff graph in the worksheet. Note: Additional calculations in the worksheet are for later stages.
 
 **Figure 5**
-1. Within same Excel file "Graph.xlsx" you will see a worksheet named "Hydrograph_H0". This worksheet has hydrographs for different number of steady low flow days scenarios with 0.83 MAF (V2) release volume and zero offset release (H1).
-2. You are only required to replace the values in the blue highlighted cells. Those values are releases that can be found in "Sat-Sun-Weekday_August.xlsx" under parameter RStore. You have to set Offset column to H1 and tot_vol to V2. 
-3. Copy releases from the Value column and paste those in Hydrograph_H0 worksheet within the Graphs.xlsx. The hydrograph on the right will be updated.
-Extra: Worksheet Hydrograph_H1000 is provided as example of Hydrographs with 1000 CFS offset release.
+
 
 **Figure 6**
 1. Import the August18_PriceDiff.gms file into GAMS IDE (same procedure as defined in Figure 4). Now within the code you have to set different energy prices i.e. only active one pricing set for "Energy_Rate" parameter and save its results. In the code move down to line: 94 "Energy_Rate(Days,p)". You will see three energy price sets (Current, Half, and Zero). Your task is to active only pricing set by placing *infront of $ontext and $offtext. When the set will be actived then you will see the prices turned into green from gray color. The next is to scroll down at the bottom of the code where it says "following part of code creates gdx and excel output file..". You have to only active the chunk of code depending on which pricing set you have activated above. Run the model for each set of pricing (Current, Half, and Zero) seperately. 
