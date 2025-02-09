@@ -151,10 +151,26 @@ We believe the user can replicate the above steps for the hourly code (March2018
 2. Update only the blue-highlighted cells; the hydrograph will update automatically. The value can be obtained by running the code file at GCD_BugFlowExperiment/Months of 2018/August 2018/Contract Price Model/August18_Sat_Sun-Weekday_Model.gms.
 3. At this stage, users should be familiar with running GAMS code in GAMS IDE. If not, refer to previous figures and tables for instructions.
 4. After successful simulation, we expect the user to collect outputs from Sat-Sun-Weekday_August.xlsx (GCD_BugFlowExperiment/Months of 2018/August 2018/Contract Price Model/August18_Sat_Sun-Weekday_August.xlsx). Move to RStore worksheet. Filter the Offset to H1 and tot_vol to V2. Copy releases from the Value column.
-5. Paste the copied values in Hydrograph_H0 worksheet within Graphs.xlsx ( GCD_BugFlowExperiment/Months of 2018/August 2018/Contract Price Model/Graphs.xlsx). The hydrograph on the right will be updated.
+5. Paste the copied values in Hydrograph_H0 worksheet within Graphs.xlsx (GCD_BugFlowExperiment/Months of 2018/August 2018/Contract Price Model/Graphs.xlsx). The hydrograph on the right will be updated.
 Extra: Worksheet Hydrograph_H1000 is provided as example of Hydrographs with 1000 CFS offset release.
 
-**Figure S9**
+**Figure S9** The figure illustrates the impact of price differentials between on- and off-peak periods on weekends only. It presents extreme release volume scenarios with a zero-offset release.
+1. Import the August18_PriceDiff.gms code file (GCD_BugFlowExperiment/Months of 2018/August 2018/Contract Price Model/August18_PriceDiff.gms) into GAMS IDE. Within the code file, we have compiled all three price difference scenarios, allowing users to select and generate the respective results from a single common code file.
+2. For example, Current Price Differential scenario. First, uncomment
+
+3. 
+
+
+ Now within the code you have to set different energy prices i.e. only active one pricing set for "Energy_Rate" parameter and save its results. In the code move down to line: 94 "Energy_Rate(Days,p)". You will see three energy price sets (Current, Half, and Zero). Your task is to active only pricing set by placing *infront of $ontext and $offtext. When the set will be actived then you will see the prices turned into green from gray color. The next is to scroll down at the bottom of the code where it says "following part of code creates gdx and excel output file..". You have to only active the chunk of code depending on which pricing set you have activated above. Run the model for each set of pricing (Current, Half, and Zero) seperately. 
+2. Open .gdx files for each of the runs: "Sat-Sun-Weekday_Current.gdx", "Sat-Sun-Weekday_Half.gdx", and "Sat-Sun-Weekday_Zero.gdx". 
+3. Open Graphs.xlsx and move to "Price_Differential" worksheet. Your job is you copy the hydropower power revenue values from .gdx file (go to "Fstore" symbol and copy the values). Within Fstore you can move the dimensions around e.g. bring cases to the vertical axis and Volume (V) and Offset (H) to the horizontal axis. Copy the values for H1 and paste those in the blue highlighted cells in Price_Differential worksheet against respected pricing set.  
+4. The graph at the bottom will be updated. Note: Don't confuse with any of the additional calculations in the worksheet. Those are additional computations which can be useful at later stages. 
+
+
+**Figure 10**
+
+
+
 
 **Table S2**
 **Table S3**
