@@ -163,24 +163,17 @@ Extra: Worksheet Hydrograph_H1000 is provided as example of Hydrographs with 100
 /Graphs.xlsx ) and "Price_Differential" worksheet. The graph on the same worksheet at the bottom will be updated. 
 *Note:* Don't confuse with any of the additional calculations in the worksheet. Those are additional computations which maybe used for possible extension and better understandings of the system. 
  
-**Figure S10**
+**Figure S10** The figure depicts the effect of offset releases on hydropeaking and the frequency of steady low-flow days.
 
+*Note* We will use the same Graphs.xlsx file as in Figure S9, but this time, the Offset worksheet. This file will compile all relevant results to reconstruct the tradeoff graph.
 
+1. Run the code "August18_Sat_Sun-Weekday_Model.gms" in gamside. The results will be available in Sat-Sun-Weekday_August.gdx or Sat-Sun-Weekday_August.xlsx. For example, open Sat-Sun-Weekday_August.gdx in gamside and navigate to FStore. Copy all FStore values, adjusting the cases as needed to match the input format required in Graphs.xlsx under the Offset worksheet.
 
+2. In the Offset worksheet, locate the blue-highlighted cells. These are preformatted to control calculations across the worksheet, ensuring that the tradeoff curves update automatically.
 
 **Table S2**
 **Table S3**
 **Table S4**
-
-
-
-
-**Figure 7**
-1. We need results from both Contract Price and Market-Contract Price models. You have already acquired Contract Price (Saturday-Sunday-Weekday) Model results in Figure 4 above. You are required to run Market-Contract Price model whose code is available within folder: GCD_BugFlowExperiment/Models/August 2018/Market-Contract Price Model/August18_Market pricing.gms. 
-2. You are required to run the model code similar to previous figures. After successful completion of the run, the output files will be updated. 
-3. Go to: GCD_BugFlowExperiment/Models/August 2018/Miscellaneous/Contract_vs_Market-Contract Results.xlsx. You are required to update values of the blue highlighted cells. For Saturday-Sunday-Weekday model, use values of Fstore symbol from Sat-Sun-Weekday_August.gdx or from Sat-Sun-Weekday_August.xlsx (Location:GCD_BugFlowExperiment\Models\August 2018\Contract Price Model). The results of the Market-Contract price model can be found from Fstore within Pricing_Model.gdx or Pricing_Model.gdx (Location: GCD_BugFlowExperiment\Models\August 2018\Market-Contract Price Model).
-4. The updated values will updated the tradeoff graph in the worksheet. Note: Additional calculations in the worksheet are for later stages.
-
 
 
 **Table 2**
@@ -193,8 +186,6 @@ This table compiles hydropower revenue results of months of 2018. Here, you are 
 6. Table 2 is for H4 (i.e. 1000 CFS offset release) and V2 (0.83 MAF) release volume. Set H4 in column A, V1 and V2 in Column B. Copy the values of V1 and V2 and paste those in "Models Results Summary.xlsx" (location: GCD_BugFlowExperiment\Supporting Data\Models Results Summary.xlsx ) and Market Price_Summary worksheet. You will see blue highlighted cells. Paste the copied values in the highlighted cells. Be careful with placing the values on their respective positions. 
 7. Values of Table 2 are given in green highlighted cells. 
 8. Repeat same procedure for Months of 2018. 
-
-
 
 ________________________________________________________________________________________________________________________________________________________________________________
 
