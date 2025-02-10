@@ -178,11 +178,14 @@ Extra: Worksheet Hydrograph_H1000 is provided as example of Hydrographs with 100
 
 **Table S3** This table compiles hydropeaking values from the Market-Contract Price Model results for 2018 Months. Market-Contract price model for each month can be found at (GCD_BugFlowExperiment/Months of 2018/).  
 1. This table is an exact copy of Table 1 in the main document. Refer back to the Table 1 reproducibility instructions and repeat all the steps, but this time for PriceScen 2 ($30/MWh).
-2. After collecting all the required values, paste them into the file Market_Price_Summary_Table1.xlsx (located at GCD_BugFlowExperiment/Supporting Data/Market_Price_Summary_Table1.xlsx) under the Market_Price_Table1_30MWh worksheet.
+2. After collecting all the required values, paste them in excel file Market_Price_Summary_Table1.xlsx (located at GCD_BugFlowExperiment/Supporting Data/Market_Price_Summary_Table1.xlsx) under the Market_Price_Table1_30MWh worksheet.
  
-**Table S4**
+**Table S4** The table illustrates a calculation for estimating slope hydropeaking, incorporating steady low-flow days. It uses the Market-Contract Price Model with a 0.83 MAF release volume and an H1000 offset release.
+1. Refer excel file Market_Price_Summary_Table1.xlsx (located at GCD_BugFlowExperiment/Supporting Data/Market_Price_Summary_Table1.xlsx) and Slope_Sat_Sun_Week_Model worksheet.
+2. Look for blue-colored cells, which contain slope values from the Market-Contract Price Model runs for each month. We have previously discussed the steps for running the model code and retrieving the results.
 
-
+**Still require help? Contact us at moazzamalirind@gmail.com**
+Enjoy working with GAMS!
 ________________________________________________________________________________________________________________________________________________________________________________
 
 ### Recommended Citation
