@@ -21,9 +21,6 @@ PlaneRownr=-1
 [RP:MARCH2018_VALIDATION(2PERIODS)]
 1=
 
-[RP:MARCH2018_WKND]
-1=
-
 [GDXDISP: FStore Par 3]
 PlaneDim=0
 RowDim=2
@@ -36,18 +33,16 @@ PlaneRownr=-1
 [RP:MARCH18_SAT_SUN-WEEKDAY_MODEL]
 1=
 
-[MRUFILES]
-1=E:\Class project\GCD_BugFlowExperiment\March 2018\Weekend-Weekday\Validation\March2018_validation(2periods).gms
-
 [OPENWINDOW_1]
-FILE0=E:\Class project\GCD_BugFlowExperiment\March 2018\Saturday-Sunday-Weekday\March18_Sat_Sun-Weekday_Model.gms
-FILE1=E:\Class project\GCD_BugFlowExperiment\March 2018\Saturday-Sunday-Weekday\Sat-Sun-Weekday_March.gdx
-FILE2=E:\Class project\GCD_BugFlowExperiment\March 2018\Weekend-Weekday\March2018(Weekend).gdx
-FILE3=E:\Class project\GCD_BugFlowExperiment\March 2018\Weekend-Weekday\March2018_Wknd.gms
-FILE4=E:\Class project\GCD_BugFlowExperiment\March 2018\Weekend-Weekday\March2018_Wknd.lst
-FILE5=E:\Class project\GCD_BugFlowExperiment\March 2018\Saturday-Sunday-Weekday\March18_Sat_Sun-Weekday_Model.gms
 MAXIM=0
 TOP=9
 LEFT=6
 HEIGHT=706
 WIDTH=1130
+
+[RP:MARCH2018_WKND]
+1=
+
+[MRUFILES]
+1=C:\Users\Mooz\Documents\GitHub\GCD_BugFlowExperiment\Months of 2018\March 2018\Miscellaneous\Weekend-Weekday\March2018_Wknd.gms
+2=E:\Class project\GCD_BugFlowExperiment\March 2018\Weekend-Weekday\Validation\March2018_validation(2periods).gms

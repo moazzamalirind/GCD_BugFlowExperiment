@@ -150,19 +150,15 @@ PlaneRownr=-1
 [RP:AUGUST18_SAT_VALIDATION]
 1=
 
-[MRUFILES]
-1=C:\Users\Mooz\Documents\GitHub\GCD_BugFlowExperiment\Models\August 2018\Validation\August2018_Validation(Hourly).lst
-2=C:\Users\Mooz\Documents\GitHub\GCD_BugFlowExperiment\Models\August 2018\Validation\August2018_Validation(Hourly).gms
-3=C:\Users\Mooz\Documents\GitHub\GCD_BugFlowExperiment\Models\August 2018\Validation\August18_Sat_Validation.lst
-4=C:\Users\Mooz\Documents\GitHub\GCD_BugFlowExperiment\Models\August 2018\Validation\Sat_Sun_Weekday_Validation.gpr
-
 [OPENWINDOW_1]
-FILE0=C:\Users\Mooz\Documents\GitHub\GCD_BugFlowExperiment\Models\August 2018\Validation\August18_Sat_Validation.gms
-FILE1=C:\Users\Mooz\Documents\GitHub\GCD_BugFlowExperiment\Models\August 2018\Validation\Valid_August2018(Hourly).gdx
-FILE2=C:\Users\Mooz\Documents\GitHub\GCD_BugFlowExperiment\Models\August 2018\Validation\Valid_SatModel_August.gdx
-FILE3=C:\Users\Mooz\Documents\GitHub\GCD_BugFlowExperiment\Models\August 2018\Validation\Valid_SatModel_August.gdx
 MAXIM=0
 TOP=0
 LEFT=50
 HEIGHT=906
 WIDTH=1101
+
+[MRUFILES]
+1=C:\Users\Mooz\Documents\GitHub\GCD_BugFlowExperiment\Models\August 2018\Validation\August2018_Validation(Hourly).lst
+2=C:\Users\Mooz\Documents\GitHub\GCD_BugFlowExperiment\Models\August 2018\Validation\August2018_Validation(Hourly).gms
+3=C:\Users\Mooz\Documents\GitHub\GCD_BugFlowExperiment\Models\August 2018\Validation\August18_Sat_Validation.lst
+4=C:\Users\Mooz\Documents\GitHub\GCD_BugFlowExperiment\Models\August 2018\Validation\Sat_Sun_Weekday_Validation.gpr
