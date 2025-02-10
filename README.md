@@ -171,21 +171,17 @@ Extra: Worksheet Hydrograph_H1000 is provided as example of Hydrographs with 100
 
 2. In the Offset worksheet, locate the blue-highlighted cells. These are preformatted to control calculations across the worksheet, ensuring that the tradeoff curves update automatically.
 
-**Table S2**
-**Table S3**
+**Table S2** This table estimates hydropower generation changes based on reservoir elevation variations.
+1. Refer the excel file "Hydropower_Fluctuations (2018).xlsx" at GCD_BugFlowExperiment/Supporting Data
+/Hydropower_Fluctuations (2018).xlsx.
+2. The Excel file is self-explanatory, using observed start and end-of-month elevation and release values, assumptions, an energy generation formula, and estimated monthly energy generation difference.
+
+**Table S3** This table compiles hydropeaking values from the Market-Contract Price Model results for 2018 Months. Market-Contract price model for each month can be found at (GCD_BugFlowExperiment/Months of 2018/).  
+1. This table is an exact copy of Table 1 in the main document. Refer back to the Table 1 reproducibility instructions and repeat all the steps, but this time for PriceScen 2 ($30/MWh).
+2. After collecting all the required values, paste them into the file Market_Price_Summary_Table1.xlsx (located at GCD_BugFlowExperiment/Supporting Data/Market_Price_Summary_Table1.xlsx) under the Market_Price_Table1_30MWh worksheet.
+ 
 **Table S4**
 
-
-**Table 2**
-This table compiles hydropower revenue results of months of 2018. Here, you are required to use monthly models available in the Models folder (Location: GCD_BugFlowExperiment\Models).
-1. You are required to run model for each of the months seperately and gather results in Excel file named "Models Results Summary" (location: GCD_BugFlowExperiment\Supporting Data\Models Results Summary.xlsx) and worksheet "Market Price_Summary". 
-2. As an example, we are only mentioning process to reproduce results for March 2018. You are required to replicate the same procedure for other months and reproduce Table 2.
-3. Move to March 2018 folder within Models folder. Enter Market-Contract Price Model folder and get the March18_Market Pricing.gms. Now follow the same procedure i.e. either import the Code (.gms) file within the given project file "Market_Price.gpr" or create a new project in GAMS IDE and import the code file.
-4. Code file has all the required inputs and you are only expected to run the model by pressing F9 or Run button. Successfull run will update the output files (e.g. .gdx, .xlsx, etc.) within project folder.
-5. Open Pricing_Model (Location: GCD_BugFlowExperiment\Models\March 2018\Market-Contract Price Model\Pricing_Model.xlsx) and move to FStore Worksheet. 
-6. Table 2 is for H4 (i.e. 1000 CFS offset release) and V2 (0.83 MAF) release volume. Set H4 in column A, V1 and V2 in Column B. Copy the values of V1 and V2 and paste those in "Models Results Summary.xlsx" (location: GCD_BugFlowExperiment\Supporting Data\Models Results Summary.xlsx ) and Market Price_Summary worksheet. You will see blue highlighted cells. Paste the copied values in the highlighted cells. Be careful with placing the values on their respective positions. 
-7. Values of Table 2 are given in green highlighted cells. 
-8. Repeat same procedure for Months of 2018. 
 
 ________________________________________________________________________________________________________________________________________________________________________________
 
