@@ -156,18 +156,14 @@ Extra: Worksheet Hydrograph_H1000 is provided as example of Hydrographs with 100
 
 **Figure S9** The figure illustrates the impact of price differentials between on- and off-peak periods on weekends only. It presents extreme release volume scenarios with a zero-offset release.
 1. Import the August18_PriceDiff.gms code file (GCD_BugFlowExperiment/Months of 2018/August 2018/Contract Price Model/August18_PriceDiff.gms) into GAMS IDE. Within the code file, we have compiled all three price difference scenarios, allowing users to select and generate the respective results from a single common code file.
-2. For example, Current Price Differential scenario. First, uncomment
-
-3. 
-
-
- Now within the code you have to set different energy prices i.e. only active one pricing set for "Energy_Rate" parameter and save its results. In the code move down to line: 94 "Energy_Rate(Days,p)". You will see three energy price sets (Current, Half, and Zero). Your task is to active only pricing set by placing *infront of $ontext and $offtext. When the set will be actived then you will see the prices turned into green from gray color. The next is to scroll down at the bottom of the code where it says "following part of code creates gdx and excel output file..". You have to only active the chunk of code depending on which pricing set you have activated above. Run the model for each set of pricing (Current, Half, and Zero) seperately. 
-2. Open .gdx files for each of the runs: "Sat-Sun-Weekday_Current.gdx", "Sat-Sun-Weekday_Half.gdx", and "Sat-Sun-Weekday_Zero.gdx". 
-3. Open Graphs.xlsx and move to "Price_Differential" worksheet. Your job is you copy the hydropower power revenue values from .gdx file (go to "Fstore" symbol and copy the values). Within Fstore you can move the dimensions around e.g. bring cases to the vertical axis and Volume (V) and Offset (H) to the horizontal axis. Copy the values for H1 and paste those in the blue highlighted cells in Price_Differential worksheet against respected pricing set.  
-4. The graph at the bottom will be updated. Note: Don't confuse with any of the additional calculations in the worksheet. Those are additional computations which can be useful at later stages. 
-
-
-**Figure 10**
+2. For example, in the Current Price Differential scenario, uncomment the relevant section of the code by placing * in front of $ontext and $offtext (e.g., Table "Energy_Rate(Days,p)" starting lines 97 to 103) to define pricing for this scenario. Ensure that the adjacent pricing templates (Half Price Differential and Zero Price Differential) remain deactivated. Once activated, the prices will change from gray to green in the code. Next, scroll to the bottom of the code where it states:"Following part of the code creates GDX and Excel output files..". Activate only the relevant section of the code based on the pricing scenario selected above. You are now ready to run the code. You are now ready to run the code.
+4. Repeat the steps to run Half and zero pricing scenarios seperately.
+5. After successful model run completion, you can check the output within gamside using .gdx files. Open .gdx files for each of the runs: "Sat-Sun-Weekday_Current.gdx", "Sat-Sun-Weekday_Half.gdx", and "Sat-Sun-Weekday_Zero.gdx". File>open then change files of types to GDX files. The alternative method is to use .xlsx output files which we have explained multiple types in previous steps. 
+6. Hover to "Fstore" and copy the values. Within Fstore in .gdx, you can move the dimensions around e.g., bring cases on the vertical axis and Volume (V) and Offset (H) to the horizontal axis. Copy the values for H1 and paste those in the blue highlighted cells in Graphs.xlsx (GCD_BugFlowExperiment/Months of 2018/August 2018/Contract Price Model
+/Graphs.xlsx ) and "Price_Differential" worksheet. The graph on the same worksheet at the bottom will be updated. 
+*Note:* Don't confuse with any of the additional calculations in the worksheet. Those are additional computations which maybe used for possible extension and better understandings of the system. 
+ 
+**Figure S10**
 
 
 
