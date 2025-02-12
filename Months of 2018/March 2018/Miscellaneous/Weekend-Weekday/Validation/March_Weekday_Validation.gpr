@@ -192,30 +192,13 @@ Order=1
 Decim=7
 PlaneRownr=-1
 
-[RP:MARCH2018_VALIDATION(2PERIODS)]
-1=
-
 [RP:MARCH2018_VALIDATION(HOURLY)]
 1=
 
-[MRUFILES]
-1=E:\Class project\GCD_BugFlowExperiment\March 2018\Weekend-Weekday\Validation\March2018_Validation(Hourly).gms
-2=E:\Class project\GCD_BugFlowExperiment\March 2018\Weekend-Weekday\Validation\March2018_validation.lst
-3=E:\Class project\GCD_BugFlowExperiment\March 2018\Weekend-Weekday\Validation\March2018_Validation(Hourly).lst
-4=E:\Class project\GCD_BugFlowExperiment\March 2018\Weekend-Weekday\Validation\March2018_validation0-8&8-0.gms
-5=E:\Class project\GCD_BugFlowExperiment\June 2018\Linear Weekend-Weekday\June2018_validation.gms
-6=E:\rep-1228\Root\Linear Programming_Bugflow\linearprogramming_Bugflows\June2018_WkndScen.gms
-
 [OPENWINDOW_1]
-FILE0=E:\Class project\GCD_BugFlowExperiment\March 2018\Saturday-Sunday-Weekday\Validation\March18_Sat_Validation.gms
-FILE1=E:\Class project\GCD_BugFlowExperiment\March 2018\Saturday-Sunday-Weekday\Validation\Valid_SatModel_March.gdx
-FILE2=E:\Class project\GCD_BugFlowExperiment\March 2018\Weekend-Weekday\Validation\March2018_validation(2periods).gms
-FILE3=E:\Class project\GCD_BugFlowExperiment\March 2018\Weekend-Weekday\Validation\Valid_March2018(2Periods).gdx
-FILE4=E:\Class project\GCD_BugFlowExperiment\March 2018\Weekend-Weekday\Validation\Validation_March2018(Hourly).gdx
-FILE5=E:\Class project\GCD_BugFlowExperiment\March 2018\Saturday-Sunday-Weekday\Validation\March18_Sat_Validation.gms
 MAXIM=0
-TOP=0
-LEFT=50
+TOP=-15
+LEFT=-134
 HEIGHT=715
 WIDTH=989
 
@@ -236,3 +219,15 @@ SqTrail0=0
 Order=1
 Decim=7
 PlaneRownr=-1
+
+[RP:MARCH2018_VALIDATION(2PERIODS)]
+1=
+
+[MRUFILES]
+1=C:\Users\Mooz\Documents\GitHub\GCD_BugFlowExperiment\Months of 2018\March 2018\Miscellaneous\Weekend-Weekday\Validation\March2018_validation(2periods).gms
+2=E:\Class project\GCD_BugFlowExperiment\March 2018\Weekend-Weekday\Validation\March2018_Validation(Hourly).gms
+3=E:\Class project\GCD_BugFlowExperiment\March 2018\Weekend-Weekday\Validation\March2018_validation.lst
+4=E:\Class project\GCD_BugFlowExperiment\March 2018\Weekend-Weekday\Validation\March2018_Validation(Hourly).lst
+5=E:\Class project\GCD_BugFlowExperiment\March 2018\Weekend-Weekday\Validation\March2018_validation0-8&8-0.gms
+6=E:\Class project\GCD_BugFlowExperiment\June 2018\Linear Weekend-Weekday\June2018_validation.gms
+7=E:\rep-1228\Root\Linear Programming_Bugflow\linearprogramming_Bugflows\June2018_WkndScen.gms

@@ -94,13 +94,13 @@ Unsteady. Weekday         23      23       23      23     23       23     22    
 Table Energy_Rate(Days,p)"Price of MegaWatt hour during different days and within period p ($ per MWh)"
 *Out of following prices just activate one pricing set at a time.  Removing star (*) before $on-text will activate the pricing set.
 
-$ontext
+*$ontext
 *Current Price Differential ($29.3 /MWh).  Price differential is between on and off peak during weekdays only.
               pLow        pHigh
 Sunday       49.70        49.70
 Saturday     49.70        64.35
 Weekday      49.70        79.00  ;
-$offtext
+*$offtext
 
 $ontext
 *Half Price Differential ($14.7 /MWh).
@@ -110,13 +110,13 @@ Saturday     49.70        64.35
 Weekday      49.70        64.35  ;
 $offtext
 
-*$ontext
+$ontext
 *Zero Price Differential ($0 /MWh).
               pLow        pHigh
 Sunday       49.70        49.70
 Saturday     49.70        64.35
 Weekday      49.70        49.70  ;
-*$offtext
+$offtext
 
 
 

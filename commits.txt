@@ -1,0 +1,133 @@
+48355d0e01bfe7ebe97eefa98ab53a9b6b1cb65b - Create blank.yml
+727f046addd05925625dae9338ddea9283a4cffa - Update README.md
+8dec1fd6be8b1f27daf66ce1e7c4806eb1e2c692 - Updates
+db9022d5d981c1e4b2fb259a0578f0624879d556 - Updates
+7009acf0e8c2effd7f3cd2f399e172b140c45fd4 - Changed Folder Name
+c13a7fa4cd4715af1fa4dcd4897a4edd18cf2938 - Updated_Results
+6c32f2cf3ed2144c4d481e94f2ef8bb3c7e7dbf2 -  Pricing_Model Resutls
+fac1f3d1e5088f7730f3f02b7ed3b804d81a389c - Update README.md
+21c83cfda4fb8034b227970ab5dd71bbc4ebc65a - Update README.md
+2be10436572d7f6f799351b33456f557e462abd2 - Update README.md
+c800a794ffedc17cc236bd742081145a97f57382 - Updates
+92d641e69591b7342554ed8df28b463d6c5e71db - Update README.md
+514f112c74998db72a31d73d8e6d8b3d0c9bda2b - Update README.md
+94cef930e4a9500f8ad1bfa2f24bb86a53daaae4 - Update README.md
+15e13df03a89f0c5186c154566e268b81b9705ee - Price_Differentail
+36218d770443a5891682137096f03226a6b9bbad - Update README.md
+e27558ba496f00902a773598c2b7eb664c8134c5 - Update README.md
+922ec4260741596d4b3a2c161883f9c74fbe9e04 - Updated
+1517d80f5e5151af5f78f0653bf3bb4f954e4872 - Graphs
+05794895577c304fa3308d7d2d10aa9a6a10dba5 - Update README.md
+7521fa94adb1735650fbe7590efef46728fa1592 - Update README.md
+eb48a863166ad216eab79692c077d8689aea2e9a - Update README.md
+a04ee029783e7b83f84fc960694735c566ce1338 - Updated
+88bc96cc43f1a3dc198dc374ecd6aebd225aa864 - Update README.md
+baaf81714326fe4f8e07ec318161a564cb3b6764 - Validation
+96808082ba69546c256b3a8095e0cdd9fe4a06f3 - Update README.md
+f2cf92b1da530a184e457fd542bfd914445db80f - Update README.md
+372ed02348e718db5b9860aec4a2fd13c1e25b2b - Validation
+426a7fccb31c26ac5523c0c98b3090799034cecf - Validation
+f19ffdfe412d2cd50dd280b851512c244b2c0ac3 - Update README.md
+babb56bcb81c0fc867142ac3118038bc5eb57b09 - Update README.md
+a1c0803eb640f3896ebd10170330ed3022f17fd9 - Updated
+25d6414a294b30627c6d7ffde88a8c7a663be319 - Update README.md
+e5fc444c8578bd6799c384f88c2f61f285f54f9d - Update README.md
+e9b17df12fec5795bf87a2c33ed152843eeaa139 - Update README.md
+fa0089b9fe136ed0027176c98e84e14c93296673 - Observed Hydrograph
+d657a1fa1bce5de4841af4a32cc9a6f04dcfaad0 - Update README.md
+3594958f64ba399fa60041be3db15c8feb863616 - Update README.md
+0ad2cbdcfdb2b7ec123a0f68a8d341c747106377 - Models
+09f8a229d50550992c6abfe5056be3f879e873b0 - Updated Files
+f9a8310c0e65831010ff3860fbad44ebd9b20354 - Updated Files
+8852c0639a260f074d58951ddcb10bc9c727a9cf - Updated files
+f53485c74d71a83119f38e56d51533151a0928c1 - August 2018
+98dd79ea7c2770c627471749bb35383b6969bca9 - April 2018
+d5eb150283d960e1b77fa44f1e6edf5c1a7e11ec - August 2018
+70c360b817ca6cb143b6a2163ff4813011f09d06 - Read Me updated
+cf4b7ee24023fb346c3f5756fb2ea0c93b7fc0bf - Read Me and Visualization
+5dfab749e1db9f1421c770e930a13b89a5d2552d - Directions to run the model
+f7d173ed27db132e952005778c8a84622e37d66d - Read me File
+5f8b6a1df1b2ec47b12636aeaa41cdce1df3d270 - Merge branch 'main' of https://github.com/moazzamalirind/GCD_BugFlowExperiment
+9d2bafee21257694297f0021bdd800a17fcbb1ea - Directions
+ddd21e77d2bd756c4fce48245bc4cb3f2c676bb7 - Update ReadMe_April
+246501475939a3939989f95867fc42aa641efb84 - April 2018
+bb30f4dc0d15e99e259593942fb96297d1a0d768 - Update README.md
+58fbf002fe30d8916a86d43758decc66c19c2615 - Update README.md
+f00802838b8b24f272c7403b35cc523301d0586f - Update README.md
+47570cb5221369e6827ce0c266480c77b4e78ff0 - Update README.md
+280a6249bad56917039a4b38ec2df1038495236e - Update README.md
+f5d51d6271582fbc448de61c3f57dcc4e46caf8e - Update README.md
+ef8be26257d63a596fa973e4bd6d109a8d9dd213 - Update README.md
+921ae316529869bd49d88940fcdae038d56f7eff - Update README.md
+6bf444eaf77cf4a8637555d3a65469dcc6822d55 - Update README.md
+922acd92908e9ebef2b695204a27751ed1f41c92 - Update README.md
+b4d7281620ed081fe933296f295bdecfd62a1e28 - Supporting data
+5dc9e6590a6e18ddc4432ad6991cc4eb574e4764 - Merge branch 'main' of https://github.com/moazzamalirind/GCD_BugFlowExperiment
+b36f5ac8d163243af40b78c1e8dff2ddd97bb2c1 - Supporting Data
+07751ea87c1d0b878868c5ba8035c5f13469e681 - Update README.md
+90f1511e92181c781edfc744e8362698d3c1ccf3 - Update README.md
+98252b6850644be6df607c412840a96127b9bb62 - Update README.md
+b50ac6c76b805ce34c4cfdfb25517036d81f7073 - Update README.md
+6d319c68c9086a1d39d3c4c391cc8c9110614d78 - Update README.md
+2dbeb0584511efe8a5ed3739c0a060f575c87c07 - Update README.md
+439e972c0933a155e4b323c7eb46d6b57704342c - Update README.md
+987bad761c7b9c4805fb9b7d0c0e2c5a496c11f8 - Update README.md
+141bbaf41d888482ca7b051f044d226e5da70e38 - Update README.md
+9c00ec1a2b04bb098996764aef0babae18a77a4d - Update README.md
+48d8a0d5542e03bfd4680ccf5fef7d54b2c278b4 - Update README.md
+e92b081b7e185efc23d2c934106412e0cf4cd2c9 - Update README.md
+cbc5e7870c9a2cd1965b708871a97d3220189c3f - Update README.md
+898698937ce98bd3f6f36c3ce1bf4f5681fb77d5 - Update README.md
+3e4551f04e02db5430ba411d3dc076af7fc3b1e3 - Changes and updates
+0498cab03db8d9453d0fd594c4252de78c711994 - Upated model with 2 possible hydrographs
+93110690df61cfeee0b2ea7431c91bdd7b0a4cce - Updates and new file
+da6902b85cb2bd8df5663bcee5dff077816d21eb - Updated model
+4db28cee55955850b36ca5db0220561f2105fecf - Updates (code and results)
+51cfb73ba347737cf8bafce6cddd8d1fb00cb329 - Up to date code and results
+77c3063630b668831ef5289b8e741bdd40a43c4e - Market and Contract pricing
+23a0125f96751fbc95c0ff594dc4a884a81616a1 - Merge branch 'main' of https://github.com/moazzamalirind/GCD_BugFlowExperiment into main
+e9ab24b73b4daff75f2997ef2bd60dfc46d917d3 - Cleaning
+5f9bd65dc4bf12eeb119c221fafabd8b1cfa1085 - Create ReadMe_March
+4adb44bbb9f38e6d910be6a34da2de77ab7cb2dc - Update ReadMe_April
+8eabe7381e4f16ea2450f0a601a569b43a46c4c1 - Create ReadMe_April
+ffe24124381082a80103158fd10a7c94151ba2b4 - Extra files removal
+cd90c8235e534590be1cac3450bf87b9b8ca9ffd - Updates
+aae74f6ce27c89160e2cd10bc1039494c12ed803 - Merge branch 'main' of https://github.com/moazzamalirind/GCD_BugFlowExperiment into main
+ec4b70011d543b46d6f95dd8173365f3a38e0ae7 - Up to date
+bfdefd8097655cc4cf9cfbd0ef023a201f5e79c1 - Update README.md
+b6d94e1e9af7c9c4ca87b53f81f5880de79c19d2 - Update README.md
+a3c6164672b062b12e336ab0a94cdc4658466186 - Update README.md
+0d2f4ddac0c237d2991e9515c9f23938c9fee40e - Improvements
+fb98e70aadc13380c875a204defdc1e7eccac677 - Corrections and updates
+d4027037b477c2c2d61b77043e7c373d15d2532b - Updates
+efc107994e68be2be0a2455304fe9f732353c290 - Updates
+248f17e021c0baf52ea707b9052c05f20a3eeb41 - Graphs update
+fe949c72137ce9ec95c321ce3732ca8d8bf8faa5 - Saturday Model Updates
+089627c8ab31e63e61ccbd6a39df69b51d467855 - Delete extra files
+6740a4ec1efe51ebf71119ec67f5a47998ddfebd - Models Results
+ab4ee837d2979746019cb6a4db1a0c2082a75b65 - Models results for different months
+a3c53cdb5b0403daf3978421e75207fa415a8e63 - Models validation during different months of 2018
+0c1d19a1f54e087a7ff50904631db40e96a2f915 - Saturday Model Validation
+8b8c15593a16d9b109ad52bee6b1033417f060ea - Weekend-Weekday model  validation over different months
+d43ba752b37ac39e29e4bcc50b79cbf3ec293d09 - Monthly validation
+83c3494c22f8bb1ac5b4814eeacccc0dce9af96c -  Meeting Material
+8d541f3d7500cd7bad6c8872a36250357fb62bbb - Updating models
+72caa47d99a43523f3170818ac332fa510e09847 - observed Data
+5e9eede403d5c58cba379d646b80b18561c0deb1 - Monthly model inputs
+3af9b82029162c6f603c44befc8a16cf311beeb3 - Monthly model additions
+2a8952f951e48a9aef6bf5131dbd8ae548f1268d - Up to date model
+353ae93a6e0415cafd417b245c7c72c8bd357fac - Saturday-Sunday-Weekday Model
+519efabae235385d5ea94f4156244cc41af9547e - Update ReadMe
+3d60fe473c80ec303913713562ec5e42c8beca52 - Update ReadMe
+577e6ec31136c63b90aa1f7a47db2f433bc80cfe - Update ReadMe
+277ee08393cc13c3396de84541a8216a52e78220 - Update ReadMe
+2c4e2a2e1b847b4398811fa2eb12d497a8287ee2 - Merge branch 'main' of https://github.com/moazzamalirind/GCD_BugFlowExperiment into main
+1216ac3a1c066a6bedc608f56926e6f7951b36c9 - Codes
+3c05722ae0baca64f2e5d14279854dba4256e5b0 - Update ReadMe
+b727ae10b55cfc7dec474af408460fbf6eebd4ef - Update ReadMe
+a5b3dd7bbd2223e24953550ce2cd8d0b04122572 - Create ReadMe
+6f6e1bb35cfece88df8ac2c2758907104b0d44bb - Nonlinear codes+outputs
+298f27ca191e1ff9ca15a4707c6fbf22a586728f - Documents
+07526eccb8fbee2ce5d1032fd40748e50b4f8c96 - Update README.md
+e8c172821d362a360a86fb142b8e3e580aad41ae - Update README.md
+97e377d98fdeba0dc33364f00b9689ab3458c40c - Create README.md
