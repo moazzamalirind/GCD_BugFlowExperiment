@@ -125,7 +125,7 @@ Note: Fstore values are also available within Pricing_Model_Updated.xlsx. Use th
 We received hourly energy prices from WAPA and compiled them in Energy Rates_2014.xlsx (GCD_BugFlowExperiment/Supporting Data/Energy Rates_2014.xlsx). For example, the August worksheet in Energy Rates_2014.xlsx contains observed energy prices for August.
 
 **Figure S2, S3, and S4**
-These observed releases were obtained from USGS 09380000 Colorado River at Lees Ferry, AZ (https://waterdata.usgs.gov/nwis/uv?site_no=09380000&legacy=1)). Refer Hydrographs_Observed_Used (location: GCD_BugFlowExperiment/Supporting Data/Hydrographs_Observed_Used.xlsx).
+These observed releases were obtained from USGS 09380000 Colorado River at Lees Ferry, AZ (https://waterdata.usgs.gov/nwis/uv?site_no=09380000&legacy=1). Refer Hydrographs_Observed_Used (location: GCD_BugFlowExperiment/Supporting Data/Hydrographs_Observed_Used.xlsx).
 
 **Figure S5**
 We created the model structure flow diagram in Microsoft PowerPoint.
