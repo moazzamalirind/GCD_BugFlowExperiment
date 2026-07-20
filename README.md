@@ -41,7 +41,7 @@ ________________________________________________________________________________
 ![image](https://github.com/moazzamalirind/GCD_BugFlowExperiment/blob/main/Supporting%20Data/Model_Structure.png)
 
 ________________________________________________________________________________________________________________________________________________________________________________
-**Details of Respository Contents**
+**Details of Repository Contents**
 
 Basically there are three distinct folders:
 **a.** Months of 2018
