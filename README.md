@@ -141,10 +141,6 @@ Extra: In case to change the solver, comment out code Line 158 by placing * info
 10. % Error = 100* (Model-Observed) /Observed. E.g. %Error = 100* (409289 - 392938)/392938 = 4.2%.
 
 
-
-
-
-
 **Table S1** This table compiles outputs from validation runs and compares them with observed data, including the % error between modeled and observed energy generation. It also displays the energy prices used for each month. We outline steps to reproduce results for a single month (e.g. March 2018), expecting users to apply them for all other months. All results should be entered in the "Validation_Results" sheet of Models Results Summary.xlsx (GCD_BugFlowExperiment/Supporting Data/Models Results Summary.xlsx). 
 
 1. Download folder named "Validation" available at GCD_BugFlowExperiment/Months of 2018/Months of 2018/March 2018/Miscellaneous/Weekend-Weekday/Validation and save at your desired location. Within this folder you will find files with extensions like, .gms, .log, .lst, .lxi, .xlsx, .gpr. User can open .gpr file by double clicking and it should open a blank GAMS IDE project. The alternative is to create a new project in GAMS. Steps for new project involve: Click start => gamside or if you have IDE icon on desktop double click that. A blank GAMS interface will show up. Create a new project (File/Project/New Project), give it a preferred name while saving the project at your desired location. Only one from .gpr or new project methods is required.
