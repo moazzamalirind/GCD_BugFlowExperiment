@@ -75,8 +75,6 @@ First download folder name "Months of 2018". Save the folder on your local machi
 1. Download 15 mins observed hydrograph of August 2018 from: https://waterdata.usgs.gov/usa/nwis/uv?09380000
 2. Paste the downloaded data in the given Excel file. The Excel file named "Hydrographs_Observed_Used" is available in the Supporting Data folder (Supporting Data/Hydrographs_Observed_Used.xlsx). Move to the worksheet named "August_2018" and paste the downloaded release data against the time in the blue colored cells. You can visulaze the updated hydrograph in the worksheet named "August_2018 (Hydrograph)".
 
-
-
 **Figure 4**
 1. Within "Models" folder (you have already downloaded this folder in step before Figure 1) enter folder "August 2018". Next, open  "Contract Price Model" folder and then double click "Saturday_Sunday_Weekday.gpr" (Models/August 2018/Contract Price Model/Saturday_Sunday_Weekday.gpr). In case, the project is not saved at your desired location you can save it using "File/Save as". 
 2. Import the code file using File/Open/August18_Sat_Sun_Weekday_Model.gms. Main window with model code will appear. You are only required to run the model (all inputs are defined in the code) and the output files will be generated/updated in the project's folder. 
@@ -90,7 +88,7 @@ First download folder name "Months of 2018". Save the folder on your local machi
 **Figure 5**  The figure compares two model versions (contract-only vs. market-contract pricing) and illustrates how varying price increases affect trade-offs.
 1. For the contract-only model, enter the same folder as in Figure 4 (Months of 2018/August 2018/Contract Price Model).
 2. Since you’ve already run the code in Figure 4, rerunning the model is unnecessary. You just have to use the output which is available in "Sat-Sun-Weekday_August.xlsx". Move to the worksheet "Fstore" and use the filter function to select only the values for H4 (1000 CFS offset). This information will be used in the next step.
-3. Move to the Market-Contract Price Model (Months of 2018/August 2018/Market-Contract Price Model). You can use the GAMS project using Market_Pricing.gpr or create a new one similar to Figure 4.
+3. Move to the Market-Contract Price Model (Months of 2018/August 2018/Market-Contract Price Model). You can use the GAMS project using Market_Pricing.gpr or create a new one similar to Figure 
 4. Open the code file (August18_MarketPricing_Updated.gms) within the GAMS IDE. The code takes care of both market pricings (+$5/MWh and +$30/MWh) and produce all the required results. The user is not required to change the code unless you want to test different scenarios.
 5. You are required to paste all the required hydropeaking values in the Graphs_August.xlsx (Months of 2018/August 2018/Market-Contract Price Model/Graphs_August.xlsx). The values are required to be pasted in the Tradeoff_Final_Compare worksheet. There are clear instructions about where to paste the values.
 6. The values should come from either .gdx files (Months of 2018/August 2018/Market-Contract Price ModelPricing_Model_Updated.gdx and Months of 2018/August 2018/Contract Price Model/Sat-Sun-Weekday_August.gdx) or the excel output files (Months of 2018/August 2018/Market-Contract Price Model/Pricing_Model_Updated.xlsx and Months of 2018/August 2018/Contract Price Model/Sat-Sun-Weekday_August.xlsx).
